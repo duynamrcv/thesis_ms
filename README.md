@@ -1,9 +1,9 @@
-## Master thesis: DISTRIBUTED CONTROL STRATEGIES FOR CHANGING MULTIPLE UAV FORMATION
+## Master thesis: Distributed Control strategies for Changing Multiple UAV Formation
 
 Install texlive
 ```
-apt install texlive-science texlive-latex-extra texlive-extra-utils latexmk texlive-publishers texlive-science
-
+sudo apt install texlive-science texlive-latex-extra texlive-extra-utils latexmk texlive-publishers texlive-science
+sudo apt install texlive-bibtex-extra biber
 ```
 
 Install plugin in VScode
