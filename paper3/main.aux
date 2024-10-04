@@ -1,0 +1,269 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}MPPDC: Model Prediction-based Perceptual Deformation Control for Multiple Robots in Narrow Space Environments}{34}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{paper3}{{4}{34}{MPPDC: Model Prediction-based Perceptual Deformation Control for Multiple Robots in Narrow Space Environments}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{34}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Background}{37}{section.4.2}\protected@file@percent }
+\newlabel{sec:problem}{{4.2}{37}{Background}{section.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of a robot with a local range sensor. Each robot is equipped with a local sensor with sensing area $S_s$ (dashed gray circle) being a circular disk with radius $r_s$. The set $\mathcal  {M}_i=\{m\}$ (green) is the observed point cloud data.\relax }}{38}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:model}{{4.1}{38}{Illustration of a robot with a local range sensor. Each robot is equipped with a local sensor with sensing area $S_s$ (dashed gray circle) being a circular disk with radius $r_s$. The set $\mathcal {M}_i=\{m\}$ (green) is the observed point cloud data.\relax }{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces The diagram of the proposed method implemented for each robot. The point cloud data of the environment observed from local sensors and the information from the neighbors are collected as inputs to the proposed approach. Our predictive control strategy, which includes two primary modes: \textit  {``Formation''} and \textit  {``Tailgating''}, is formulated by the weighted-sum of five cost functions to address the requirements \textit  {(O1-O4)}. The optimal solver is constructed to generate the control signal for the low-level controller.\relax }}{38}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:diagram}{{4.2}{38}{The diagram of the proposed method implemented for each robot. The point cloud data of the environment observed from local sensors and the information from the neighbors are collected as inputs to the proposed approach. Our predictive control strategy, which includes two primary modes: \textit {``Formation''} and \textit {``Tailgating''}, is formulated by the weighted-sum of five cost functions to address the requirements \textit {(O1-O4)}. The optimal solver is constructed to generate the control signal for the low-level controller.\relax }{figure.caption.34}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}MPPDC: Model Prediction-based Perceptual Deformation Control Strategy}{38}{section.4.3}\protected@file@percent }
+\newlabel{sec:propose}{{4.3}{38}{MPPDC: Model Prediction-based Perceptual Deformation Control Strategy}{section.4.3}{}}
+\newlabel{eqn:formation}{{4.3}{39}{MPPDC: Model Prediction-based Perceptual Deformation Control Strategy}{equation.4.3.3}{}}
+\newlabel{eqn:tildep}{{4.4}{39}{MPPDC: Model Prediction-based Perceptual Deformation Control Strategy}{equation.4.3.4}{}}
+\newlabel{eqn:li}{{4.5}{39}{MPPDC: Model Prediction-based Perceptual Deformation Control Strategy}{equation.4.3.5}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Pseudocode of leader selection\relax }}{39}{algocf.2}\protected@file@percent }
+\newlabel{alg:ls}{{2}{39}{MPPDC: Model Prediction-based Perceptual Deformation Control Strategy}{algocf.2}{}}
+\newlabel{eqn:tailgating}{{4.7}{40}{MPPDC: Model Prediction-based Perceptual Deformation Control Strategy}{equation.4.3.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}The predictive control formulation}{40}{subsection.4.3.1}\protected@file@percent }
+\newlabel{eqn:J}{{4.9}{40}{The predictive control formulation}{equation.4.3.9}{}}
+\newlabel{eqn:constraints}{{4.10}{40}{The predictive control formulation}{equation.4.3.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Tracking term}{41}{subsubsection*.36}\protected@file@percent }
+\newlabel{sec:tracking_term}{{4.3.1}{41}{Tracking term}{subsubsection*.36}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Speed term}{41}{subsubsection*.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Direction term}{41}{subsubsection*.38}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Collision avoidance term}{41}{subsubsection*.39}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Control effort}{42}{subsubsection*.40}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Perceptual deformation control strategy}{42}{subsection.4.3.2}\protected@file@percent }
+\newlabel{sec:obs_aware}{{4.3.2}{42}{Perceptual deformation control strategy}{subsection.4.3.2}{}}
+\newlabel{eqn:mui}{{4.20}{42}{Perceptual deformation control strategy}{equation.4.3.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The process of estimating the environment's width: the robot first obtains point cloud data $\mathcal  {M}_i$ from the local sensor (green). It then selects a point set $\mathcal  {M}_{ui}$ (red) that is in front of the robot in a predefined direction $u_\text  {ref}$. It then divides those points into two sub-sets on the left-hand (blue) and right-hand (yellow) sides. Finally, the points that are nearest to the robot in $u_\text  {ref}$ direction in each side, $\mathcal  {M}_{i,l}$, and $\mathcal  {M}_{i,r}$ are selected to estimate the width of the environment.\relax }}{43}{figure.caption.41}\protected@file@percent }
+\newlabel{fig:perception}{{4.3}{43}{The process of estimating the environment's width: the robot first obtains point cloud data $\mathcal {M}_i$ from the local sensor (green). It then selects a point set $\mathcal {M}_{ui}$ (red) that is in front of the robot in a predefined direction $u_\text {ref}$. It then divides those points into two sub-sets on the left-hand (blue) and right-hand (yellow) sides. Finally, the points that are nearest to the robot in $u_\text {ref}$ direction in each side, $\mathcal {M}_{i,l}$, and $\mathcal {M}_{i,r}$ are selected to estimate the width of the environment.\relax }{figure.caption.41}{}}
+\newlabel{eqn:we}{{4.21}{43}{Perceptual deformation control strategy}{equation.4.3.21}{}}
+\newlabel{eqn:kappa}{{4.22}{43}{Perceptual deformation control strategy}{equation.4.3.22}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Pseudocode to estimate the environment's width\relax }}{43}{algocf.3}\protected@file@percent }
+\newlabel{alg:we}{{3}{43}{Perceptual deformation control strategy}{algocf.3}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces Pseudocode of the MPPDC strategy\relax }}{44}{algocf.4}\protected@file@percent }
+\newlabel{alg:our}{{4}{44}{Perceptual deformation control strategy}{algocf.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Results and Discussion}{44}{section.4.4}\protected@file@percent }
+\newlabel{sec:result}{{4.4}{44}{Results and Discussion}{section.4.4}{}}
+\newlabel{fig:cor1}{{4.4c}{45}{Scenario 1 - Correlation of number of robots and scaling factor\relax }{figure.caption.44}{}}
+\newlabel{sub@fig:cor1}{{c}{45}{Scenario 1 - Correlation of number of robots and scaling factor\relax }{figure.caption.44}{}}
+\newlabel{fig:cor2}{{4.4d}{45}{Scenario 2 - Correlation of number of robots and scaling factor\relax }{figure.caption.44}{}}
+\newlabel{sub@fig:cor2}{{d}{45}{Scenario 2 - Correlation of number of robots and scaling factor\relax }{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The motion path of a pentagon formation in two scenarios using the proposed strategy.\relax }}{45}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:path}{{4.4}{45}{The motion path of a pentagon formation in two scenarios using the proposed strategy.\relax }{figure.caption.44}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Results and Comparisons}{45}{subsection.4.4.1}\protected@file@percent }
+\newlabel{subsec:results}{{4.4.1}{45}{Results and Comparisons}{subsection.4.4.1}{}}
+\newlabel{fig:speed1}{{4.5a}{46}{Scenario 1 - Speed\relax }{figure.caption.45}{}}
+\newlabel{sub@fig:speed1}{{a}{46}{Scenario 1 - Speed\relax }{figure.caption.45}{}}
+\newlabel{fig:speed2}{{4.5b}{46}{Scenario 2 - Speed\relax }{figure.caption.45}{}}
+\newlabel{sub@fig:speed2}{{b}{46}{Scenario 2 - Speed\relax }{figure.caption.45}{}}
+\newlabel{fig:order1}{{4.5c}{46}{Scenario 1 - \textit {Order} $\Phi $\relax }{figure.caption.45}{}}
+\newlabel{sub@fig:order1}{{c}{46}{Scenario 1 - \textit {Order} $\Phi $\relax }{figure.caption.45}{}}
+\newlabel{fig:order2}{{4.5d}{46}{Scenario 2 - \textit {Order} $\Phi $\relax }{figure.caption.45}{}}
+\newlabel{sub@fig:order2}{{d}{46}{Scenario 2 - \textit {Order} $\Phi $\relax }{figure.caption.45}{}}
+\newlabel{fig:error1}{{4.5e}{46}{Scenario 1 - \textit {Formation error} $\varepsilon $\relax }{figure.caption.45}{}}
+\newlabel{sub@fig:error1}{{e}{46}{Scenario 1 - \textit {Formation error} $\varepsilon $\relax }{figure.caption.45}{}}
+\newlabel{fig:errorr2}{{4.5f}{46}{Scenario 2 - \textit {Formation error} $\varepsilon $\relax }{figure.caption.45}{}}
+\newlabel{sub@fig:errorr2}{{f}{46}{Scenario 2 - \textit {Formation error} $\varepsilon $\relax }{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison results of three strategies in two scenarios.\relax }}{46}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:comparison}{{4.5}{46}{Comparison results of three strategies in two scenarios.\relax }{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Effect of number of robots on system performance, including \textit  {order} $\Phi $ value and formation error $\varepsilon $.\relax }}{46}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:scalability}{{4.6}{46}{Effect of number of robots on system performance, including \textit {order} $\Phi $ value and formation error $\varepsilon $.\relax }{figure.caption.46}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces The comparison between \textit  {BDC}, \textit  {MPFC}, and the proposed \textit  {MPPDC}. Each comparison is over 10 simulations of 5 robots in two different scenarios. The metrics displayed in the table are the success rate, mean \textit  {order}, mean speed, mean formation error, and acceleration cost.\relax }}{47}{table.caption.47}\protected@file@percent }
+\newlabel{tbl:analys}{{4.1}{47}{The comparison between \textit {BDC}, \textit {MPFC}, and the proposed \textit {MPPDC}. Each comparison is over 10 simulations of 5 robots in two different scenarios. The metrics displayed in the table are the success rate, mean \textit {order}, mean speed, mean formation error, and acceleration cost.\relax }{table.caption.47}{}}
+\newlabel{fig:gazebo_tunnel}{{4.7a}{48}{The cave-like environment\relax }{figure.caption.48}{}}
+\newlabel{sub@fig:gazebo_tunnel}{{a}{48}{The cave-like environment\relax }{figure.caption.48}{}}
+\newlabel{fig:gazebo_hummingbird}{{4.7b}{48}{The used drone model~\cite {Bui2022,Furrer2016}\relax }{figure.caption.48}{}}
+\newlabel{sub@fig:gazebo_hummingbird}{{b}{48}{The used drone model~\cite {Bui2022,Furrer2016}\relax }{figure.caption.48}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces The SIL set up on Gazebo simulator. The environment consists of two large obstacles forming a cave-like environment. We use 5 Hummingbird drones equipped with perception sensors including LiDAR, RGBD camera, communication and positioning modules.\relax }}{48}{figure.caption.48}\protected@file@percent }
+\newlabel{fig:sil}{{4.7}{48}{The SIL set up on Gazebo simulator. The environment consists of two large obstacles forming a cave-like environment. We use 5 Hummingbird drones equipped with perception sensors including LiDAR, RGBD camera, communication and positioning modules.\relax }{figure.caption.48}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Software-in-the-loop verification}{48}{subsection.4.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Snapshot of the migration process of a formation using the proposed strategy. At the beginning of the SIL test, drones in a formation hover and start at their initial positions (a). Consequently, they converge to the specified shape (b), i.e. pentagon shape. When they sense that the width of the environment is not enough to maintain their original shape, they deform their shape to adapt to the environment (c). When the formation finds that the environment in the front is too narrow, the formation transforms into a straight line shape (d) and moves safely through the narrow passage (e). Finally, after escaping from the narrow passage, they transform back to their original shape (f) and reach the target.\relax }}{49}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:snap}{{4.8}{49}{Snapshot of the migration process of a formation using the proposed strategy. At the beginning of the SIL test, drones in a formation hover and start at their initial positions (a). Consequently, they converge to the specified shape (b), i.e. pentagon shape. When they sense that the width of the environment is not enough to maintain their original shape, they deform their shape to adapt to the environment (c). When the formation finds that the environment in the front is too narrow, the formation transforms into a straight line shape (d) and moves safely through the narrow passage (e). Finally, after escaping from the narrow passage, they transform back to their original shape (f) and reach the target.\relax }{figure.caption.49}{}}
+\newlabel{fig:gazebo_path}{{4.9a}{49}{The captured motion paths\relax }{figure.caption.50}{}}
+\newlabel{sub@fig:gazebo_path}{{a}{49}{The captured motion paths\relax }{figure.caption.50}{}}
+\newlabel{fig:gazebo_mode}{{4.9b}{49}{Correlation of number of robots and scaling factor $\kappa $\relax }{figure.caption.50}{}}
+\newlabel{sub@fig:gazebo_mode}{{b}{49}{Correlation of number of robots and scaling factor $\kappa $\relax }{figure.caption.50}{}}
+\newlabel{fig:gazebo_speed}{{4.9c}{49}{The speed profile\relax }{figure.caption.50}{}}
+\newlabel{sub@fig:gazebo_speed}{{c}{49}{The speed profile\relax }{figure.caption.50}{}}
+\newlabel{fig:gazebo_order}{{4.9d}{49}{The \textit {order} metric $\Phi $\relax }{figure.caption.50}{}}
+\newlabel{sub@fig:gazebo_order}{{d}{49}{The \textit {order} metric $\Phi $\relax }{figure.caption.50}{}}
+\newlabel{fig:gazebo_error}{{4.9e}{49}{The \textit {formation error} $\varepsilon _i$\relax }{figure.caption.50}{}}
+\newlabel{sub@fig:gazebo_error}{{e}{49}{The \textit {formation error} $\varepsilon _i$\relax }{figure.caption.50}{}}
+\newlabel{fig:gazebo_time}{{4.9f}{49}{The computational times\relax }{figure.caption.50}{}}
+\newlabel{sub@fig:gazebo_time}{{f}{49}{The computational times\relax }{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces The recorded results and metrics in the SIL test\relax }}{49}{figure.caption.50}\protected@file@percent }
+\newlabel{fig:gazebo}{{4.9}{49}{The recorded results and metrics in the SIL test\relax }{figure.caption.50}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Discussion}{50}{subsection.4.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Decentralization}{50}{subsubsection*.51}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{High performance}{50}{subsubsection*.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Scalability}{51}{subsubsection*.53}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Flexibility}{51}{subsubsection*.54}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Conclusion}{51}{section.4.5}\protected@file@percent }
+\newlabel{sec:conclusion}{{4.5}{51}{Conclusion}{section.4.5}{}}
+\@setckpt{paper3/main}{
+\setcounter{page}{52}
+\setcounter{equation}{24}
+\setcounter{enumi}{3}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{1}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{9}
+\setcounter{table}{1}
+\setcounter{blindtext}{1}
+\setcounter{Blindtext}{5}
+\setcounter{blind@countparstart}{0}
+\setcounter{blindlist}{0}
+\setcounter{blindlistlevel}{0}
+\setcounter{blindlist@level}{0}
+\setcounter{blind@listcount}{0}
+\setcounter{blind@levelcount}{0}
+\setcounter{blind@randomcount}{0}
+\setcounter{blind@randommax}{0}
+\setcounter{blind@pangramcount}{0}
+\setcounter{blind@pangrammax}{0}
+\setcounter{Item}{13}
+\setcounter{Hfootnote}{3}
+\setcounter{bookmark@seq@number}{48}
+\setcounter{caption@flags}{0}
+\setcounter{continuedfloat}{0}
+\setcounter{subfigure}{6}
+\setcounter{subtable}{0}
+\setcounter{parentequation}{0}
+\setcounter{float@type}{4}
+\setcounter{AlgoLine}{27}
+\setcounter{algocfline}{4}
+\setcounter{algocfproc}{4}
+\setcounter{algocf}{4}
+\setcounter{tabx@nest}{0}
+\setcounter{listtotal}{0}
+\setcounter{listcount}{0}
+\setcounter{liststart}{0}
+\setcounter{liststop}{0}
+\setcounter{citecount}{0}
+\setcounter{citetotal}{0}
+\setcounter{multicitecount}{0}
+\setcounter{multicitetotal}{0}
+\setcounter{instcount}{202}
+\setcounter{maxnames}{3}
+\setcounter{minnames}{3}
+\setcounter{maxitems}{3}
+\setcounter{minitems}{1}
+\setcounter{citecounter}{0}
+\setcounter{maxcitecounter}{0}
+\setcounter{savedcitecounter}{0}
+\setcounter{uniquelist}{0}
+\setcounter{uniquename}{0}
+\setcounter{refsection}{0}
+\setcounter{refsegment}{0}
+\setcounter{maxextratitle}{0}
+\setcounter{maxextratitleyear}{0}
+\setcounter{maxextraname}{2}
+\setcounter{maxextradate}{0}
+\setcounter{maxextraalpha}{0}
+\setcounter{abbrvpenalty}{50}
+\setcounter{highnamepenalty}{50}
+\setcounter{lownamepenalty}{25}
+\setcounter{maxparens}{3}
+\setcounter{parenlevel}{0}
+\setcounter{blx@maxsection}{0}
+\setcounter{blx@maxsegment@0}{0}
+\setcounter{blx@sectionciteorder@0}{108}
+\setcounter{mincomprange}{10}
+\setcounter{maxcomprange}{100000}
+\setcounter{mincompwidth}{1}
+\setcounter{afterword}{0}
+\setcounter{savedafterword}{0}
+\setcounter{annotator}{0}
+\setcounter{savedannotator}{0}
+\setcounter{author}{0}
+\setcounter{savedauthor}{0}
+\setcounter{bookauthor}{0}
+\setcounter{savedbookauthor}{0}
+\setcounter{commentator}{0}
+\setcounter{savedcommentator}{0}
+\setcounter{editor}{0}
+\setcounter{savededitor}{0}
+\setcounter{editora}{0}
+\setcounter{savededitora}{0}
+\setcounter{editorb}{0}
+\setcounter{savededitorb}{0}
+\setcounter{editorc}{0}
+\setcounter{savededitorc}{0}
+\setcounter{foreword}{0}
+\setcounter{savedforeword}{0}
+\setcounter{holder}{0}
+\setcounter{savedholder}{0}
+\setcounter{introduction}{0}
+\setcounter{savedintroduction}{0}
+\setcounter{namea}{0}
+\setcounter{savednamea}{0}
+\setcounter{nameb}{0}
+\setcounter{savednameb}{0}
+\setcounter{namec}{0}
+\setcounter{savednamec}{0}
+\setcounter{translator}{0}
+\setcounter{savedtranslator}{0}
+\setcounter{shortauthor}{0}
+\setcounter{savedshortauthor}{0}
+\setcounter{shorteditor}{0}
+\setcounter{savedshorteditor}{0}
+\setcounter{labelname}{0}
+\setcounter{savedlabelname}{0}
+\setcounter{institution}{0}
+\setcounter{savedinstitution}{0}
+\setcounter{lista}{0}
+\setcounter{savedlista}{0}
+\setcounter{listb}{0}
+\setcounter{savedlistb}{0}
+\setcounter{listc}{0}
+\setcounter{savedlistc}{0}
+\setcounter{listd}{0}
+\setcounter{savedlistd}{0}
+\setcounter{liste}{0}
+\setcounter{savedliste}{0}
+\setcounter{listf}{0}
+\setcounter{savedlistf}{0}
+\setcounter{location}{0}
+\setcounter{savedlocation}{0}
+\setcounter{organization}{0}
+\setcounter{savedorganization}{0}
+\setcounter{origlocation}{0}
+\setcounter{savedoriglocation}{0}
+\setcounter{origpublisher}{0}
+\setcounter{savedorigpublisher}{0}
+\setcounter{publisher}{0}
+\setcounter{savedpublisher}{0}
+\setcounter{language}{0}
+\setcounter{savedlanguage}{0}
+\setcounter{origlanguage}{0}
+\setcounter{savedoriglanguage}{0}
+\setcounter{pageref}{0}
+\setcounter{savedpageref}{0}
+\setcounter{textcitecount}{0}
+\setcounter{textcitetotal}{0}
+\setcounter{textcitemaxnames}{0}
+\setcounter{biburlbigbreakpenalty}{100}
+\setcounter{biburlbreakpenalty}{200}
+\setcounter{biburlnumpenalty}{0}
+\setcounter{biburlucpenalty}{0}
+\setcounter{biburllcpenalty}{0}
+\setcounter{smartand}{1}
+\setcounter{bbx:relatedcount}{0}
+\setcounter{bbx:relatedtotal}{0}
+\setcounter{cbx@tempcnta}{0}
+\setcounter{cbx@tempcntb}{64}
+\setcounter{cbx@tempcntc}{0}
+\setcounter{cbx@tempcntd}{-1}
+\setcounter{theorem}{1}
+\setcounter{definition}{2}
+\setcounter{remark}{2}
+\setcounter{papernumber}{0}
+\setcounter{section@level}{0}
+}

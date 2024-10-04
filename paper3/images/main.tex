@@ -1,0 +1,99 @@
+% \documentclass[final]{IEEEtran}
+\documentclass[letterpaper, 10 pt, journal, twoside]{IEEEtran}
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  \usepackage[pdftex]{graphicx}
+  \usepackage[export]{adjustbox}
+  \usepackage[hidelinks]{hyperref}
+  \hypersetup{pdfauthor=author}
+  \usepackage{amsmath,amsthm,amsfonts,amssymb}
+  \usepackage{pifont}
+  \usepackage{cuted}
+  \usepackage{multirow}
+  \usepackage{enumitem}
+  \usepackage{balance}
+  \usepackage{subcaption}
+  \usepackage{cite}
+  \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+  \usepackage{orcidlink}
+  \usepackage{soul}
+  \usepackage{nomencl}
+  
+  \makenomenclature
+
+  \newtheorem{theorem}{Theorem}
+  \newtheorem{definition}{Definition}
+
+  \usepackage{array}
+  \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+  \newcolumntype{C}[1]{>{\PreserveBackslash\centering}m{#1}}
+  \renewcommand{\arraystretch}{1.5}
+  
+  \newcommand{\cmark}{\ding{51}}%
+  \newcommand{\xmark}{\ding{55}}%
+\else
+
+  \usepackage[dvips]{graphicx}
+\fi
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+\title{MPPDC: Model Prediction-based Perceptual Deformation Control for Multiple Robots\\in Narrow Space Environments
+}
+
+
+\author{Duy-Nam Bui\orcidlink{0009-0001-0837-4360}, Manh Duong Phung\orcidlink{0000-0001-5247-6180}~\IEEEmembership{Senior Member,~IEEE}, and Hung Pham Duy\orcidlink{0000-0001-7878-9409}~\IEEEmembership{Member,~IEEE}% <-this % stops a space
+\thanks{\textit{Corresponding author: Hung Pham Duy}}
+\thanks{Duy-Nam Bui and Hung Pham Duy are with the VNU-University of Engineering and Technology, Hanoi, Vietnam. {\tt\footnotesize duynam@ieee.org; hungpd@vnu.edu.vn}}
+\thanks{Manh Duong Phung is with the Fulbright University Vietnam, Ho Chi Minh City, Vietnam. {\tt\footnotesize duong.phung@fulbright.edu.vn}}
+\thanks{Duy-Nam Bui was funded by the Master, PhD Scholarship Programme of Vingroup Innovation Foundation (VINIF), code VINIF.2023.Ths.088.}
+\thanks{Code: {\tt\url{https://github.com/duynamrcv/mppdc}}}
+\thanks{Video: {\tt\url{https://youtu.be/qW8N0WVQAwU}}}
+}
+
+% The paper headers
+\markboth{IEEE Transactions on Aerospace and Electronic Systems. Preprint Version.}{Duy-Nam Bui \MakeLowercase{\textit{et al.}}: MPPDC} 
+
+
+% make the title area
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+Formation control plays a key role in multi-robot systems, in which a group of robots is coordinated to enhance task performance. Ensuring the safety of robot formations in clustered environments, especially in narrow space environments, remains a significant challenge. This paper proposes a Model Prediction-based Perceptual Deformation Control (MPPDC) strategy for a multi-robot swarm. The strategy proactively ensures the safety of robot formations moving through narrow space by changing the shape according to the environment observed from local sensors. The formation navigation method is modeled as objective functions that express the requirements, constraints, and limitations of the system in the formation movement mission. Additionally, a perceptual deformation strategy is also proposed for distributed decision-making. Finally, simulations, comparisons, and software-in-the-loop testing results are provided to demonstrate the effectiveness of the proposed approach.
+\end{abstract}
+
+\begin{IEEEkeywords} multi-robot system, distributed deformation  control, model predictive control, narrow space environments.
+\end{IEEEkeywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\IEEEpeerreviewmaketitle
+% \section*{Supplementary materials}
+% Source code: {\tt\small\url{https://github.com/duynamrcv/mppdc}}
+
+% Video: {\tt\small\url{https://youtu.be/qW8N0WVQAwU}}
+
+% \input{nomenclatures}
+\input{1_introduction}
+\input{2_problem}
+\input{3_proposed}
+\input{4_result}
+\input{5_conclusion}
+
+% \section*{Acknowledgement}
+% Duy-Nam Bui was funded by the Master, PhD Scholarship Programme of Vingroup Innovation Foundation (VINIF), code VINIF.2023.Ths.088.
+
+\balance
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+\bibliographystyle{IEEEtran}  
+\bibliography{ref}
+\end{document}

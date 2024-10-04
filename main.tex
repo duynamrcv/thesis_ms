@@ -1,0 +1,115 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[english]{babel}
+\usepackage{titlesec, blindtext, color}
+\usepackage[table,xcdraw]{xcolor}
+
+\title{Demo Document}
+\author{BDN}
+
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\setlength{\parindent}{0.6cm}
+\usepackage{indentfirst}    
+\setlength{\parskip}{6pt}
+\renewcommand{\baselinestretch}{1.05} %format distance between lines
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue, urlcolor=blue,citecolor=blue]{hyperref}
+% \usepackage{graphicx}
+\usepackage{lmodern}
+
+% abbreviation
+% \usepackage{nomencl}
+% \makenomenclature
+% \renewcommand{\nomname}{Bảng ký hiệu và chữ viết tắt}
+%% This code creates the groups
+% -----------------------------------------
+% \usepackage{etoolbox}
+% \renewcommand\nomgroup[1]{%
+%   \item[\bfseries
+%   \ifstrequal{#1}{T}{Chữ viết tắt}{%
+%   \ifstrequal{#1}{K}{Ký hiệu}}%
+% ]}
+% ------
+
+
+\usepackage{subcaption}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{pifont}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{titletoc}
+\usepackage{csquotes}
+
+\usetikzlibrary{calc}
+\usepackage{enumitem}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage[backend=biber,style=ieee,sorting=none]{biblatex}
+
+\addbibresource{reference.bib}
+
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+% \addto\captionsenglish{
+% \renewcommand{\contentsname}{Table of Contents}%
+% }
+
+% format titile chapter section ...
+\titleformat{\chapter}[display]
+{\bfseries\LARGE}
+{\chaptertitlename~\thechapter}
+{0.5ex}
+{\titlerule\LARGE}
+
+\titlecontents{chapter}% <section-type>
+  [0pt]% <left>
+  {}% <above-code>
+  {\bfseries Chapter~\thecontentslabel.\quad}% <numbered-entry-format>
+  {\bfseries}% <numberless-entry-format>
+  {\hfill\contentspage}% <filler-page-format>
+
+% Define a counter for papers
+\newcounter{papernumber}
+
+% Change the format of the papernumber to Roman numerals
+\renewcommand{\thepapernumber}{\Roman{papernumber}}
+
+% Define the paper command
+\newcommand{\paper}[1]{
+  \refstepcounter{papernumber}
+  \chapter*{Paper~\thepapernumber~--~#1}
+  \addcontentsline{toc}{chapter}{Paper~\thepapernumber~--~#1}
+}
+
+\begin{document}
+
+\include{overview/title}
+\include{overview/subtitle}
+\pagenumbering{roman}
+\include{overview/authorship}
+\include{overview/approval}
+\include{overview/abstract}
+\include{overview/thank}
+\include{overview/contents}
+
+% main body
+\pagenumbering{arabic}
+\include{chap1}
+
+\include{paper1/main}
+\include{paper2/main}
+\include{paper3/main}
+
+% Reference
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography%[title=REFERENCES]
+\end{document}

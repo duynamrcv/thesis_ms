@@ -1,0 +1,3673 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{9306908}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7ff7de3ff0cfe266873732c2deecbff5}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b9cc0f8fd17361996f148a1bb37d6d55}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{03ea06a149a45b093d94c349a7e8a5fb}
+      \strng{fullhash}{03ea06a149a45b093d94c349a7e8a5fb}
+      \strng{bibnamehash}{03ea06a149a45b093d94c349a7e8a5fb}
+      \strng{authorbibnamehash}{03ea06a149a45b093d94c349a7e8a5fb}
+      \strng{authornamehash}{03ea06a149a45b093d94c349a7e8a5fb}
+      \strng{authorfullhash}{03ea06a149a45b093d94c349a7e8a5fb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics: Systems}
+      \field{number}{1}
+      \field{title}{A Survey on Intelligent Control for Multiagent Systems}
+      \field{volume}{51}
+      \field{year}{2021}
+      \field{pages}{161\bibrangedash 175}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TSMC.2020.3042823
+      \endverb
+      \keyw{Intelligent control;Task analysis;Robot sensing systems;Collaboration;Topology;Uncertainty;Sensors;Consensus problem;flocking control;formation control;intelligent control;multiagent systems (MASs);multilevel constraints}
+    \endentry
+    \entry{Skorobogatov2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1b00b2db8abea8d1c7711df21a76945f}{%
+           family={Skorobogatov},
+           familyi={S\bibinitperiod},
+           given={Georgy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9acfa0d27a3ffd40adf88d78bb15ed5f}{%
+           family={Barrado},
+           familyi={B\bibinitperiod},
+           given={Cristina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=424ab5520f5961521b89713747258130}{%
+           family={Salamí},
+           familyi={S\bibinitperiod},
+           given={Esther},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific Pub Co Pte Ltd}%
+      }
+      \strng{namehash}{b7126936914d4666958ebf33df8e362d}
+      \strng{fullhash}{b7126936914d4666958ebf33df8e362d}
+      \strng{bibnamehash}{b7126936914d4666958ebf33df8e362d}
+      \strng{authorbibnamehash}{b7126936914d4666958ebf33df8e362d}
+      \strng{authornamehash}{b7126936914d4666958ebf33df8e362d}
+      \strng{authorfullhash}{b7126936914d4666958ebf33df8e362d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2301-3869}
+      \field{journaltitle}{Unmanned Systems}
+      \field{month}{4}
+      \field{number}{02}
+      \field{title}{Multiple UAV Systems: A Survey}
+      \field{volume}{08}
+      \field{year}{2020}
+      \field{pages}{149\bibrangedash 169}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1142/s2301385020500090
+      \endverb
+    \endentry
+    \entry{Tang2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e5d55ceb618761c66de79968a9ed937f}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=15d69e98290fc4142571efe03f85387d}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Haibin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5d98b2be419245c6dafd3b39b404a71b}{%
+           family={Lao},
+           familyi={L\bibinitperiod},
+           given={Songyang},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{147767ea547c7a9f4d53076c996d82e9}
+      \strng{fullhash}{147767ea547c7a9f4d53076c996d82e9}
+      \strng{bibnamehash}{147767ea547c7a9f4d53076c996d82e9}
+      \strng{authorbibnamehash}{147767ea547c7a9f4d53076c996d82e9}
+      \strng{authornamehash}{147767ea547c7a9f4d53076c996d82e9}
+      \strng{authorfullhash}{147767ea547c7a9f4d53076c996d82e9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-7462}
+      \field{journaltitle}{Artificial Intelligence Review}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{Swarm intelligence algorithms for multiple unmanned aerial vehicles collaboration: a comprehensive review}
+      \field{volume}{56}
+      \field{year}{2022}
+      \field{pages}{4295\bibrangedash 4327}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1007/s10462-022-10281-7
+      \endverb
+    \endentry
+    \entry{Oh2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=841345416892fc54e2f2d9730a1eaaef}{%
+           family={Oh},
+           familyi={O\bibinitperiod},
+           given={Kwang-Kyo},
+           giveni={K\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=b8c981679c026448ab3a222daa3f066f}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Myoung-Chul},
+           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=94fa0b6115767ff5497fd47bab1bb834}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Hyo-Sung},
+           giveni={H\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{3278fcb7fe5d1388c67ef49edf5066e7}
+      \strng{fullhash}{3278fcb7fe5d1388c67ef49edf5066e7}
+      \strng{bibnamehash}{3278fcb7fe5d1388c67ef49edf5066e7}
+      \strng{authorbibnamehash}{3278fcb7fe5d1388c67ef49edf5066e7}
+      \strng{authornamehash}{3278fcb7fe5d1388c67ef49edf5066e7}
+      \strng{authorfullhash}{3278fcb7fe5d1388c67ef49edf5066e7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0005-1098}
+      \field{journaltitle}{Automatica}
+      \field{month}{3}
+      \field{title}{A survey of multi-agent formation control}
+      \field{volume}{53}
+      \field{year}{2015}
+      \field{pages}{424\bibrangedash 440}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.automatica.2014.10.022
+      \endverb
+    \endentry
+    \entry{Huang2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d772a664d743aeb06bfeda3a19f82c84}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Sunan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=af06edf6d4928ebf12a5587494bee7ce}{%
+           family={Teo},
+           familyi={T\bibinitperiod},
+           given={Rodney\bibnamedelimb Swee\bibnamedelima Huat},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=d2ea1e4986d607aa64fa28257a06247b}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Kok\bibnamedelima Kiong},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{f68699c34901ac02d420be916eb0e5e6}
+      \strng{fullhash}{f68699c34901ac02d420be916eb0e5e6}
+      \strng{bibnamehash}{f68699c34901ac02d420be916eb0e5e6}
+      \strng{authorbibnamehash}{f68699c34901ac02d420be916eb0e5e6}
+      \strng{authornamehash}{f68699c34901ac02d420be916eb0e5e6}
+      \strng{authorfullhash}{f68699c34901ac02d420be916eb0e5e6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1367-5788}
+      \field{journaltitle}{Annual Reviews in Control}
+      \field{title}{Collision avoidance of multi unmanned aerial vehicles: A review}
+      \field{volume}{48}
+      \field{year}{2019}
+      \field{pages}{147\bibrangedash 164}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.arcontrol.2019.10.001
+      \endverb
+    \endentry
+    \entry{Rastgoftar2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3f8bad0a140a66c7f6e83b58ae277250}{%
+           family={Rastgoftar},
+           familyi={R\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=646b4362fe7cf0460a0231cfc6305f9d}{%
+           family={Atkins},
+           familyi={A\bibinitperiod},
+           given={Ella\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{c8c60c7198f0131b6aea6fcdf7e69ca0}
+      \strng{fullhash}{c8c60c7198f0131b6aea6fcdf7e69ca0}
+      \strng{bibnamehash}{c8c60c7198f0131b6aea6fcdf7e69ca0}
+      \strng{authorbibnamehash}{c8c60c7198f0131b6aea6fcdf7e69ca0}
+      \strng{authornamehash}{c8c60c7198f0131b6aea6fcdf7e69ca0}
+      \strng{authorfullhash}{c8c60c7198f0131b6aea6fcdf7e69ca0}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1270-9638}
+      \field{journaltitle}{Aerospace Science and Technology}
+      \field{month}{8}
+      \field{title}{Safe multi-cluster UAV continuum deformation coordination}
+      \field{volume}{91}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1016/j.ast.2019.05.002
+      \endverb
+    \endentry
+    \entry{736776}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b19bc54fd1d2d6ef10c080ca2c71dc49}{%
+           family={Balch},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6f7fef311b8ddc0289e8f5f3cff0d58b}{%
+           family={Arkin},
+           familyi={A\bibinitperiod},
+           given={R.C.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8df3a9703204f77125b89a50d0a4894}
+      \strng{fullhash}{f8df3a9703204f77125b89a50d0a4894}
+      \strng{bibnamehash}{f8df3a9703204f77125b89a50d0a4894}
+      \strng{authorbibnamehash}{f8df3a9703204f77125b89a50d0a4894}
+      \strng{authornamehash}{f8df3a9703204f77125b89a50d0a4894}
+      \strng{authorfullhash}{f8df3a9703204f77125b89a50d0a4894}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics and Automation}
+      \field{number}{6}
+      \field{title}{Behavior-based formation control for multirobot teams}
+      \field{volume}{14}
+      \field{year}{1998}
+      \field{pages}{926\bibrangedash 939}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/70.736776
+      \endverb
+    \endentry
+    \entry{Berlinger2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fb6080650eef8b3408973f3c25d48d89}{%
+           family={Berlinger},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d6dbcab9444fd8d62a11f55cc7e84d1b}{%
+           family={Gauci},
+           familyi={G\bibinitperiod},
+           given={Melvin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d649a97dbd0a44bfdfb74b5c5f5da7c0}{%
+           family={Nagpal},
+           familyi={N\bibinitperiod},
+           given={Radhika},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science (AAAS)}%
+      }
+      \strng{namehash}{99059e5f54e017c2552496867c689766}
+      \strng{fullhash}{99059e5f54e017c2552496867c689766}
+      \strng{bibnamehash}{99059e5f54e017c2552496867c689766}
+      \strng{authorbibnamehash}{99059e5f54e017c2552496867c689766}
+      \strng{authornamehash}{99059e5f54e017c2552496867c689766}
+      \strng{authorfullhash}{99059e5f54e017c2552496867c689766}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2470-9476}
+      \field{journaltitle}{Science Robotics}
+      \field{month}{1}
+      \field{number}{50}
+      \field{title}{Implicit coordination for {3D} underwater collective behaviors in a fish-inspired robot swarm}
+      \field{volume}{6}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1126/scirobotics.abd8668
+      \endverb
+    \endentry
+    \entry{9565893}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6af469d9807d60f2d45f5c5e35981ab4}{%
+           family={Nhu},
+           familyi={N\bibinitperiod},
+           given={Truong},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bb7833eb1e83621a22312886948f336f}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={Pham\bibnamedelima Duy},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=89db2ef6760b9b105932252b7ccdf9de}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Van\bibnamedelima Anh},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b10e3dcf0bf6e4e8e08b2bd6d610282c}{%
+           family={Ngo},
+           familyi={N\bibinitperiod},
+           given={Trung\bibnamedelima Dung},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{05cae707b740f7b4882762e871e466e5}
+      \strng{fullhash}{262e73d06a169888c5b5ab4e3f0b0068}
+      \strng{bibnamehash}{262e73d06a169888c5b5ab4e3f0b0068}
+      \strng{authorbibnamehash}{262e73d06a169888c5b5ab4e3f0b0068}
+      \strng{authornamehash}{05cae707b740f7b4882762e871e466e5}
+      \strng{authorfullhash}{262e73d06a169888c5b5ab4e3f0b0068}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Fuzzy-Based Distributed Behavioral Control With Wall-Following Strategy for Swarm Navigation in Arbitrary-Shaped Environments}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{139176\bibrangedash 139185}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2021.3119232
+      \endverb
+      \keyw{Robots;Robot sensing systems;Collision avoidance;Navigation;Maintenance engineering;Sensors;Shape;Fuzzy-logic control;distributed behavioural control;robot swarm navigation;wall-following strategy;configuration transformation;arbitrary-shaped environments;local minima}
+    \endentry
+    \entry{Elkilany2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2c8e47f20261f4f3b2674c8221fe4a8f}{%
+           family={Elkilany},
+           familyi={E\bibinitperiod},
+           given={Basma\bibnamedelima Gh.},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=9b30882fbbc598c1d8a0c11f3637b600}{%
+           family={Abouelsoud},
+           familyi={A\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=08814740203b87d589b67077322f2dbf}{%
+           family={Fathelbab},
+           familyi={F\bibinitperiod},
+           given={Ahmed\bibnamedelimb M.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=4ccbda145f83ede62ca7706148e6465c}{%
+           family={Ishii},
+           familyi={I\bibinitperiod},
+           given={Hiroyuki},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{c03de4f9f63dc23817a81ef98b9a080f}
+      \strng{fullhash}{b5c28532569456e7347039cc9b4490b9}
+      \strng{bibnamehash}{b5c28532569456e7347039cc9b4490b9}
+      \strng{authorbibnamehash}{b5c28532569456e7347039cc9b4490b9}
+      \strng{authornamehash}{c03de4f9f63dc23817a81ef98b9a080f}
+      \strng{authorfullhash}{b5c28532569456e7347039cc9b4490b9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1433-3058}
+      \field{journaltitle}{Neural Computing and Applications}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{A proposed decentralized formation control algorithm for robot swarm based on an optimized potential field method}
+      \field{volume}{33}
+      \field{year}{2020}
+      \field{pages}{487\bibrangedash 499}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s00521-020-05032-0
+      \endverb
+    \endentry
+    \entry{AlonsoMora2018}{article}{}
+      \name{author}{6}{}{%
+        {{hash=248bd79f5e503f11eb095282260ee29f}{%
+           family={Alonso-Mora},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ef7a6f3a559f31218666dfe4f43fa89e}{%
+           family={Montijano},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d1d90fc7a8ed4471369a31ade21ee23c}{%
+           family={Nägeli},
+           familyi={N\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e4282a8b050f6ec88f43896369f6fe38}{%
+           family={Hilliges},
+           familyi={H\bibinitperiod},
+           given={Otmar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c54985d67e300fac8041d549c20bb2f0}{%
+           family={Schwager},
+           familyi={S\bibinitperiod},
+           given={Mac},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f74192f92945701041a41bfa429ee111}{%
+           family={Rus},
+           familyi={R\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{35d13b089f4df27b310ebd940204fb84}
+      \strng{fullhash}{00473eeba71375b91b11b8db757834a1}
+      \strng{bibnamehash}{00473eeba71375b91b11b8db757834a1}
+      \strng{authorbibnamehash}{00473eeba71375b91b11b8db757834a1}
+      \strng{authornamehash}{35d13b089f4df27b310ebd940204fb84}
+      \strng{authorfullhash}{00473eeba71375b91b11b8db757834a1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-7527}
+      \field{journaltitle}{Autonomous Robots}
+      \field{month}{7}
+      \field{number}{5}
+      \field{title}{Distributed multi-robot formation control in dynamic environments}
+      \field{volume}{43}
+      \field{year}{2018}
+      \field{pages}{1079\bibrangedash 1100}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/s10514-018-9783-9
+      \endverb
+    \endentry
+    \entry{Vsrhelyi2018}{article}{}
+      \name{author}{6}{}{%
+        {{hash=30b158c0e6add7ca6b53247e3f8fbdeb}{%
+           family={Vásárhelyi},
+           familyi={V\bibinitperiod},
+           given={Gábor},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c0029a3b298dd884cc9db96c98a52ce1}{%
+           family={Virágh},
+           familyi={V\bibinitperiod},
+           given={Csaba},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4528103203010abd1b3d79fd7a0b4c4c}{%
+           family={Somorjai},
+           familyi={S\bibinitperiod},
+           given={Gergő},
+           giveni={G\bibinitperiod}}}%
+        {{hash=83e5f0107d170f4cdc9184b9d2c4a52d}{%
+           family={Nepusz},
+           familyi={N\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cc5a50d71ff97e6f9595cd504cb5de10}{%
+           family={Eiben},
+           familyi={E\bibinitperiod},
+           given={Agoston\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6ff33ab4371a3804415d624c6171ef14}{%
+           family={Vicsek},
+           familyi={V\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science (AAAS)}%
+      }
+      \strng{namehash}{02e042889e08856bac9ea29400b09ea3}
+      \strng{fullhash}{736ecec0a1ad8b69e2288e914a50571b}
+      \strng{bibnamehash}{736ecec0a1ad8b69e2288e914a50571b}
+      \strng{authorbibnamehash}{736ecec0a1ad8b69e2288e914a50571b}
+      \strng{authornamehash}{02e042889e08856bac9ea29400b09ea3}
+      \strng{authorfullhash}{736ecec0a1ad8b69e2288e914a50571b}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2470-9476}
+      \field{journaltitle}{Science Robotics}
+      \field{month}{7}
+      \field{number}{20}
+      \field{title}{Optimized flocking of autonomous drones in confined environments}
+      \field{volume}{3}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1126/scirobotics.aat3536
+      \endverb
+    \endentry
+    \entry{7828016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2be5beb1e6120a4941a55be1145775b5}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Dingjiang},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1b3a68812c65e5ec9a55123c111c95f4}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zijian},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=bcbb4ed6f3ae446fe808896d864bcf37}{%
+           family={Bandyopadhyay},
+           familyi={B\bibinitperiod},
+           given={Saptarshi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c54985d67e300fac8041d549c20bb2f0}{%
+           family={Schwager},
+           familyi={S\bibinitperiod},
+           given={Mac},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{83d8871f5860933abdcf7d1634c34ff5}
+      \strng{fullhash}{12f1c644b09a36ff17f994139e884b83}
+      \strng{bibnamehash}{12f1c644b09a36ff17f994139e884b83}
+      \strng{authorbibnamehash}{12f1c644b09a36ff17f994139e884b83}
+      \strng{authornamehash}{83d8871f5860933abdcf7d1634c34ff5}
+      \strng{authorfullhash}{12f1c644b09a36ff17f994139e884b83}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics and Automation Letters}
+      \field{number}{2}
+      \field{title}{Fast, On-line Collision Avoidance for Dynamic Vehicles Using Buffered Voronoi Cells}
+      \field{volume}{2}
+      \field{year}{2017}
+      \field{pages}{1047\bibrangedash 1054}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/LRA.2017.2656241
+      \endverb
+      \keyw{Collision avoidance;Heuristic algorithms;Vehicle dynamics;Vehicles;Robot sensing systems;Prediction algorithms;Collision avoidance;distributed robot systems;motion and path planning}
+    \endentry
+    \entry{Wu2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=497a9e1774032d32e4123020bfd16b7a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b328aa25c1e9357440ff314544f2fb2c}{%
+           family={Gou},
+           familyi={G\bibinitperiod},
+           given={Jinzhan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fedaeb784a767e4c2ca2a2fa6d87416b}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Xinting},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b713d08247a23c8689e1cafe36455ace}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Yanting},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{e9c149d5dbc10a99c795e6fe601464bd}
+      \strng{fullhash}{c040a6370ef02ac7bcc4967f12eea301}
+      \strng{bibnamehash}{c040a6370ef02ac7bcc4967f12eea301}
+      \strng{authorbibnamehash}{c040a6370ef02ac7bcc4967f12eea301}
+      \strng{authornamehash}{e9c149d5dbc10a99c795e6fe601464bd}
+      \strng{authorfullhash}{c040a6370ef02ac7bcc4967f12eea301}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1270-9638}
+      \field{journaltitle}{Aerospace Science and Technology}
+      \field{month}{12}
+      \field{title}{A new consensus theory-based method for formation control and obstacle avoidance of {UAVs}}
+      \field{volume}{107}
+      \field{year}{2020}
+      \field{pages}{106332}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ast.2020.106332
+      \endverb
+    \endentry
+    \entry{1545539}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=cc012cb35dabc84a8f3be9e5436141e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yang\bibnamedelima Quan},
+           giveni={Y\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=6c40edbcd0c99c4f1c5370715164c63a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhongmin},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{44031f5d39986db8da61e73a21ed55bb}
+      \strng{fullhash}{44031f5d39986db8da61e73a21ed55bb}
+      \strng{bibnamehash}{44031f5d39986db8da61e73a21ed55bb}
+      \strng{authorbibnamehash}{44031f5d39986db8da61e73a21ed55bb}
+      \strng{authornamehash}{44031f5d39986db8da61e73a21ed55bb}
+      \strng{authorfullhash}{44031f5d39986db8da61e73a21ed55bb}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2005 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{title}{Formation control: a review and a new consideration}
+      \field{year}{2005}
+      \field{pages}{3181\bibrangedash 3186}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IROS.2005.1545539
+      \endverb
+      \keyw{Robot kinematics;Mobile robots;Control systems;Remotely operated vehicles;Robot sensing systems;Robot control;Intelligent robots;Distributed parameter systems;Road vehicles;Intelligent systems;Formation control;stability analysis;graph theory;Lyapunov analysis;distributed parameter system;pattern formation;formation regulation control;formation tracking control;morphological pattern formation tracking control;adaptive mesh}
+    \endentry
+    \entry{Brando2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a23122e4aa590eebfd84c6c6443a9b75}{%
+           family={Brandão},
+           familyi={B\bibinitperiod},
+           given={Alexandre\bibnamedelima Santos},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=2264d152c01d5502e1a526c0efd3d274}{%
+           family={Sarcinelli-Filho},
+           familyi={S\bibinithyphendelim F\bibinitperiod},
+           given={Mário},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{40c3d4fa2a0df6b21164072060664c54}
+      \strng{fullhash}{40c3d4fa2a0df6b21164072060664c54}
+      \strng{bibnamehash}{40c3d4fa2a0df6b21164072060664c54}
+      \strng{authorbibnamehash}{40c3d4fa2a0df6b21164072060664c54}
+      \strng{authornamehash}{40c3d4fa2a0df6b21164072060664c54}
+      \strng{authorfullhash}{40c3d4fa2a0df6b21164072060664c54}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{month}{11}
+      \field{number}{1–4}
+      \field{title}{On the Guidance of Multiple UAV using a Centralized Formation Control Scheme and Delaunay Triangulation}
+      \field{volume}{84}
+      \field{year}{2015}
+      \field{pages}{397\bibrangedash 413}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s10846-015-0300-5
+      \endverb
+    \endentry
+    \entry{Liu2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6d8214804e6fb811ed58f757c1b42e3c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yuanchang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f013f1062d3fe7dfc52e539a21429253}{%
+           family={Bucknall},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press (CUP)}%
+      }
+      \strng{namehash}{dc798469c074d11217befa81f9aa3972}
+      \strng{fullhash}{dc798469c074d11217befa81f9aa3972}
+      \strng{bibnamehash}{dc798469c074d11217befa81f9aa3972}
+      \strng{authorbibnamehash}{dc798469c074d11217befa81f9aa3972}
+      \strng{authornamehash}{dc798469c074d11217befa81f9aa3972}
+      \strng{authorfullhash}{dc798469c074d11217befa81f9aa3972}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1469-8668}
+      \field{journaltitle}{Robotica}
+      \field{month}{3}
+      \field{number}{7}
+      \field{title}{A survey of formation control and motion planning of multiple unmanned vehicles}
+      \field{volume}{36}
+      \field{year}{2018}
+      \field{pages}{1019\bibrangedash 1047}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1017/s0263574718000218
+      \endverb
+    \endentry
+    \entry{Ahn2020}{book}{}
+      \name{author}{1}{}{%
+        {{hash=94fa0b6115767ff5497fd47bab1bb834}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Hyo-Sung},
+           giveni={H\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{94fa0b6115767ff5497fd47bab1bb834}
+      \strng{fullhash}{94fa0b6115767ff5497fd47bab1bb834}
+      \strng{bibnamehash}{94fa0b6115767ff5497fd47bab1bb834}
+      \strng{authorbibnamehash}{94fa0b6115767ff5497fd47bab1bb834}
+      \strng{authornamehash}{94fa0b6115767ff5497fd47bab1bb834}
+      \strng{authorfullhash}{94fa0b6115767ff5497fd47bab1bb834}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783030151874}
+      \field{issn}{2198-4190}
+      \field{journaltitle}{Studies in Systems, Decision and Control}
+      \field{title}{Formation Control: Approaches for Distributed Agents}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1007/978-3-030-15187-4
+      \endverb
+    \endentry
+    \entry{9123564}{article}{}
+      \name{author}{6}{}{%
+        {{hash=82ca3b71473e7f2e05ebdcdaf270e5d6}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Jinwen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=50ae8624895612f5fc1234eecb3c7a05}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Houxin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9b70d85f003fa30a5cae684a692c6e97}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d84ba8a157a1aae260930ad4d1247ebf}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xiaoping},
+           giveni={X\bibinitperiod}}}%
+        {{hash=bed12d79834b58a8d9e15dbc005fb5ce}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Chunhui},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9870eab5474af10b9e1c954f997f6bd0}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Quan},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{37e749048186afd6625851fa3f126fa4}
+      \strng{fullhash}{cee1bda56eca88b8a35f79145fbc6f0a}
+      \strng{bibnamehash}{cee1bda56eca88b8a35f79145fbc6f0a}
+      \strng{authorbibnamehash}{cee1bda56eca88b8a35f79145fbc6f0a}
+      \strng{authornamehash}{37e749048186afd6625851fa3f126fa4}
+      \strng{authorfullhash}{cee1bda56eca88b8a35f79145fbc6f0a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics}
+      \field{number}{6}
+      \field{title}{Convergent Multiagent Formation Control With Collision Avoidance}
+      \field{volume}{36}
+      \field{year}{2020}
+      \field{pages}{1805\bibrangedash 1818}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TRO.2020.2998766
+      \endverb
+      \keyw{Collision avoidance;Convergence;Mobile robots;Decentralized control;Optimization;Multi-agent systems;Collision avoidance;distributed control;formation control;multiagent systems (MASs)}
+    \endentry
+    \entry{7452570}{article}{}
+      \name{author}{6}{}{%
+        {{hash=acebda9c8c30dc152fc573a76faeac2a}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Fang},
+           giveni={F\bibinitperiod}}}%
+        {{hash=542b6147d7b4bf9de49dc4799b6239d2}{%
+           family={Teo},
+           familyi={T\bibinitperiod},
+           given={Rodney},
+           giveni={R\bibinitperiod}}}%
+        {{hash=92455d7ec5dbb971c0348775c1639bb1}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jian\bibnamedelima Liang},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c4e3bf9910f85a02f91d2f46457ddd07}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Xiangxu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=37177639f418a6c6c34ed11f1d8ee99c}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5a96d916b908cc7a0dc24304b3986db8}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Kemao},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{23367040fb9269687467b051b3b311c7}
+      \strng{fullhash}{2a3dc2f86ae53c591c3ca99a3eed04b2}
+      \strng{bibnamehash}{2a3dc2f86ae53c591c3ca99a3eed04b2}
+      \strng{authorbibnamehash}{2a3dc2f86ae53c591c3ca99a3eed04b2}
+      \strng{authornamehash}{23367040fb9269687467b051b3b311c7}
+      \strng{authorfullhash}{2a3dc2f86ae53c591c3ca99a3eed04b2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Control Systems Technology}
+      \field{number}{1}
+      \field{title}{Distributed Formation and Reconfiguration Control of VTOL UAVs}
+      \field{volume}{25}
+      \field{year}{2017}
+      \field{pages}{270\bibrangedash 277}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TCST.2016.2547952
+      \endverb
+      \keyw{Collision avoidance;Convergence;Robustness;Vehicle dynamics;Nickel;Unmanned aerial vehicles;Distributed control;formation control;multi-agent system;networked control;unmanned air vehicles (UAV)}
+    \endentry
+    \entry{Dang2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cee8385e6599c025612034ad2ae1800b}{%
+           family={Dang},
+           familyi={D\bibinitperiod},
+           given={Anh\bibnamedelima Duc},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=382be5d989c032348bc8d6c2dd58d04e}{%
+           family={La},
+           familyi={L\bibinitperiod},
+           given={Hung\bibnamedelima Manh},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d4e34ac07ce6f7de25594c07505e0322}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Thang},
+           giveni={T\bibinitperiod}}}%
+        {{hash=525ead3af1642ce907548c8813eae11a}{%
+           family={Horn},
+           familyi={H\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{SAGE} Publications}%
+      }
+      \strng{namehash}{2bd2c8a8804e99f64f30705f3af88425}
+      \strng{fullhash}{abe4a5b07d986f954ca32ba53a1f9b21}
+      \strng{bibnamehash}{abe4a5b07d986f954ca32ba53a1f9b21}
+      \strng{authorbibnamehash}{abe4a5b07d986f954ca32ba53a1f9b21}
+      \strng{authornamehash}{2bd2c8a8804e99f64f30705f3af88425}
+      \strng{authorfullhash}{abe4a5b07d986f954ca32ba53a1f9b21}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Robotic Systems}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{Formation control for autonomous robots with collision and obstacle avoidance using a rotational and repulsive force{–}based approach}
+      \field{volume}{16}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1177/1729881419847897
+      \endverb
+    \endentry
+    \entry{Mirzaeinia2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0fbab2e2fbe7af12f6060590d7efaf59}{%
+           family={Mirzaeinia},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1933f0d929031497624168b4a408db2}{%
+           family={Hassanalian},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e57d0b1f72e19c844023fb5ae360f752}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1ac38298611fadcec168abda52b883ce}{%
+           family={Mirzaeinia},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{e15721c26d24a1d3a5ca51b09991f381}
+      \strng{fullhash}{e1b24fb5402760c90c7e180c90e077cc}
+      \strng{bibnamehash}{e1b24fb5402760c90c7e180c90e077cc}
+      \strng{authorbibnamehash}{e1b24fb5402760c90c7e180c90e077cc}
+      \strng{authornamehash}{e15721c26d24a1d3a5ca51b09991f381}
+      \strng{authorfullhash}{e1b24fb5402760c90c7e180c90e077cc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Aerospace Science and Technology}
+      \field{month}{11}
+      \field{title}{Energy conservation of V-shaped swarming fixed-wing drones through position reconfiguration}
+      \field{volume}{94}
+      \field{year}{2019}
+      \field{pages}{105398}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ast.2019.105398
+      \endverb
+    \endentry
+    \entry{8793765}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=68612ec39f81e0e4757f6e5654a2b2ab}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Hai},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1707563fc1b9a7a366198a63182c9ec1}{%
+           family={Juhl},
+           familyi={J\bibinitperiod},
+           given={Jelle},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d2492ac6457abe79c3962d36c44030b7}{%
+           family={Ferranti},
+           familyi={F\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=248bd79f5e503f11eb095282260ee29f}{%
+           family={Alonso-Mora},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f73b8b9c30e18601ffd2ae8f7b49cbf}
+      \strng{fullhash}{174e79c74dd6137e0464578cbab55c4d}
+      \strng{bibnamehash}{174e79c74dd6137e0464578cbab55c4d}
+      \strng{authorbibnamehash}{174e79c74dd6137e0464578cbab55c4d}
+      \strng{authornamehash}{0f73b8b9c30e18601ffd2ae8f7b49cbf}
+      \strng{authorfullhash}{174e79c74dd6137e0464578cbab55c4d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Distributed Multi-Robot Formation Splitting and Merging in Dynamic Environments}
+      \field{year}{2019}
+      \field{pages}{9080\bibrangedash 9086}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICRA.2019.8793765
+      \endverb
+    \endentry
+    \entry{9990236}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=967cc5efe81c1ad37acc74b6008a3a8c}{%
+           family={Quang},
+           familyi={Q\bibinitperiod},
+           given={Hung\bibnamedelima Pham},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e929a8c14dc9e737c6b4b0709834637d}{%
+           family={Nguyen\bibnamedelima Dam},
+           familyi={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Truong},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7e746f044dd702d36b0b3bac1ff53615}{%
+           family={Hoang},
+           familyi={H\bibinitperiod},
+           given={Vu\bibnamedelima Nguyen},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=6efa4801b5485b1597f57e5bb755d139}{%
+           family={Pham\bibnamedelima Duy},
+           familyi={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Hung},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{92f6112aff69c1c1b873808175caf42f}
+      \strng{fullhash}{b49075fae78603bce70b239ffb9e1189}
+      \strng{bibnamehash}{b49075fae78603bce70b239ffb9e1189}
+      \strng{authorbibnamehash}{b49075fae78603bce70b239ffb9e1189}
+      \strng{authornamehash}{92f6112aff69c1c1b873808175caf42f}
+      \strng{authorfullhash}{b49075fae78603bce70b239ffb9e1189}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 11th International Conference on Control, Automation and Information Sciences (ICCAIS)}
+      \field{title}{Multi-{UAV} Coverage Strategy with V-shaped Formation for Patrol and Surveillance}
+      \field{year}{2022}
+      \field{pages}{487\bibrangedash 492}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICCAIS56082.2022.9990236
+      \endverb
+    \endentry
+    \entry{Zhang2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=82a1b44b0a9fe1bfad29f420b58d555a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Daifeng},
+           giveni={D\bibinitperiod}}}%
+        {{hash=15d69e98290fc4142571efe03f85387d}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Haibin},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{cf6885d0f7545fd8ad1b5c60d0a27aee}
+      \strng{fullhash}{cf6885d0f7545fd8ad1b5c60d0a27aee}
+      \strng{bibnamehash}{cf6885d0f7545fd8ad1b5c60d0a27aee}
+      \strng{authorbibnamehash}{cf6885d0f7545fd8ad1b5c60d0a27aee}
+      \strng{authornamehash}{cf6885d0f7545fd8ad1b5c60d0a27aee}
+      \strng{authorfullhash}{cf6885d0f7545fd8ad1b5c60d0a27aee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0016-0032}
+      \field{journaltitle}{Journal of the Franklin Institute}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Switching topology approach for UAV formation based on binary-tree network}
+      \field{volume}{356}
+      \field{year}{2019}
+      \field{pages}{835\bibrangedash 859}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/j.jfranklin.2017.11.026
+      \endverb
+    \endentry
+    \entry{8682048}{article}{}
+      \name{author}{9}{}{%
+        {{hash=2760dbd977a1af37924e9c79fb3d65e7}{%
+           family={Shakhatreh},
+           familyi={S\bibinitperiod},
+           given={Hazim},
+           giveni={H\bibinitperiod}}}%
+        {{hash=af5781736411377d9b562488f579cd1f}{%
+           family={Sawalmeh},
+           familyi={S\bibinitperiod},
+           given={Ahmad\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=8868a3dff96deabbbb427b120f6f2281}{%
+           family={Al-Fuqaha},
+           familyi={A\bibinithyphendelim F\bibinitperiod},
+           given={Ala},
+           giveni={A\bibinitperiod}}}%
+        {{hash=069d775c075a4b6fb9856a8fe77591d0}{%
+           family={Dou},
+           familyi={D\bibinitperiod},
+           given={Zuochao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=60ed39ae5e082516373aabcd47878301}{%
+           family={Almaita},
+           familyi={A\bibinitperiod},
+           given={Eyad},
+           giveni={E\bibinitperiod}}}%
+        {{hash=79e929fa10da92dc334c84ad44fc54eb}{%
+           family={Khalil},
+           familyi={K\bibinitperiod},
+           given={Issa},
+           giveni={I\bibinitperiod}}}%
+        {{hash=e94c15fb88e7df0d39571049c8378bae}{%
+           family={Othman},
+           familyi={O\bibinitperiod},
+           given={Noor\bibnamedelima Shamsiah},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=f6d007a92bc362757bae6aecc1b92091}{%
+           family={Khreishah},
+           familyi={K\bibinitperiod},
+           given={Abdallah},
+           giveni={A\bibinitperiod}}}%
+        {{hash=05189762dbb0ad87814451304904fe83}{%
+           family={Guizani},
+           familyi={G\bibinitperiod},
+           given={Mohsen},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a76d433ad1397eb60835b23c57a2baa0}
+      \strng{fullhash}{88faefb5c30006d74e0250adfa245905}
+      \strng{bibnamehash}{a76d433ad1397eb60835b23c57a2baa0}
+      \strng{authorbibnamehash}{a76d433ad1397eb60835b23c57a2baa0}
+      \strng{authornamehash}{a76d433ad1397eb60835b23c57a2baa0}
+      \strng{authorfullhash}{88faefb5c30006d74e0250adfa245905}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Unmanned Aerial Vehicles ({UAVs}): A Survey on Civil Applications and Key Research Challenges}
+      \field{volume}{7}
+      \field{year}{2019}
+      \field{pages}{48572\bibrangedash 48634}
+      \range{pages}{63}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2019.2909530
+      \endverb
+    \endentry
+    \entry{9990164}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=8e9fb26786e3a2a9e1197d9d7aac61be}{%
+           family={Duong\bibnamedelimb Thi\bibnamedelima Thuy},
+           familyi={D\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Ngan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=0dba669914f535bebb20dd40ef80df0f}{%
+           family={Nam\bibnamedelima Bui},
+           familyi={N\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Duy},
+           giveni={D\bibinitperiod}}}%
+        {{hash=580ffd7e38309aea1e6345cc2b25cb48}{%
+           family={Duong\bibnamedelima Phung},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Manh},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6efa4801b5485b1597f57e5bb755d139}{%
+           family={Pham\bibnamedelima Duy},
+           familyi={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Hung},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{cdc4a67d119e9d8a23a8ed1643ff40d5}
+      \strng{fullhash}{76742879ba02438db07949e90269f6d5}
+      \strng{bibnamehash}{76742879ba02438db07949e90269f6d5}
+      \strng{authorbibnamehash}{76742879ba02438db07949e90269f6d5}
+      \strng{authornamehash}{cdc4a67d119e9d8a23a8ed1643ff40d5}
+      \strng{authorfullhash}{76742879ba02438db07949e90269f6d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 11th International Conference on Control, Automation and Information Sciences (ICCAIS)}
+      \field{title}{Deployment of {UAVs} for Optimal Multihop Ad-hoc Networks Using Particle Swarm Optimization and Behavior-based Control}
+      \field{year}{2022}
+      \field{pages}{304\bibrangedash 309}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICCAIS56082.2022.9990164
+      \endverb
+    \endentry
+    \entry{Anderson}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=e8a4070f47356ebf747da5eda23eeddd}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Brian\bibnamedelimb D.\bibnamedelimi O.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=09841793bcc77b948153e85488f17f4a}{%
+           family={Fidan},
+           familyi={F\bibinitperiod},
+           given={Bariş},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f0be147247584101d99ca11273fb94b3}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Changbin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c48426188563c47379bef62cb389f422}{%
+           family={Walle},
+           familyi={W\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{21d274517fe68cda4f1449b6e14596e4}
+      \strng{fullhash}{ceef1b2e34feddc7ba334ef075bd512a}
+      \strng{bibnamehash}{ceef1b2e34feddc7ba334ef075bd512a}
+      \strng{authorbibnamehash}{ceef1b2e34feddc7ba334ef075bd512a}
+      \strng{authornamehash}{21d274517fe68cda4f1449b6e14596e4}
+      \strng{authorfullhash}{ceef1b2e34feddc7ba334ef075bd512a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Lecture Notes in Control and Information Sciences}
+      \field{title}{{UAV} Formation Control: Theory and Application}
+      \field{year}{2008}
+      \field{pages}{15\bibrangedash 33}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/978-1-84800-155-8_2
+      \endverb
+    \endentry
+    \entry{Balch2000}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5738807b3cbc99f8fb288598d3b3eded}{%
+           family={Balch},
+           familyi={B\bibinitperiod},
+           given={Tucker},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{5738807b3cbc99f8fb288598d3b3eded}
+      \strng{fullhash}{5738807b3cbc99f8fb288598d3b3eded}
+      \strng{bibnamehash}{5738807b3cbc99f8fb288598d3b3eded}
+      \strng{authorbibnamehash}{5738807b3cbc99f8fb288598d3b3eded}
+      \strng{authornamehash}{5738807b3cbc99f8fb288598d3b3eded}
+      \strng{authorfullhash}{5738807b3cbc99f8fb288598d3b3eded}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Autonomous Robots}
+      \field{number}{3}
+      \field{title}{Hierarchic Social Entropy: An Information Theoretic Measure of Robot Group Diversity}
+      \field{volume}{8}
+      \field{year}{2000}
+      \field{pages}{209\bibrangedash 238}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1023/a:1008973424594
+      \endverb
+    \endentry
+    \entry{7487747}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=248bd79f5e503f11eb095282260ee29f}{%
+           family={Alonso-Mora},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ef7a6f3a559f31218666dfe4f43fa89e}{%
+           family={Montijano},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c54985d67e300fac8041d549c20bb2f0}{%
+           family={Schwager},
+           familyi={S\bibinitperiod},
+           given={Mac},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f74192f92945701041a41bfa429ee111}{%
+           family={Rus},
+           familyi={R\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{95323a4e5461569ae9ead8150f5e7259}
+      \strng{fullhash}{e5bd22b7b3141c6d02df49a2ed6d2b8b}
+      \strng{bibnamehash}{e5bd22b7b3141c6d02df49a2ed6d2b8b}
+      \strng{authorbibnamehash}{e5bd22b7b3141c6d02df49a2ed6d2b8b}
+      \strng{authornamehash}{95323a4e5461569ae9ead8150f5e7259}
+      \strng{authorfullhash}{e5bd22b7b3141c6d02df49a2ed6d2b8b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Distributed multi-robot formation control among obstacles: A geometric and optimization approach with consensus}
+      \field{year}{2016}
+      \field{pages}{5356\bibrangedash 5363}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICRA.2016.7487747
+      \endverb
+    \endentry
+    \entry{8843165}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=3d081c70fa81437bdcaf5f07eebe08a7}{%
+           family={Hoang},
+           familyi={H\bibinitperiod},
+           given={V.T.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=4f077f1871110df251ccfba465eaec49}{%
+           family={Phung},
+           familyi={P\bibinitperiod},
+           given={M.D.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1bbcf88530a857e344e6cecaca4f2118}{%
+           family={Dinh},
+           familyi={D\bibinitperiod},
+           given={T.H.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=39ce567f031070f8ec7dd1aad84e1e5e}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Q.},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=4d649b854aece5c173014c9e30d2df53}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={Q.P.},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{eadc057914d0df4736356164269a79b5}
+      \strng{fullhash}{c308fe330dca86f2be23f58476bfa1a9}
+      \strng{bibnamehash}{c308fe330dca86f2be23f58476bfa1a9}
+      \strng{authorbibnamehash}{c308fe330dca86f2be23f58476bfa1a9}
+      \strng{authornamehash}{eadc057914d0df4736356164269a79b5}
+      \strng{authorfullhash}{c308fe330dca86f2be23f58476bfa1a9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 IEEE 15th International Conference on Automation Science and Engineering (CASE)}
+      \field{title}{Reconfigurable Multi-{UAV} Formation Using Angle-Encoded PSO}
+      \field{year}{2019}
+      \field{pages}{1670\bibrangedash 1675}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/COASE.2019.8843165
+      \endverb
+    \endentry
+    \entry{8594438}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=21ebe7919c39b8acd0470d5e73687864}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Dibyendu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fe67c47919b4d708b68962b1cb44c58f}{%
+           family={Chowdhury},
+           familyi={C\bibinitperiod},
+           given={Arijit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c21c6e1331aa05fe98d87383c265a83d}{%
+           family={Maitra},
+           familyi={M\bibinitperiod},
+           given={Madhubanti},
+           giveni={M\bibinitperiod}}}%
+        {{hash=db118c54d0fe45562526a44ca082fd25}{%
+           family={Bhattacharya},
+           familyi={B\bibinitperiod},
+           given={Samar},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a61f9d7ba9ae9c663b48b5bbe3e4446}
+      \strng{fullhash}{16e0caa181a28b70da1dd8a75d4b4509}
+      \strng{bibnamehash}{16e0caa181a28b70da1dd8a75d4b4509}
+      \strng{authorbibnamehash}{16e0caa181a28b70da1dd8a75d4b4509}
+      \strng{authornamehash}{3a61f9d7ba9ae9c663b48b5bbe3e4446}
+      \strng{authorfullhash}{16e0caa181a28b70da1dd8a75d4b4509}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}
+      \field{title}{Multi-Robot Virtual Structure Switching and Formation Changing Strategy in an Unknown Occluded Environment}
+      \field{year}{2018}
+      \field{pages}{4854\bibrangedash 4861}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS.2018.8594438
+      \endverb
+    \endentry
+    \entry{FENG2022}{article}{}
+      \name{author}{8}{}{%
+        {{hash=a16a0edb54a63c06dc75e3fe3983ee14}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=5f780158fc4ca2a51360057d2104fdb8}{%
+           family={Hai},
+           familyi={H\bibinitperiod},
+           given={Xingshuo},
+           giveni={X\bibinitperiod}}}%
+        {{hash=115afe6cc7f667cde499464315bf3ce5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b16f413501c898845c8100a04adeacfb}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=656cacebef49796a42ffd57a6ee592e8}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zili},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b10b09d116dc929128212818b48accc2}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Dezhen},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8eb7f0c033c941566e07da3df5cd4c43}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yaolong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4d54176b792107b3b465fd298cb83b2d}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Ronggen},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{9535b29a72fb4518ca9b574e44f8bada}
+      \strng{fullhash}{29e4688b918a0328998f2857a80ec1f5}
+      \strng{bibnamehash}{9535b29a72fb4518ca9b574e44f8bada}
+      \strng{authorbibnamehash}{9535b29a72fb4518ca9b574e44f8bada}
+      \strng{authornamehash}{9535b29a72fb4518ca9b574e44f8bada}
+      \strng{authorfullhash}{29e4688b918a0328998f2857a80ec1f5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chinese Journal of Aeronautics}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Resilience optimization for multi-{UAV} formation reconfiguration via enhanced pigeon-inspired optimization}
+      \field{volume}{35}
+      \field{year}{2022}
+      \field{pages}{110\bibrangedash 123}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.cja.2020.10.029
+      \endverb
+    \endentry
+    \entry{Gao2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7b4a911dbd1bf7f83f91f0ef7fa9a780}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Chenyang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7831aa7be717ab76605a1b5162f898ba}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianfeng},
+           giveni={J\bibinitperiod}}}%
+        {{hash=14ca7e9fff3d2b975deaa6956febc897}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Teng},
+           giveni={T\bibinitperiod}}}%
+        {{hash=26aefe4ea0177147306646769358cdb2}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Yulong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{b3a522b1628eeaf7b2f5d986502e20e4}
+      \strng{fullhash}{ecba9d22e8d266682ee098823ee5d60c}
+      \strng{bibnamehash}{ecba9d22e8d266682ee098823ee5d60c}
+      \strng{authorbibnamehash}{ecba9d22e8d266682ee098823ee5d60c}
+      \strng{authornamehash}{b3a522b1628eeaf7b2f5d986502e20e4}
+      \strng{authorfullhash}{ecba9d22e8d266682ee098823ee5d60c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Complex {\&} Intelligent Systems}
+      \field{month}{10}
+      \field{number}{2}
+      \field{title}{Hybrid swarm intelligent algorithm for multi-{UAV} formation reconfiguration}
+      \field{volume}{9}
+      \field{year}{2022}
+      \field{pages}{1929\bibrangedash 1962}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/s40747-022-00891-7
+      \endverb
+    \endentry
+    \entry{Mataric2008}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=c1579c7c6384d5a74c8a5b269301dd70}{%
+           family={Matarić},
+           familyi={M\bibinitperiod},
+           given={Maja\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=19be9bc4c650698bb61a5289658a32bd}{%
+           family={Michaud},
+           familyi={M\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{41c201878de4c74b2648b2301651e199}
+      \strng{fullhash}{41c201878de4c74b2648b2301651e199}
+      \strng{bibnamehash}{41c201878de4c74b2648b2301651e199}
+      \strng{authorbibnamehash}{41c201878de4c74b2648b2301651e199}
+      \strng{authornamehash}{41c201878de4c74b2648b2301651e199}
+      \strng{authorfullhash}{41c201878de4c74b2648b2301651e199}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Springer Handbook of Robotics}
+      \field{isbn}{978-3-540-30301-5}
+      \field{title}{Behavior-Based Systems}
+      \field{year}{2008}
+      \field{pages}{891\bibrangedash 909}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/978-3-540-30301-5_39
+      \endverb
+    \endentry
+    \entry{MirzaeeKahagh2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b12e0ccf47d8a86f30e90316bc8bb866}{%
+           family={Kahagh},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi Mirzaee},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=118befca6c4a9334acafebc3637c7bf9}{%
+           family={Pazooki},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a796bce1e50f0e54f154a7da6132a95d}{%
+           family={Haghighi},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi Etemadi},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press ({CUP})}%
+      }
+      \strng{namehash}{c8dedebac5fc654dfda776d9d01d77ed}
+      \strng{fullhash}{c8dedebac5fc654dfda776d9d01d77ed}
+      \strng{bibnamehash}{c8dedebac5fc654dfda776d9d01d77ed}
+      \strng{authorbibnamehash}{c8dedebac5fc654dfda776d9d01d77ed}
+      \strng{authornamehash}{c8dedebac5fc654dfda776d9d01d77ed}
+      \strng{authorfullhash}{c8dedebac5fc654dfda776d9d01d77ed}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Aeronautical Journal}
+      \field{month}{10}
+      \field{number}{1282}
+      \field{title}{Obstacle avoidance in V-shape formation flight of multiple fixed-wing {UAVs} using variable repulsive circles}
+      \field{volume}{124}
+      \field{year}{2020}
+      \field{pages}{1979\bibrangedash 2000}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1017/aer.2020.81
+      \endverb
+    \endentry
+    \entry{Vicsek1995}{article}{}
+      \name{author}{5}{}{%
+        {{hash=6ff33ab4371a3804415d624c6171ef14}{%
+           family={Vicsek},
+           familyi={V\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e49092463ae827145e6c5db1f68e488c}{%
+           family={Czirók},
+           familyi={C\bibinitperiod},
+           given={András},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e1aafa4a6f7b6d973b7b308d275c740d}{%
+           family={Ben-Jacob},
+           familyi={B\bibinithyphendelim J\bibinitperiod},
+           given={Eshel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c3374403e0a9bf6fc4c56ad43756d69c}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Inon},
+           giveni={I\bibinitperiod}}}%
+        {{hash=3095bc01b159c211fee2012bc81caf3f}{%
+           family={Shochet},
+           familyi={S\bibinitperiod},
+           given={Ofer},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society ({APS})}%
+      }
+      \strng{namehash}{2269fc9bb0501b51c71b6815405fb420}
+      \strng{fullhash}{d32f79665a78e2c74dcbf61c2ef6859f}
+      \strng{bibnamehash}{d32f79665a78e2c74dcbf61c2ef6859f}
+      \strng{authorbibnamehash}{d32f79665a78e2c74dcbf61c2ef6859f}
+      \strng{authornamehash}{2269fc9bb0501b51c71b6815405fb420}
+      \strng{authorfullhash}{d32f79665a78e2c74dcbf61c2ef6859f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{8}
+      \field{number}{6}
+      \field{title}{Novel Type of Phase Transition in a System of Self-Driven Particles}
+      \field{volume}{75}
+      \field{year}{1995}
+      \field{pages}{1226\bibrangedash 1229}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/physrevlett.75.1226
+      \endverb
+    \endentry
+    \entry{6303906}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5657259856dc4521a4b0919759780670}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yongcan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=999899fd204d7ef5355e044f745c1067}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Wenwu},
+           giveni={W\bibinitperiod}}}%
+        {{hash=79312c25841a4f2341e462020d563806}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c2465aadc98c418b040e810d4f8c1b79}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Guanrong},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e85eba36128b245481b1f7452605beb}
+      \strng{fullhash}{07ea47f3ce2633e4f9f044c89817096a}
+      \strng{bibnamehash}{07ea47f3ce2633e4f9f044c89817096a}
+      \strng{authorbibnamehash}{07ea47f3ce2633e4f9f044c89817096a}
+      \strng{authornamehash}{1e85eba36128b245481b1f7452605beb}
+      \strng{authorfullhash}{07ea47f3ce2633e4f9f044c89817096a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Industrial Informatics}
+      \field{number}{1}
+      \field{title}{An Overview of Recent Progress in the Study of Distributed Multi-Agent Coordination}
+      \field{volume}{9}
+      \field{year}{2013}
+      \field{pages}{427\bibrangedash 438}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TII.2012.2219061
+      \endverb
+    \endentry
+    \entry{1335496}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5e889534505ed455a9d6217ff0c938db}{%
+           family={Farinelli},
+           familyi={F\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e158c5fff284132ec65d5c3fe8fce839}{%
+           family={Iocchi},
+           familyi={I\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=48fe3c2fe0b7271996ec055e0547a8bb}{%
+           family={Nardi},
+           familyi={N\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f0f8e7e89eed36329cc7dba30da7bf7}
+      \strng{fullhash}{8f0f8e7e89eed36329cc7dba30da7bf7}
+      \strng{bibnamehash}{8f0f8e7e89eed36329cc7dba30da7bf7}
+      \strng{authorbibnamehash}{8f0f8e7e89eed36329cc7dba30da7bf7}
+      \strng{authornamehash}{8f0f8e7e89eed36329cc7dba30da7bf7}
+      \strng{authorfullhash}{8f0f8e7e89eed36329cc7dba30da7bf7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)}
+      \field{number}{5}
+      \field{title}{Multirobot systems: a classification focused on coordination}
+      \field{volume}{34}
+      \field{year}{2004}
+      \field{pages}{2015\bibrangedash 2028}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TSMCB.2004.832155
+      \endverb
+    \endentry
+    \entry{Dong2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=12d0a11116ae653cdae90e916e87abd8}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Xiwang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c4319ce8f63b8a50ad8b3ce9cf8adaf5}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Bocheng},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f573b86db7f9a4c93380e14e09be95bc}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Zongying},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=05d69a912486766a461e04291b0b5904}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Yisheng},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{005e2dc44aa8066aae830e187000f0ab}
+      \strng{fullhash}{ef1ef4352206e7222264d2ccaf1ceed7}
+      \strng{bibnamehash}{ef1ef4352206e7222264d2ccaf1ceed7}
+      \strng{authorbibnamehash}{ef1ef4352206e7222264d2ccaf1ceed7}
+      \strng{authornamehash}{005e2dc44aa8066aae830e187000f0ab}
+      \strng{authorfullhash}{ef1ef4352206e7222264d2ccaf1ceed7}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-0865}
+      \field{journaltitle}{IEEE Transactions on Control Systems Technology}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Time-Varying Formation Control for Unmanned Aerial Vehicles: Theories and Applications}
+      \field{volume}{23}
+      \field{year}{2015}
+      \field{pages}{340\bibrangedash 348}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/tcst.2014.2314460
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/TCST.2014.2314460
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/TCST.2014.2314460
+      \endverb
+    \endentry
+    \entry{Dong2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=12d0a11116ae653cdae90e916e87abd8}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Xiwang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=dda8e1495f42b47f93bb3f978c74a70c}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Guoqiang},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{8690d940a57f85a5d18ffcf6f1d6c039}
+      \strng{fullhash}{8690d940a57f85a5d18ffcf6f1d6c039}
+      \strng{bibnamehash}{8690d940a57f85a5d18ffcf6f1d6c039}
+      \strng{authorbibnamehash}{8690d940a57f85a5d18ffcf6f1d6c039}
+      \strng{authornamehash}{8690d940a57f85a5d18ffcf6f1d6c039}
+      \strng{authorfullhash}{8690d940a57f85a5d18ffcf6f1d6c039}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0005-1098}
+      \field{journaltitle}{Automatica}
+      \field{month}{11}
+      \field{title}{Time-varying formation control for general linear multi-agent systems with switching directed topologies}
+      \field{volume}{73}
+      \field{year}{2016}
+      \field{pages}{47\bibrangedash 55}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.automatica.2016.06.024
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.automatica.2016.06.024
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.automatica.2016.06.024
+      \endverb
+    \endentry
+    \entry{Reynolds1987}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c565938772b0a9629e74a8f8f657693b}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Craig\bibnamedelima W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery (ACM)}%
+      }
+      \strng{namehash}{c565938772b0a9629e74a8f8f657693b}
+      \strng{fullhash}{c565938772b0a9629e74a8f8f657693b}
+      \strng{bibnamehash}{c565938772b0a9629e74a8f8f657693b}
+      \strng{authorbibnamehash}{c565938772b0a9629e74a8f8f657693b}
+      \strng{authornamehash}{c565938772b0a9629e74a8f8f657693b}
+      \strng{authorfullhash}{c565938772b0a9629e74a8f8f657693b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0097-8930}
+      \field{journaltitle}{ACM SIGGRAPH Computer Graphics}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{Flocks, herds and schools: A distributed behavioral model}
+      \field{volume}{21}
+      \field{year}{1987}
+      \field{pages}{25\bibrangedash 34}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/37402.37406
+      \endverb
+    \endentry
+    \entry{Antonelli2009}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3f53ed3fcc39712da8bb3e690efeaef8}{%
+           family={Antonelli},
+           familyi={A\bibinitperiod},
+           given={Gianluca},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ca5c3ae8d62df6fa463e158eb324cba6}{%
+           family={Arrichiello},
+           familyi={A\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=33ee89bf2fcaa0244d03e92c8ee52ddf}{%
+           family={Chiaverini},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{d91eab05f5559f8da307761c323e93c2}
+      \strng{fullhash}{d91eab05f5559f8da307761c323e93c2}
+      \strng{bibnamehash}{d91eab05f5559f8da307761c323e93c2}
+      \strng{authorbibnamehash}{d91eab05f5559f8da307761c323e93c2}
+      \strng{authornamehash}{d91eab05f5559f8da307761c323e93c2}
+      \strng{authorfullhash}{d91eab05f5559f8da307761c323e93c2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1935-3820}
+      \field{journaltitle}{Swarm Intelligence}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Flocking for multi-robot systems via the Null-Space-based Behavioral control}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{37\bibrangedash 56}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11721-009-0036-6
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/s11721-009-0036-6
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s11721-009-0036-6
+      \endverb
+    \endentry
+    \entry{6095129}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=5259b61ac44d5001b31adb509f9ed459}{%
+           family={Hauert},
+           familyi={H\bibinitperiod},
+           given={Sabine},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d990ad46d336e93735356b8247fd44c6}{%
+           family={Leven},
+           familyi={L\bibinitperiod},
+           given={Severin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ea2cdf4b345d91dc11d43c7c73dfd1ec}{%
+           family={Varga},
+           familyi={V\bibinitperiod},
+           given={Maja},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3fd8d44b635bec32d3d87f9f336a0c41}{%
+           family={Ruini},
+           familyi={R\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bf118bc0f4f8e10d68a9bcbd06d97a8e}{%
+           family={Cangelosi},
+           familyi={C\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eee156e3f1b0a9708f445e90842b71d7}{%
+           family={Zufferey},
+           familyi={Z\bibinitperiod},
+           given={Jean-Christophe},
+           giveni={J\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=620d43cd0ee8802d53fe4d7b715445ec}{%
+           family={Floreano},
+           familyi={F\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{fbb729b15faf9658bd734538852265f0}
+      \strng{fullhash}{dc6d5add84ee7ffdd85827b000cd8fa9}
+      \strng{bibnamehash}{fbb729b15faf9658bd734538852265f0}
+      \strng{authorbibnamehash}{fbb729b15faf9658bd734538852265f0}
+      \strng{authornamehash}{fbb729b15faf9658bd734538852265f0}
+      \strng{authorfullhash}{dc6d5add84ee7ffdd85827b000cd8fa9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2011 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{title}{Reynolds flocking in reality with fixed-wing robots: Communication range vs. maximum turning rate}
+      \field{year}{2011}
+      \field{pages}{5015\bibrangedash 5020}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IROS.2011.6095129
+      \endverb
+      \keyw{Robot sensing systems;Vectors;Dynamics;Collision avoidance;Dynamic range;IEEE 802.11 Standards}
+    \endentry
+    \entry{1605401}{article}{}
+      \name{author}{1}{}{%
+        {{hash=15e981d332839da280596605b85b1b9c}{%
+           family={Olfati-Saber},
+           familyi={O\bibinithyphendelim S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{15e981d332839da280596605b85b1b9c}
+      \strng{fullhash}{15e981d332839da280596605b85b1b9c}
+      \strng{bibnamehash}{15e981d332839da280596605b85b1b9c}
+      \strng{authorbibnamehash}{15e981d332839da280596605b85b1b9c}
+      \strng{authornamehash}{15e981d332839da280596605b85b1b9c}
+      \strng{authorfullhash}{15e981d332839da280596605b85b1b9c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Automatic Control}
+      \field{number}{3}
+      \field{title}{Flocking for multi-agent dynamic systems: algorithms and theory}
+      \field{volume}{51}
+      \field{year}{2006}
+      \field{pages}{401\bibrangedash 420}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TAC.2005.864190
+      \endverb
+    \endentry
+    \entry{10417519}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=910af0e7f011f03c5418155f14127529}{%
+           family={Bui},
+           familyi={B\bibinitperiod},
+           given={Duy\bibnamedelima Nam},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8a32a61a7fbd5445cd04c3abc2506d3b}{%
+           family={Phung},
+           familyi={P\bibinitperiod},
+           given={Manh\bibnamedelima Duong},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=fdec814144cd5784b557e20dbc8d32f4}{%
+           family={Duy},
+           familyi={D\bibinitperiod},
+           given={Hung\bibnamedelima Pham},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8fd9429e5e7923fd4f0d7073ff49ff33}
+      \strng{fullhash}{8fd9429e5e7923fd4f0d7073ff49ff33}
+      \strng{bibnamehash}{8fd9429e5e7923fd4f0d7073ff49ff33}
+      \strng{authorbibnamehash}{8fd9429e5e7923fd4f0d7073ff49ff33}
+      \strng{authornamehash}{8fd9429e5e7923fd4f0d7073ff49ff33}
+      \strng{authorfullhash}{8fd9429e5e7923fd4f0d7073ff49ff33}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 IEEE/SICE International Symposium on System Integration (SII)}
+      \field{title}{Self-Reconfigurable {V}-Shape Formation of Multiple {UAVs} in Narrow Space Environments}
+      \field{year}{2024}
+      \field{pages}{1006\bibrangedash 1011}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/SII58957.2024.10417519
+      \endverb
+      \keyw{Navigation;System integration;Aerospace electronics;Autonomous aerial vehicles;Control systems;Behavioral sciences;Vehicle dynamics;Unmanned aerial vehicles;multi-robot system;distributed control;formation control;reconfiguration}
+    \endentry
+    \entry{8716301}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bb7833eb1e83621a22312886948f336f}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={Pham\bibnamedelima Duy},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=38945afd245678830eed331b5106032e}{%
+           family={Vinh},
+           familyi={V\bibinitperiod},
+           given={Tran\bibnamedelima Quang},
+           giveni={T\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=b10e3dcf0bf6e4e8e08b2bd6d610282c}{%
+           family={Ngo},
+           familyi={N\bibinitperiod},
+           given={Trung\bibnamedelima Dung},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6d5b1c1f0bb58c8d51ada2ef88fcc46}
+      \strng{fullhash}{f6d5b1c1f0bb58c8d51ada2ef88fcc46}
+      \strng{bibnamehash}{f6d5b1c1f0bb58c8d51ada2ef88fcc46}
+      \strng{authorbibnamehash}{f6d5b1c1f0bb58c8d51ada2ef88fcc46}
+      \strng{authornamehash}{f6d5b1c1f0bb58c8d51ada2ef88fcc46}
+      \strng{authorfullhash}{f6d5b1c1f0bb58c8d51ada2ef88fcc46}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Cybernetics}
+      \field{number}{3}
+      \field{title}{Hierarchical Distributed Control for Global Network Integrity Preservation in Multirobot Systems}
+      \field{volume}{50}
+      \field{year}{2020}
+      \field{pages}{1278\bibrangedash 1291}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCYB.2019.2913326
+      \endverb
+    \endentry
+    \entry{9981858}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=ab4d92dce97829e84f262001682ada46}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7d87c5957b07153c7f18918b92830bf8}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=293c31f46eb012efc4b2449215c92484}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=faaabcf5b4885f9b0f40f6b8c696f7d5}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xiangyang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{588214da18b41e60436668d939c6f11f}
+      \strng{fullhash}{c66cb0f2b1243133dd6f6d95f65924c0}
+      \strng{bibnamehash}{c66cb0f2b1243133dd6f6d95f65924c0}
+      \strng{authorbibnamehash}{c66cb0f2b1243133dd6f6d95f65924c0}
+      \strng{authornamehash}{588214da18b41e60436668d939c6f11f}
+      \strng{authorfullhash}{c66cb0f2b1243133dd6f6d95f65924c0}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}
+      \field{title}{Obstacle Avoidance of Resilient UAV Swarm Formation with Active Sensing System in the Dense Environment}
+      \field{year}{2022}
+      \field{pages}{10529\bibrangedash 10535}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IROS47612.2022.9981858
+      \endverb
+      \keyw{Point cloud compression;Robot sensing systems;Sensors;Planning;Trajectory;Safety;Collision avoidance}
+    \endentry
+    \entry{9561902}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=35b53a5f450cc6a8ce8bce633606e1de}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f82d313b405e37bc9ce0181544c9b7e0}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jiangchao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e61435c932c98b1090971e35d592f36e}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Hongyu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e51bd353d330d0203232b51fcbc2b64a}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0be48a9daf13fde579d9d51375cfee5b}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b79e375bbb1612738f0fb25210f7feff}
+      \strng{fullhash}{8fedf4ded5afeab2a3f554b43df853fa}
+      \strng{bibnamehash}{8fedf4ded5afeab2a3f554b43df853fa}
+      \strng{authorbibnamehash}{8fedf4ded5afeab2a3f554b43df853fa}
+      \strng{authornamehash}{b79e375bbb1612738f0fb25210f7feff}
+      \strng{authorfullhash}{8fedf4ded5afeab2a3f554b43df853fa}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments}
+      \field{year}{2021}
+      \field{pages}{4101\bibrangedash 4107}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICRA48506.2021.9561902
+      \endverb
+      \keyw{Location awareness;Systematics;Codes;Navigation;Conferences;Robustness;Trajectory}
+    \endentry
+    \entry{Dang2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=ecc70db449d64bf9ff52f2423872647e}{%
+           family={Dang},
+           familyi={D\bibinitperiod},
+           given={Tung},
+           giveni={T\bibinitperiod}}}%
+        {{hash=75360e047c4f5efdcbec3d2fdb4935c5}{%
+           family={Tranzatto},
+           familyi={T\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a366bd6f7d23477c863b29df74f2ab06}{%
+           family={Khattak},
+           familyi={K\bibinitperiod},
+           given={Shehryar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=db3efa16ec416afbf9b83f8ce36d19b6}{%
+           family={Mascarich},
+           familyi={M\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=607eea23552518c3e54a04a592995738}{%
+           family={Alexis},
+           familyi={A\bibinitperiod},
+           given={Kostas},
+           giveni={K\bibinitperiod}}}%
+        {{hash=164607f9daa616a03bed0e2bf6531a8d}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{40f025b155c092e9f4d7c81316919bdc}
+      \strng{fullhash}{df970bb4af3bf6ca3f845970551bc538}
+      \strng{bibnamehash}{df970bb4af3bf6ca3f845970551bc538}
+      \strng{authorbibnamehash}{df970bb4af3bf6ca3f845970551bc538}
+      \strng{authornamehash}{40f025b155c092e9f4d7c81316919bdc}
+      \strng{authorfullhash}{df970bb4af3bf6ca3f845970551bc538}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Field Robotics}
+      \field{month}{11}
+      \field{number}{8}
+      \field{title}{Graph-based subterranean exploration path planning using aerial and legged robots}
+      \field{volume}{37}
+      \field{year}{2020}
+      \field{pages}{1363\bibrangedash 1388}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1002/rob.21993
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/rob.21993
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/rob.21993
+      \endverb
+    \endentry
+    \entry{9220149}{article}{}
+      \name{author}{9}{}{%
+        {{hash=8695c2a8e948284d473515ae87368a8e}{%
+           family={Queralta},
+           familyi={Q\bibinitperiod},
+           given={Jorge\bibnamedelima Peña},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d0ff6a1b319eb4649eeb33ada3e68235}{%
+           family={Taipalmaa},
+           familyi={T\bibinitperiod},
+           given={Jussi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=895c1caa3908c40b46737908e25bc4fe}{%
+           family={Can\bibnamedelima Pullinen},
+           familyi={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Bilge},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8e8b4f05cd7a47af8c53fb20c6a39d13}{%
+           family={Sarker},
+           familyi={S\bibinitperiod},
+           given={Victor\bibnamedelima Kathan},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=4470069198aef5c9f86466288f7225a6}{%
+           family={Nguyen\bibnamedelima Gia},
+           familyi={N\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Tuan},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0146491c1686471470d4763516e431be}{%
+           family={Tenhunen},
+           familyi={T\bibinitperiod},
+           given={Hannu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b680f786282bcb3b9a76782c1aa50289}{%
+           family={Gabbouj},
+           familyi={G\bibinitperiod},
+           given={Moncef},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e38801ec0eb94be7194a2bedd143269b}{%
+           family={Raitoharju},
+           familyi={R\bibinitperiod},
+           given={Jenni},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b75e9db8d37e84616f4c935075954062}{%
+           family={Westerlund},
+           familyi={W\bibinitperiod},
+           given={Tomi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{42f446d53f3cca93a711b26cf4aaefee}
+      \strng{fullhash}{651bfc97d01ec1f2dd839949d8eaf3ec}
+      \strng{bibnamehash}{42f446d53f3cca93a711b26cf4aaefee}
+      \strng{authorbibnamehash}{42f446d53f3cca93a711b26cf4aaefee}
+      \strng{authornamehash}{42f446d53f3cca93a711b26cf4aaefee}
+      \strng{authorfullhash}{651bfc97d01ec1f2dd839949d8eaf3ec}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Collaborative Multi-Robot Search and Rescue: Planning, Coordination, Perception, and Active Vision}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{191617\bibrangedash 191643}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.3030190
+      \endverb
+    \endentry
+    \entry{Saska2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=bf219f96a5ef126a473bacf7e7ce5aa2}{%
+           family={Saska},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8cf288f03f906159ebe80bbd9bedc71c}{%
+           family={Hert},
+           familyi={H\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2c874a2a62adaff4629b8bb5c6820014}{%
+           family={Baca},
+           familyi={B\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=488f3952a5621483674f5744ac2d03c3}{%
+           family={Kratky},
+           familyi={K\bibinitperiod},
+           given={Vit},
+           giveni={V\bibinitperiod}}}%
+        {{hash=88d4e6409876fede37052a7ae6e5d649}{%
+           family={Nascimento},
+           familyi={N\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{8127e040456a638165f852b4812eeacd}
+      \strng{fullhash}{a9bc3bdc019e6a611cd96696af3690ce}
+      \strng{bibnamehash}{a9bc3bdc019e6a611cd96696af3690ce}
+      \strng{authorbibnamehash}{a9bc3bdc019e6a611cd96696af3690ce}
+      \strng{authornamehash}{8127e040456a638165f852b4812eeacd}
+      \strng{authorfullhash}{a9bc3bdc019e6a611cd96696af3690ce}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Autonomous Robots}
+      \field{month}{3}
+      \field{number}{6}
+      \field{title}{Formation control of unmanned micro aerial vehicles for straitened environments}
+      \field{volume}{44}
+      \field{year}{2020}
+      \field{pages}{991\bibrangedash 1008}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s10514-020-09913-0
+      \endverb
+    \endentry
+    \entry{Gmez2013}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0b538b193fddec051835587145e2c924}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={Javier\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=6309bbe5412a8e0e167eb85b6dd52a20}{%
+           family={Lumbier},
+           familyi={L\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e7888556c49abd52cdd48c4c614a1580}{%
+           family={Garrido},
+           familyi={G\bibinitperiod},
+           given={Santiago},
+           giveni={S\bibinitperiod}}}%
+        {{hash=49e172853022ca2987ee55afc89a9286}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{e1eed5457f42698a77cb36afab5668c4}
+      \strng{fullhash}{5e42d08a53aaf402d4e038ae1e38f09a}
+      \strng{bibnamehash}{5e42d08a53aaf402d4e038ae1e38f09a}
+      \strng{authorbibnamehash}{5e42d08a53aaf402d4e038ae1e38f09a}
+      \strng{authornamehash}{e1eed5457f42698a77cb36afab5668c4}
+      \strng{authorfullhash}{5e42d08a53aaf402d4e038ae1e38f09a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0921-8890}
+      \field{journaltitle}{Robotics and Autonomous Systems}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Planning robot formations with fast marching square including uncertainty conditions}
+      \field{volume}{61}
+      \field{year}{2013}
+      \field{pages}{137\bibrangedash 152}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.robot.2012.10.009
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.robot.2012.10.009
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.robot.2012.10.009
+      \endverb
+    \endentry
+    \entry{Ebel2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=830ead6f0dda40e6395560fcc0f2fa5a}{%
+           family={Ebel},
+           familyi={E\bibinitperiod},
+           given={Henrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3547b7b3f0a5fea06afadbd5bc201565}{%
+           family={Sharafian\bibnamedelima Ardakani},
+           familyi={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Ehsan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e64475aa8064b50d90ddb3353ec8c363}{%
+           family={Eberhard},
+           familyi={E\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{01191c54a548ef802305959c4f0d159b}
+      \strng{fullhash}{01191c54a548ef802305959c4f0d159b}
+      \strng{bibnamehash}{01191c54a548ef802305959c4f0d159b}
+      \strng{authorbibnamehash}{01191c54a548ef802305959c4f0d159b}
+      \strng{authornamehash}{01191c54a548ef802305959c4f0d159b}
+      \strng{authorfullhash}{01191c54a548ef802305959c4f0d159b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0921-8890}
+      \field{journaltitle}{Robotics and Autonomous Systems}
+      \field{month}{10}
+      \field{title}{Distributed model predictive formation control with discretization-free path planning for transporting a load}
+      \field{volume}{96}
+      \field{year}{2017}
+      \field{pages}{211\bibrangedash 223}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.robot.2017.07.007
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.robot.2017.07.007
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.robot.2017.07.007
+      \endverb
+    \endentry
+    \entry{Roy2018}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=21ebe7919c39b8acd0470d5e73687864}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Dibyendu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fe67c47919b4d708b68962b1cb44c58f}{%
+           family={Chowdhury},
+           familyi={C\bibinitperiod},
+           given={Arijit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c21c6e1331aa05fe98d87383c265a83d}{%
+           family={Maitra},
+           familyi={M\bibinitperiod},
+           given={Madhubanti},
+           giveni={M\bibinitperiod}}}%
+        {{hash=db118c54d0fe45562526a44ca082fd25}{%
+           family={Bhattacharya},
+           familyi={B\bibinitperiod},
+           given={Samar},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{3a61f9d7ba9ae9c663b48b5bbe3e4446}
+      \strng{fullhash}{16e0caa181a28b70da1dd8a75d4b4509}
+      \strng{bibnamehash}{16e0caa181a28b70da1dd8a75d4b4509}
+      \strng{authorbibnamehash}{16e0caa181a28b70da1dd8a75d4b4509}
+      \strng{authornamehash}{3a61f9d7ba9ae9c663b48b5bbe3e4446}
+      \strng{authorfullhash}{16e0caa181a28b70da1dd8a75d4b4509}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})}
+      \field{month}{10}
+      \field{title}{Multi-Robot Virtual Structure Switching and Formation Changing Strategy in an Unknown Occluded Environment}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1109/iros.2018.8594438
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/iros.2018.8594438
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/iros.2018.8594438
+      \endverb
+    \endentry
+    \entry{AlonsoMora2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=248bd79f5e503f11eb095282260ee29f}{%
+           family={Alonso-Mora},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=33ad8243429ffe2db95e49104698e930}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f74192f92945701041a41bfa429ee111}{%
+           family={Rus},
+           familyi={R\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{4b103627ea15802249281a423e1b67b7}
+      \strng{fullhash}{4b103627ea15802249281a423e1b67b7}
+      \strng{bibnamehash}{4b103627ea15802249281a423e1b67b7}
+      \strng{authorbibnamehash}{4b103627ea15802249281a423e1b67b7}
+      \strng{authornamehash}{4b103627ea15802249281a423e1b67b7}
+      \strng{authorfullhash}{4b103627ea15802249281a423e1b67b7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1741-3176}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{month}{8}
+      \field{number}{9}
+      \field{title}{Multi-robot formation control and object transport in dynamic environments via constrained optimization}
+      \field{volume}{36}
+      \field{year}{2017}
+      \field{pages}{1000\bibrangedash 1021}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1177/0278364917719333
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1177/0278364917719333
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1177/0278364917719333
+      \endverb
+    \endentry
+    \entry{Fu2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0dc498c2c8434e8c9a27f1a5e7f98ace}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=387e4dbca181fb86e2e2de719709f681}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=802cd58423a7072bc2a851a30de541f9}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haixiang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d0e0cdd7e41e32c1760cf12a0a61eb6d}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xiaoguang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{b730219fbb1c8a70728d10bbdd92ebf6}
+      \strng{fullhash}{9de4dac7c8308f1b83951719289e2075}
+      \strng{bibnamehash}{9de4dac7c8308f1b83951719289e2075}
+      \strng{authorbibnamehash}{9de4dac7c8308f1b83951719289e2075}
+      \strng{authornamehash}{b730219fbb1c8a70728d10bbdd92ebf6}
+      \strng{authorfullhash}{9de4dac7c8308f1b83951719289e2075}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1270-9638}
+      \field{journaltitle}{Aerospace Science and Technology}
+      \field{month}{9}
+      \field{title}{A formation maintenance and reconstruction method of {UAV} swarm based on distributed control}
+      \field{volume}{104}
+      \field{year}{2020}
+      \field{pages}{105981}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ast.2020.105981
+      \endverb
+    \endentry
+    \entry{9527169}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f567533b34d0e8a044246b3f3c469b18}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Chengchao},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c826e710b315f2169f3cedb41b63a269}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=188e0b0486b277245804f98bce4641f9}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=af58f9c2d39da9739e6ab7dd66d95e7d}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Jifeng},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{26851177752cb04b7d2aa20abe057959}
+      \strng{fullhash}{766b17eecda6275977924b63798b28b0}
+      \strng{bibnamehash}{766b17eecda6275977924b63798b28b0}
+      \strng{authorbibnamehash}{766b17eecda6275977924b63798b28b0}
+      \strng{authornamehash}{26851177752cb04b7d2aa20abe057959}
+      \strng{authorfullhash}{766b17eecda6275977924b63798b28b0}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Intelligent Transportation Systems}
+      \field{number}{8}
+      \field{title}{Learning-Based Multi-Robot Formation Control With Obstacle Avoidance}
+      \field{volume}{23}
+      \field{year}{2022}
+      \field{pages}{11811\bibrangedash 11822}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TITS.2021.3107336
+      \endverb
+      \keyw{Collision avoidance;Robots;Robot sensing systems;Decision making;Multi-robot systems;Measurement by laser beam;Laser modes;Multi-robot systems;leader–follower formation control;deep reinforcement learning;collision avoidance;formation adjustment}
+    \endentry
+    \entry{Furrer2016}{inbook}{}
+      \name{author}{4}{}{%
+        {{hash=665db5ea95243ba1f2e8374baf040cf3}{%
+           family={Furrer},
+           familyi={F\bibinitperiod},
+           given={Fadri},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7bd6f7a61dfd5ad21868e55eb9fd00d8}{%
+           family={Burri},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=49397fd202a75592df65f18658a90163}{%
+           family={Achtelik},
+           familyi={A\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6ee8958bbf32527489012d8ca7c95ee3}{%
+           family={Siegwart},
+           familyi={S\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=bfa7caea7320966a6a6bd9ef6a4bd029}{%
+           family={Koubaa},
+           familyi={K\bibinitperiod},
+           given={Anis},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{19bace94a19e5d4354b0a11577efa8b2}
+      \strng{fullhash}{1131266087fc164994151b0818db1aba}
+      \strng{bibnamehash}{1131266087fc164994151b0818db1aba}
+      \strng{authorbibnamehash}{1131266087fc164994151b0818db1aba}
+      \strng{authornamehash}{19bace94a19e5d4354b0a11577efa8b2}
+      \strng{authorfullhash}{1131266087fc164994151b0818db1aba}
+      \strng{editorbibnamehash}{bfa7caea7320966a6a6bd9ef6a4bd029}
+      \strng{editornamehash}{bfa7caea7320966a6a6bd9ef6a4bd029}
+      \strng{editorfullhash}{bfa7caea7320966a6a6bd9ef6a4bd029}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{RotorS---A Modular Gazebo MAV Simulator Framework}
+      \field{isbn}{978-3-319-26054-9}
+      \field{title}{Robot Operating System (ROS): The Complete Reference (Volume 1)}
+      \field{year}{2016}
+      \field{pages}{595\bibrangedash 625}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1007/978-3-319-26054-9_23
+      \endverb
+    \endentry
+    \entry{Bui2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=910af0e7f011f03c5418155f14127529}{%
+           family={Bui},
+           familyi={B\bibinitperiod},
+           given={Duy\bibnamedelima Nam},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=6a4795f921d8cd9a34331110fd015b00}{%
+           family={Van\bibnamedelima Nguyen},
+           familyi={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Thi\bibnamedelima Thanh},
+           giveni={T\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=8a32a61a7fbd5445cd04c3abc2506d3b}{%
+           family={Phung},
+           familyi={P\bibinitperiod},
+           given={Manh\bibnamedelima Duong},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{7755cca605c97d30e2941febef70bb1f}
+      \strng{fullhash}{7755cca605c97d30e2941febef70bb1f}
+      \strng{bibnamehash}{7755cca605c97d30e2941febef70bb1f}
+      \strng{authorbibnamehash}{7755cca605c97d30e2941febef70bb1f}
+      \strng{authornamehash}{7755cca605c97d30e2941febef70bb1f}
+      \strng{authorfullhash}{7755cca605c97d30e2941febef70bb1f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2093-2480}
+      \field{journaltitle}{International Journal of Aeronautical and Space Sciences}
+      \field{month}{10}
+      \field{number}{2}
+      \field{title}{Lyapunov-Based Nonlinear Model Predictive Control for Attitude Trajectory Tracking of Unmanned Aerial Vehicles}
+      \field{volume}{24}
+      \field{year}{2022}
+      \field{pages}{502\bibrangedash 513}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s42405-022-00545-5
+      \endverb
+    \endentry
+    \entry{Nagy2010}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9b54ccf3d4e1f421ab53407c9be833d5}{%
+           family={Nagy},
+           familyi={N\bibinitperiod},
+           given={Máté},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e970ced30e6005b3aa9f84e93db60ab8}{%
+           family={Ákos},
+           familyi={Á\bibinitperiod},
+           given={Zsuzsa},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b6e4e9592d402ef47e7555dff926517a}{%
+           family={Biro},
+           familyi={B\bibinitperiod},
+           given={Dora},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6ff33ab4371a3804415d624c6171ef14}{%
+           family={Vicsek},
+           familyi={V\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{e006c5ac14f32f21b2fdf9da2485ec64}
+      \strng{fullhash}{c8e919610e64d1f75e67fab384548ae5}
+      \strng{bibnamehash}{c8e919610e64d1f75e67fab384548ae5}
+      \strng{authorbibnamehash}{c8e919610e64d1f75e67fab384548ae5}
+      \strng{authornamehash}{e006c5ac14f32f21b2fdf9da2485ec64}
+      \strng{authorfullhash}{c8e919610e64d1f75e67fab384548ae5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{month}{4}
+      \field{number}{7290}
+      \field{title}{Hierarchical group dynamics in pigeon flocks}
+      \field{volume}{464}
+      \field{year}{2010}
+      \field{pages}{890\bibrangedash 893}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/nature08891
+      \endverb
+    \endentry
+    \entry{131810}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=68e28d54204820006ff12df112baa4c7}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a5fc7de37e539d65ca8aaf39eb61296e}{%
+           family={Borenstein},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{bde6c9b4d7a92b4a4ab8ae9c7f412173}
+      \strng{fullhash}{bde6c9b4d7a92b4a4ab8ae9c7f412173}
+      \strng{bibnamehash}{bde6c9b4d7a92b4a4ab8ae9c7f412173}
+      \strng{authorbibnamehash}{bde6c9b4d7a92b4a4ab8ae9c7f412173}
+      \strng{authornamehash}{bde6c9b4d7a92b4a4ab8ae9c7f412173}
+      \strng{authorfullhash}{bde6c9b4d7a92b4a4ab8ae9c7f412173}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings. 1991 IEEE International Conference on Robotics and Automation}
+      \field{title}{Potential field methods and their inherent limitations for mobile robot navigation}
+      \field{year}{1991}
+      \field{pages}{1398\bibrangedash 1404 vol.2}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/ROBOT.1991.131810
+      \endverb
+      \keyw{Mobile robots;Navigation;Histograms;Robot kinematics;Vehicles;Force sensors;Mechanical engineering;Manipulators;Heart;Differential equations}
+    \endentry
+    \entry{Beaver2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6304d51db4d92210beea39bad3aec883}{%
+           family={Beaver},
+           familyi={B\bibinitperiod},
+           given={Logan\bibnamedelima E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=b2518a714d10b864a9bd0155049a50ae}{%
+           family={Malikopoulos},
+           familyi={M\bibinitperiod},
+           given={Andreas\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{0898fcbe5343da48bf8050b8a0373129}
+      \strng{fullhash}{0898fcbe5343da48bf8050b8a0373129}
+      \strng{bibnamehash}{0898fcbe5343da48bf8050b8a0373129}
+      \strng{authorbibnamehash}{0898fcbe5343da48bf8050b8a0373129}
+      \strng{authornamehash}{0898fcbe5343da48bf8050b8a0373129}
+      \strng{authorfullhash}{0898fcbe5343da48bf8050b8a0373129}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1367-5788}
+      \field{journaltitle}{Annual Reviews in Control}
+      \field{title}{An overview on optimal flocking}
+      \field{volume}{51}
+      \field{year}{2021}
+      \field{pages}{88\bibrangedash 99}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.arcontrol.2021.03.004
+      \endverb
+    \endentry
+    \entry{Soria2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7cdfa303560c0b127afc67d780003262}{%
+           family={Soria},
+           familyi={S\bibinitperiod},
+           given={Enrica},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b16df28231916b2520228c1d58e5502f}{%
+           family={Schiano},
+           familyi={S\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=620d43cd0ee8802d53fe4d7b715445ec}{%
+           family={Floreano},
+           familyi={F\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{fullhash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{bibnamehash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{authorbibnamehash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{authornamehash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{authorfullhash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2522-5839}
+      \field{journaltitle}{Nature Machine Intelligence}
+      \field{month}{5}
+      \field{number}{6}
+      \field{title}{Predictive control of aerial swarms in cluttered environments}
+      \field{volume}{3}
+      \field{year}{2021}
+      \field{pages}{545\bibrangedash 554}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1038/s42256-021-00341-y
+      \endverb
+    \endentry
+    \entry{8950150}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ff4b36bce3b0164018c10ffff5da8248}{%
+           family={Luis},
+           familyi={L\bibinitperiod},
+           given={Carlos\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=692ac251730f86e0bb5e9bfb135a5541}{%
+           family={Vukosavljev},
+           familyi={V\bibinitperiod},
+           given={Marijan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f84c642b8b17f55dce44eaa4eabb0dc3}{%
+           family={Schoellig},
+           familyi={S\bibinitperiod},
+           given={Angela\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd9a6eaf247da2b930d3395f6ca6f881}
+      \strng{fullhash}{bd9a6eaf247da2b930d3395f6ca6f881}
+      \strng{bibnamehash}{bd9a6eaf247da2b930d3395f6ca6f881}
+      \strng{authorbibnamehash}{bd9a6eaf247da2b930d3395f6ca6f881}
+      \strng{authornamehash}{bd9a6eaf247da2b930d3395f6ca6f881}
+      \strng{authorfullhash}{bd9a6eaf247da2b930d3395f6ca6f881}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics and Automation Letters}
+      \field{number}{2}
+      \field{title}{Online Trajectory Generation With Distributed Model Predictive Control for Multi-Robot Motion Planning}
+      \field{volume}{5}
+      \field{year}{2020}
+      \field{pages}{604\bibrangedash 611}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/LRA.2020.2964159
+      \endverb
+      \keyw{Collision avoidance;Trajectory;Planning;Real-time systems;Robots;Task analysis;Predictive control;Motion and path planning;distributed robot systems;collision avoidance;model predictive control}
+    \endentry
+    \entry{Darby2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0922edcb6113eb099607e900e85462c4}{%
+           family={Darby},
+           familyi={D\bibinitperiod},
+           given={Mark\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=16ffda96d5163e699c96fae37ac434d9}{%
+           family={Nikolaou},
+           familyi={N\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{8c38f65de4b0a2a83517945e6d52fdf5}
+      \strng{fullhash}{8c38f65de4b0a2a83517945e6d52fdf5}
+      \strng{bibnamehash}{8c38f65de4b0a2a83517945e6d52fdf5}
+      \strng{authorbibnamehash}{8c38f65de4b0a2a83517945e6d52fdf5}
+      \strng{authornamehash}{8c38f65de4b0a2a83517945e6d52fdf5}
+      \strng{authorfullhash}{8c38f65de4b0a2a83517945e6d52fdf5}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0967-0661}
+      \field{journaltitle}{Control Engineering Practice}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{{MPC}: Current practice and challenges}
+      \field{volume}{20}
+      \field{year}{2012}
+      \field{pages}{328\bibrangedash 342}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.conengprac.2011.12.004
+      \endverb
+    \endentry
+    \entry{2020SciPy-NMeth}{article}{}
+      \name{author}{35}{}{%
+        {{hash=18703a2bb6a62484483c193a212da2f8}{%
+           family={Virtanen},
+           familyi={V\bibinitperiod},
+           given={Pauli},
+           giveni={P\bibinitperiod}}}%
+        {{hash=646fbfe08374cc41c2f9bd971d8c4725}{%
+           family={Gommers},
+           familyi={G\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d500f4849030f34359cdb3e1513acf83}{%
+           family={Oliphant},
+           familyi={O\bibinitperiod},
+           given={Travis\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=35bb9c71f55048509a3e9018c349ed73}{%
+           family={Haberland},
+           familyi={H\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fbb0c40f5d70be8ce47ce9daafdf5749}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9fd9ed8466bbb96364ae008f2a665e6e}{%
+           family={Cournapeau},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=09a667aa6a26526bfcccb2676a494e55}{%
+           family={Burovski},
+           familyi={B\bibinitperiod},
+           given={Evgeni},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Pearu},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4c7e4c94b846fa41e2fc0a88e0dc656d}{%
+           family={Weckesser},
+           familyi={W\bibinitperiod},
+           given={Warren},
+           giveni={W\bibinitperiod}}}%
+        {{hash=7447cb057596bc2645d3980bb04f5c78}{%
+           family={Bright},
+           familyi={B\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1b5d87f5a394ee92a6edb4c1de058cab}{%
+           family={{van der Walt}},
+           familyi={v\bibinitperiod},
+           given={Stéfan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=626cc151613864abeb653c0d8172d98c}{%
+           family={Brett},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=57849e8550281b202bd611bf6f11e14b}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b053969d2c6a9ec8689980fb6463cd56}{%
+           family={Millman},
+           familyi={M\bibinitperiod},
+           given={K.\bibnamedelimi Jarrod},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=fbaf80580622bd40577f4a6d38021c0a}{%
+           family={Mayorov},
+           familyi={M\bibinitperiod},
+           given={Nikolay},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7bcf847eaccba039f7a4523540673aea}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelimb R.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4b3d26f886661aa723985bcfd835ba18}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9ad1d38817acd2f00cb7f324ec7d37ea}{%
+           family={Kern},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8d336f110675c46226ece1db501ce712}{%
+           family={Larson},
+           familyi={L\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=65b1934a87acb0abe09c469aaf11c326}{%
+           family={Carey},
+           familyi={C\bibinitperiod},
+           given={C\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9989e8a18827e34b15112d671f52bd35}{%
+           family={Polat},
+           familyi={P\bibinitperiod},
+           given={İlhan},
+           giveni={İ\bibinitperiod}}}%
+        {{hash=b8b88d61c79de60e6e1b5d44e03f5dec}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bf4be16325cb4f641345ca394443fd18}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0fd9a0e34f1b2adda41357c948d14986}{%
+           family={{VanderPlas}},
+           familyi={V\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c6a95a8ced3b86b4e7e60a74bc6ebf5a}{%
+           family={Laxalde},
+           familyi={L\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=85242652d69220e83cf71ceb8d90a8cb}{%
+           family={Perktold},
+           familyi={P\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5bca159e697db439e23b8947dfa4b614}{%
+           family={Cimrman},
+           familyi={C\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=70b659f5067a8a2efbee66f770681598}{%
+           family={Henriksen},
+           familyi={H\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=fa5163c76600eb11a4d07a28f0701cb0}{%
+           family={Quintero},
+           familyi={Q\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=db2b4761cc46be347b418e68660c9554}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Charles\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7d86aea5ad1f2b4e27f2f014c71712c2}{%
+           family={Archibald},
+           familyi={A\bibinitperiod},
+           given={Anne\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3876f7c3dbbb1a17823dcd135d07cfc6}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Antônio\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=bab4e5caee2d67831e464ce575022b37}{%
+           family={Pedregosa},
+           familyi={P\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8928c27c900ec0b05492cbba126c5196}{%
+           family={{van Mulbregt}},
+           familyi={v\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=aa8bf7a30651c7bc3d20ff02fc843dd9}{%
+           family={{SciPy 1.0 Contributors}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2614ea043823efadef6a201c96446be0}
+      \strng{fullhash}{371a3f5cdbab4f8c68cab2e17d157950}
+      \strng{bibnamehash}{2614ea043823efadef6a201c96446be0}
+      \strng{authorbibnamehash}{2614ea043823efadef6a201c96446be0}
+      \strng{authornamehash}{2614ea043823efadef6a201c96446be0}
+      \strng{authorfullhash}{371a3f5cdbab4f8c68cab2e17d157950}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Methods}
+      \field{title}{{{SciPy} 1.0: Fundamental Algorithms for Scientific Computing in Python}}
+      \field{volume}{17}
+      \field{year}{2020}
+      \field{pages}{261\bibrangedash 272}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1038/s41592-019-0686-2
+      \endverb
+    \endentry
+    \entry{9562281}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7cdfa303560c0b127afc67d780003262}{%
+           family={Soria},
+           familyi={S\bibinitperiod},
+           given={Enrica},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b16df28231916b2520228c1d58e5502f}{%
+           family={Schiano},
+           familyi={S\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=620d43cd0ee8802d53fe4d7b715445ec}{%
+           family={Floreano},
+           familyi={F\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{fullhash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{bibnamehash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{authorbibnamehash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{authornamehash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \strng{authorfullhash}{6e115c4dc965871cef34a5e6b5691dc7}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics and Automation Letters}
+      \field{number}{1}
+      \field{title}{Distributed Predictive Drone Swarms in Cluttered Environments}
+      \field{volume}{7}
+      \field{year}{2022}
+      \field{pages}{73\bibrangedash 80}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/LRA.2021.3118091
+      \endverb
+      \keyw{Trajectory;Drones;Collision avoidance;Safety;Optimization;Forestry;Real-time systems;Swarm robotics;aerial systems: perception and autonomy;multi-robot systems}
+    \endentry
+    \entry{Matveev2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fb896aeb4bbbf60988545415900ffb03}{%
+           family={Matveev},
+           familyi={M\bibinitperiod},
+           given={Alexey\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=afe198b5d626ed77b53a4dd74ae2374f}{%
+           family={Magerkin},
+           familyi={M\bibinitperiod},
+           given={Valentin\bibnamedelima V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=c6a5eb91ef23c39cd3d78540276eb4a6}{%
+           family={Savkin},
+           familyi={S\bibinitperiod},
+           given={Andrey\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{5557c3423521ffb925b26e9ea1433f85}
+      \strng{fullhash}{5557c3423521ffb925b26e9ea1433f85}
+      \strng{bibnamehash}{5557c3423521ffb925b26e9ea1433f85}
+      \strng{authorbibnamehash}{5557c3423521ffb925b26e9ea1433f85}
+      \strng{authornamehash}{5557c3423521ffb925b26e9ea1433f85}
+      \strng{authorfullhash}{5557c3423521ffb925b26e9ea1433f85}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0005-1098}
+      \field{journaltitle}{Automatica}
+      \field{month}{4}
+      \field{title}{A method of reactive control for 3D navigation of a nonholonomic robot in tunnel-like environments}
+      \field{volume}{114}
+      \field{year}{2020}
+      \field{pages}{108831}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.automatica.2020.108831
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.automatica.2020.108831
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.automatica.2020.108831
+      \endverb
+    \endentry
+    \entry{6798711}{article}{}
+      \name{author}{4}{}{%
+        {{hash=12d0a11116ae653cdae90e916e87abd8}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Xiwang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c4319ce8f63b8a50ad8b3ce9cf8adaf5}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Bocheng},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f573b86db7f9a4c93380e14e09be95bc}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Zongying},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=05d69a912486766a461e04291b0b5904}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Yisheng},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{005e2dc44aa8066aae830e187000f0ab}
+      \strng{fullhash}{ef1ef4352206e7222264d2ccaf1ceed7}
+      \strng{bibnamehash}{ef1ef4352206e7222264d2ccaf1ceed7}
+      \strng{authorbibnamehash}{ef1ef4352206e7222264d2ccaf1ceed7}
+      \strng{authornamehash}{005e2dc44aa8066aae830e187000f0ab}
+      \strng{authorfullhash}{ef1ef4352206e7222264d2ccaf1ceed7}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Control Systems Technology}
+      \field{number}{1}
+      \field{title}{Time-Varying Formation Control for Unmanned Aerial Vehicles: Theories and Applications}
+      \field{volume}{23}
+      \field{year}{2015}
+      \field{pages}{340\bibrangedash 348}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TCST.2014.2314460
+      \endverb
+    \endentry
+    \entry{9145644}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ba72f7ec92f9a0f0674243e04bd78be3}{%
+           family={Lindqvist},
+           familyi={L\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b37300608d949356a5d63a9a0b8d9fa3}{%
+           family={Mansouri},
+           familyi={M\bibinitperiod},
+           given={Sina\bibnamedelima Sharif},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6ed5efddc9f3e49781cb4c64ae6135f7}{%
+           family={Agha-mohammadi},
+           familyi={A\bibinithyphendelim m\bibinitperiod},
+           given={Ali-akbar},
+           giveni={A\bibinithyphendelim a\bibinitperiod}}}%
+        {{hash=3afc59e5614c23cce7afb1fdb69736a4}{%
+           family={Nikolakopoulos},
+           familyi={N\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9eef763e44e957674d23ba70676487fe}
+      \strng{fullhash}{b17ccfb67cd3d575b149cfff85a50d03}
+      \strng{bibnamehash}{b17ccfb67cd3d575b149cfff85a50d03}
+      \strng{authorbibnamehash}{b17ccfb67cd3d575b149cfff85a50d03}
+      \strng{authornamehash}{9eef763e44e957674d23ba70676487fe}
+      \strng{authorfullhash}{b17ccfb67cd3d575b149cfff85a50d03}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics and Automation Letters}
+      \field{number}{4}
+      \field{title}{Nonlinear {MPC} for Collision Avoidance and Control of {UAVs} With Dynamic Obstacles}
+      \field{volume}{5}
+      \field{year}{2020}
+      \field{pages}{6001\bibrangedash 6008}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/LRA.2020.3010730
+      \endverb
+      \keyw{Collision avoidance;Trajectory;Vehicle dynamics;Predictive models;Navigation;Unmanned aerial vehicles;Cost function;Collision avoidance;aerial systems: applications;autonomous vehicle navigation}
+    \endentry
+    \entry{9938397}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f0a222168bfd4108b09b4cdca56b73ad}{%
+           family={Saccani},
+           familyi={S\bibinitperiod},
+           given={Danilo},
+           giveni={D\bibinitperiod}}}%
+        {{hash=91a7e88e594d7b4400fe9e4a84db87e0}{%
+           family={Cecchin},
+           familyi={C\bibinitperiod},
+           given={Leonardo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=caad20229285c0d0726d66fdd6643394}{%
+           family={Fagiano},
+           familyi={F\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{90d664fd93299135a5bcbb132edae590}
+      \strng{fullhash}{90d664fd93299135a5bcbb132edae590}
+      \strng{bibnamehash}{90d664fd93299135a5bcbb132edae590}
+      \strng{authorbibnamehash}{90d664fd93299135a5bcbb132edae590}
+      \strng{authornamehash}{90d664fd93299135a5bcbb132edae590}
+      \strng{authorfullhash}{90d664fd93299135a5bcbb132edae590}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Control Systems Technology}
+      \field{number}{5}
+      \field{title}{Multitrajectory Model Predictive Control for Safe {UAV} Navigation in an Unknown Environment}
+      \field{volume}{31}
+      \field{year}{2023}
+      \field{pages}{1982\bibrangedash 1997}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/TCST.2022.3216989
+      \endverb
+      \keyw{Trajectory;Uncertainty;Navigation;Safety;Drones;Collision avoidance;Aerospace electronics;Learning for control;model predictive control (MPC);safe autonomous navigation;uncertainty quantification;unmanned aerial vehicles (UAVs)}
+    \endentry
+    \entry{580977}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5a041f7d87b5414dffcb3cffd218f4cc}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bce2faa6685176847af3844f1c3dfef2}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9aae21f53f8024b5be43d6281ed55dce}{%
+           family={Thrun},
+           familyi={T\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{22ec697a72039d9ff3c599302797cc3b}
+      \strng{fullhash}{22ec697a72039d9ff3c599302797cc3b}
+      \strng{bibnamehash}{22ec697a72039d9ff3c599302797cc3b}
+      \strng{authorbibnamehash}{22ec697a72039d9ff3c599302797cc3b}
+      \strng{authornamehash}{22ec697a72039d9ff3c599302797cc3b}
+      \strng{authorfullhash}{22ec697a72039d9ff3c599302797cc3b}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics \& Automation Magazine}
+      \field{number}{1}
+      \field{title}{The dynamic window approach to collision avoidance}
+      \field{volume}{4}
+      \field{year}{1997}
+      \field{pages}{23\bibrangedash 33}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/100.580977
+      \endverb
+      \keyw{Collision avoidance;Mobile robots;Robot sensing systems;Orbital robotics;Robotics and automation;Motion control;Humans;Robot control;Motion planning;Acceleration}
+    \endentry
+    \entry{8202163}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6cca95d38079b9dc9975f20d44d419e1}{%
+           family={Kamel},
+           familyi={K\bibinitperiod},
+           given={Mina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=248bd79f5e503f11eb095282260ee29f}{%
+           family={Alonso-Mora},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6ee8958bbf32527489012d8ca7c95ee3}{%
+           family={Siegwart},
+           familyi={S\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=86481b508a2ad389b40948bac9c23e65}{%
+           family={Nieto},
+           familyi={N\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{3fc6ac8875efad79b964c8cd9e9906ce}
+      \strng{fullhash}{85db43b5c0820dc9e39433090c867db7}
+      \strng{bibnamehash}{85db43b5c0820dc9e39433090c867db7}
+      \strng{authorbibnamehash}{85db43b5c0820dc9e39433090c867db7}
+      \strng{authornamehash}{3fc6ac8875efad79b964c8cd9e9906ce}
+      \strng{authorfullhash}{85db43b5c0820dc9e39433090c867db7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}
+      \field{title}{Robust collision avoidance for multiple micro aerial vehicles using nonlinear model predictive control}
+      \field{year}{2017}
+      \field{pages}{236\bibrangedash 243}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS.2017.8202163
+      \endverb
+      \keyw{Collision avoidance;Trajectory;Cost function;Trajectory tracking;Robustness;Vehicle dynamics}
+    \endentry
+    \entry{10.5555/3001460.3001507}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=2c062e64ed26aacc08a62155e7944f04}{%
+           family={Ester},
+           familyi={E\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
+           family={Kriegel},
+           familyi={K\bibinitperiod},
+           given={Hans-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=802157026f850823b2027c2100cb359a}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2dda16c0a5d50fc830d0d4a3787937fa}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Portland, Oregon}%
+      }
+      \list{publisher}{1}{%
+        {AAAI Press}%
+      }
+      \strng{namehash}{93f88297c66aca5bc89c3c5131ea9566}
+      \strng{fullhash}{3270dfaa31e8210b3bd04b1bcf4a29a3}
+      \strng{bibnamehash}{3270dfaa31e8210b3bd04b1bcf4a29a3}
+      \strng{authorbibnamehash}{3270dfaa31e8210b3bd04b1bcf4a29a3}
+      \strng{authornamehash}{93f88297c66aca5bc89c3c5131ea9566}
+      \strng{authorfullhash}{3270dfaa31e8210b3bd04b1bcf4a29a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Clustering algorithms are attractive for the task of class identification in spatial databases. However, the application to large spatial databases rises the following requirements for clustering algorithms: minimal requirements of domain knowledge to determine the input parameters, discovery of clusters with arbitrary shape and good efficiency on large databases. The well-known clustering algorithms offer no solution to the combination of these requirements. In this paper, we present the new clustering algorithm DBSCAN relying on a density-based notion of clusters which is designed to discover clusters of arbitrary shape. DBSCAN requires only one input parameter and supports the user in determining an appropriate value for it. We performed an experimental evaluation of the effectiveness and efficiency of DBSCAN using synthetic data and real data of the SEQUOIA 2000 benchmark. The results of our experiments demonstrate that (1) DBSCAN is significantly more effective in discovering clusters of arbitrary shape than the well-known algorithm CLAR-ANS, and that (2) DBSCAN outperforms CLARANS by a factor of more than 100 in terms of efficiency.}
+      \field{booktitle}{Proceedings of the Second International Conference on Knowledge Discovery and Data Mining}
+      \field{series}{KDD'96}
+      \field{title}{A density-based algorithm for discovering clusters in large spatial databases with noise}
+      \field{year}{1996}
+      \field{pages}{226\bibrangedash 231}
+      \range{pages}{6}
+      \keyw{arbitrary shape of clusters,clustering algorithms,efficiency on large spatial databases,handling nlj4-275oise}
+    \endentry
+    \entry{kraft1988software}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6733d047b401f5ee6052056c2ae596b8}{%
+           family={Kraft},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiss. Berichtswesen d. DFVLR}%
+      }
+      \strng{namehash}{6733d047b401f5ee6052056c2ae596b8}
+      \strng{fullhash}{6733d047b401f5ee6052056c2ae596b8}
+      \strng{bibnamehash}{6733d047b401f5ee6052056c2ae596b8}
+      \strng{authorbibnamehash}{6733d047b401f5ee6052056c2ae596b8}
+      \strng{authornamehash}{6733d047b401f5ee6052056c2ae596b8}
+      \strng{authorfullhash}{6733d047b401f5ee6052056c2ae596b8}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Deutsche Forschungs- und Versuchsanstalt für Luft- und Raumfahrt Köln: Forschungsbericht}
+      \field{title}{A Software Package for Sequential Quadratic Programming}
+      \field{year}{1988}
+      \verb{urlraw}
+      \verb https://books.google.com.vn/books?id=4rKaGwAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.vn/books?id=4rKaGwAACAAJ
+      \endverb
+    \endentry
+    \entry{Zhang2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4677bcd6915e5e9391edb1e91e1ca641}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8ca2505bc0b6b50661ca176ccdf22369}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=33bd5e52b5125f2ffff4d8fcce66455b}{%
+           family={Sweeney\bibnamedelima II},
+           familyi={S\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={Donald\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b8a91f6dd5a9cb31060f442612c7585b}{%
+           family={Hupman},
+           familyi={H\bibinitperiod},
+           given={Andrea\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{4e9804250f306c4a0b015baa6239a48b}
+      \strng{fullhash}{b4ac8a391f39aae89ce63d21928b14be}
+      \strng{bibnamehash}{b4ac8a391f39aae89ce63d21928b14be}
+      \strng{authorbibnamehash}{b4ac8a391f39aae89ce63d21928b14be}
+      \strng{authornamehash}{4e9804250f306c4a0b015baa6239a48b}
+      \strng{authorfullhash}{b4ac8a391f39aae89ce63d21928b14be}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1361-9209}
+      \field{journaltitle}{Transportation Research Part D: Transport and Environment}
+      \field{month}{1}
+      \field{title}{Energy consumption models for delivery drones: A comparison and assessment}
+      \field{volume}{90}
+      \field{year}{2021}
+      \field{pages}{102668}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.trd.2020.102668
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

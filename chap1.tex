@@ -1,0 +1,89 @@
+\chapter{Introduction}\label{chap1}
+
+\section{Motivation}\label{sec11}
+The significant potential of unmanned aerial vehicles (UAVs) to assist humans in various tasks, such as inspecting infrastructure in dangerous areas and assessing damage after natural disasters, has been a major impetus for research into the automation of UAV missions over the past few decades~\cite{9306908}. Despite their many advantages, single UAV systems still face significant limitations, particularly in payload capacity, battery life, and coverage range. These limitations have driven the development of multi-UAV systems, where multiple drones cooperate to perform complex missions more efficiently, with less time and performance than a single UAV. Multi-UAV cooperation offers scalability, redundancy, and improved mission speed, making them a powerful solution for many challenging applications~\cite{Skorobogatov2020,Tang2022}.
+
+An important aspect of multi-UAV cooperation is formation control~\cite{Oh2015}, in which a group of UAVs are coordinated to fly in a specific geometric pattern. Formation control is essential to maintain spatial relationships between UAVs, ensure collision avoidance, and optimize mission performance. However, when maneuvering in environments with obstacles and limited space, maintaining an effective formation is a challenge that can fail to maintain an effective formation and a high risk of collision, especially when UAVs have to maneuver through narrow passages or confined spaces. Maintaining a desired formation in such environments requires sophisticated control strategies to dynamically adjust the formation, preventing collisions while still achieving the mission objective~\cite{Huang2019,Rastgoftar2019}.
+
+The goal of deformation control in multi-UAV systems is to enable UAV formations to dynamically adjust their shapes to meet environmental constraints and mission requirements~\cite{Oh2015,Huang2019}. This capability is critical to ensuring that UAVs can safely navigate narrow passageways, avoid obstacles, and maintain operational efficiency. Requirements for effective deformation control include accurate real-time communication between UAVs, robust algorithms for making decisions and performing shape reconfiguration, and reliable sensing mechanisms to detect and respond to environmental changes~\cite{736776,Berlinger2021,9565893,Elkilany2020,AlonsoMora2018,Vsrhelyi2018,7828016,Wu2020}.
+
+However, achieving effective deformation control poses significant challenges. Real-time coordination is required to ensure that all UAVs in the formation can communicate and accurately synchronize their movements to maintain the desired shape. Developing robust obstacle avoidance algorithms is critical, as the formation must be able to detect and maneuver around obstacles without losing cohesion. Environmental adaptability is another key challenge, requiring control strategies that can dynamically adjust the formation in response to changing environmental conditions. Scalability is critical to ensure that these control algorithms can handle varying numbers of UAVs without compromising performance. Additionally, robustness is crucial in maintaining formation integrity despite potential issues such as communication latency, UAV malfunction, or sensor inaccuracy. Addressing these challenges is essential to ensure the reliability and effectiveness of deformation control in multi-UAV systems.
+
+This thesis aims to address the challenges of autonomous navigation by focusing on the coordination of multiple UAVs in deformation control, i.e. changing their shape based on environmental information. The thesis focuses on studying various formation-changing strategies for a robot swarm, particularly in navigating through unknown narrow passages, with a focus on applications such as search and rescue.
+
+\section{Approaches and Background}
+Motivated by the application areas and challenges mentioned above, the research conducted during this thesis aims to promote the autonomy of UAV formations in actively performing distributed formation transformations based on information collected from the environment. We specifically focus on studying effective deformation control strategies for various types of formations. This section provides a summary of key approaches followed in this thesis.
+
+One of the common formation control methods is to use centralized formation control~\cite{Oh2015,1545539}, which involves a single control or command unit coordinating the movements and actions of all UAVs in the formation. In this method, a central controller collects information from all UAVs, processes the information to determine the optimal formation strategy, and sends commands to each UAV to perform the required operations. This method simplifies the coordination process because it reduces the problem to a single decision point, ensuring that all UAVs operate in sync based on the instructions of the central controller.
+
+The main advantage of centralized formation control~\cite{Oh2015,1545539,Brando2015,Liu2018} is the ability to achieve precise and coordinated movements across the entire formation. Since the central controller has a comprehensive view of the system, it can optimize the formation for various parameters such as fuel efficiency, coverage, and collision avoidance. In addition, this approach facilitates the implementation of complex maneuvers and formation changes, as the central controller can effectively manage the overall strategy.
+
+However, centralized formation control also has significant disadvantages~\cite{Oh2015,Liu2018,Ahn2020,9123564}. The central controller becomes a single point of failure; if it malfunctions or loses contact with the UAV, the entire formation may collapse, i.e. the robustness is not guaranteed. Furthermore, the computational and communication costs on the central controller can be significant, especially in large-scale formations, leading to potential delays and bottlenecks, i.e. the scalability is limited. These limitations can hinder the scalability and robustness of the system, especially in dynamic and unpredictable environments.
+
+In contrast, distributed formation control~\cite{Oh2015,Ahn2020} is often used because it relies on decentralized decision-making, where each UAV acts based on local information and interacts with nearby UAVs. Instead of a single controller, the formation is maintained through a set of local rules and behaviors that each UAV follows. This approach mimics natural systems, such as flocks of birds or schools of fish, where complex group behaviors emerge from simple individual actions.
+
+Distributed formation control offers several advantages, particularly in terms of scalability and robustness~\cite{Oh2015,Liu2018,Ahn2020,AlonsoMora2018,7452570}. Since each UAV makes decisions independently, the system can be easily expanded to accommodate more UAVs without overloading the central controller. This decentralization also enhances the fault tolerance of the system; if one UAV fails, the rest can continue to operate and adapt to changing circumstances. Furthermore, distributed control allows for better flexibility and adaptability in dynamic environments, as each UAV can react to local changes and maintain formation without relying on centralized commands. Therefore, in this thesis, we focus on designing distributed controllers for their scalability and robustness.
+
+In search and rescue (SAR) operations, the V-formation is frequently used because this shape optimizes coverage by maintaining an even distribution of UAVs, ensuring a comprehensive search without gaps~\cite{Dang2019,Mirzaeinia2019,8793765}. The improved line-of-sight communication in the V-formation facilitates real-time data sharing and coordination, which is critical for timely decision-making in SAR missions. Additionally, the flexibility and adaptability of the V-formation allows UAVs to move effectively across diverse and challenging terrains, making it a valuable strategy for locating survivors and assessing disaster areas quickly and efficiently. There are many studies~\cite{Dang2019,9990236,Zhang2019} providing insights into how to effectively maintain a V-formation in the environment. However, studies regarding the V-formation’s ability to maneuver through confined environments are quite limited.
+
+To address these limitations in the context of V-shape formation movement through a constrained environment, in \textit{Method I}, we propose an efficient behavioral strategy capable of automatically observing and self-coordinating to maintain the formation and appropriately expand the formation according to the shape of the narrow space, with the goal of efficiently and safely navigating the robot formation.
+
+In practice, various formation shapes offer more potential applications than the V-formation, highlighting the need for a more general formation control method. Consequently, \textit{Method II} extends the formation transformation algorithm to accommodate different formation shapes, demonstrating its stability through Lyapunov stability theory.
+
+The two methods above focus exclusively on primitive motion and do not address the constraints and limitations of the system. Their method relies on the potential field approach influenced by numerous parameters, potentially complicating the control process. Therefore, \textit{Method III} adopts the model predictive control (MPC) method, which not only provides optimal control signals but also effectively manages the system's constraints and limitations. This approach ensures more precise and reliable formation control, enhancing overall performance and applicability in various operational scenarios.
+
+\section{Contributions}
+This section details the core contributions of the research carried out in this master's thesis, including a complete list of publications and open-source software libraries derived from the methods contributing to this thesis. Next, we provide a list of all student projects supervised during the master's studies.
+
+\subsection{Research Contributions}
+The general objective of this thesis was to design control strategies to guide the formation of multiple robots through confined spaces, especially in narrow environments. These proposed approaches were presented as follows:
+
+\noindent \textbf{Method 1.} \hyperref[paper1]{Self-Reconfigurable V-Shape Formation of Multiple UAVs in Narrow Space Environments}
+
+As motivated by Section~\ref{sec11}, multi-robot systems have the mission to form a V-shape and navigate through a narrow and confined space. Aiming to develop an effective control strategy in the confined space, this work proposed a self-reconfigurable V-shape formation control algorithm for multiple UAVs operating in a narrow space where the formation can be formed and maintained the desired V-shape from a random initial position and during the movement. Moreover, the formation can autonomously reconfigure its V-shape by expanding/shrinking its two V-wings to avoid collisions with obstacles and maintain safe distances among the UAVs. The primary contribution of this work is the design of the self-reconfigurable control strategy for distributed multi-UAV systems cooperating in V-shape formation. Moreover, the behaviors are presented to contribute to the distributed strategy that UAV systems can safely avoid obstacles and effectively maintain their V-shape.
+
+\noindent \textbf{Method 2.} \hyperref[paper2]{Event-based Deformation Control Strategy for Time-varying Formation in Confined Space}
+
+Multi-robot formations require numerous different shapes to adapt to various environments. Aiming to expand the wide application given in \textit{Method 1} to multiple types of formations in confined space environments, this work proposed an event-based deformation control strategy based on the artificial potential field (APF) which enhances the safety of multi-robot time-varying formation (TVF) in a confined space. In a collision-free environment, i.e. without any obstacles, the proposed approach ensures that multi-robot systems maintain their desired configuration and inter-agent collision-free. Additionally, the local sensor equipped in each robot can detect the confined space, which contributes to the configuration change if needed by applying the scale, rotation, or transformation into the straight line topology to ensure collision-free flight.
+
+\noindent \textbf{Method 3.} \hyperref[paper3]{MPPDC: Model Prediction-based Perceptual Deformation Control for Multiple Robots in Narrow Space Environments}
+
+Aiming to improve the smoothness and optimize the motion control of multi-UAV formation given in \textit{Method 2}, an optimal deformation control strategy is presented for a decentralized multi-robot team to ensure safety in narrow space environments. The core contribution is in a perceptual deformation control strategy to navigate a multi-robot formation moving through narrow environments effectively. Each robot is equipped with local sensors and communication modules to collect information from the surrounding environment and its neighbors for distributed decision-making. The formation thus can be shrunk/expanded or transformed to the line formation according to the environment. Particularly, a proposed strategy is formulated from a model prediction-based control strategy to achieve the navigation requirements of maintaining formation, velocity, and direction, while effectively avoiding collisions.
+
+\subsection{List of Publications}\label{sec22}
+During the master's studies, the following publications were achieved, with invaluable contributions from the co-authors. Furthermore, the author had the opportunity to present some of these works at international conferences. We list the publications in chronological order.
+\subsubsection{Publications included in this Thesis}
+\begin{itemize}
+    \item \textbf{Duy-Nam Bui}, Manh Duong Phung and Hung Pham Duy, ``Self-Reconfigurable V-Shape Formation of Multiple UAVs in Narrow Space Environments,'' \textit{2024 IEEE/SICE International Symposium on System Integration (SII)}, Ha Long, Vietnam, pp. 1006--1011, 2024.
+        \item \textbf{Duy-Nam Bui}, Manh Duong Phung, Trung-Dung Ngo and Hung Pham Duy. ``Event-based Deformation Control Strategy for Time-varying Robot Formation in Confined Space,'' in \textit{Preprint}, 2024.
+    \item \textbf{Duy-Nam Bui}, Manh Duong Phung, and Hung Pham Duy. ``MPPDC: Model Prediction-based Perceptual Deformation Control for Multiple Robots in Narrow Space Environments,'' in \textit{Preprint}, 2024.
+\end{itemize}
+\subsubsection{Other publications}
+\begin{itemize}
+    \item \textbf{Duy-Nam Bui}, Thuy Ngan Duong and Manh Duong Phung, ``Ant Colony Optimization for Cooperative Inspection Path Planning Using Multiple Unmanned Aerial Vehicles,'' \textit{2024 IEEE/SICE International Symposium on System Integration (SII)}, Ha Long, Vietnam, pp. 675--680, 2024.
+        \item \textbf{Duy-Nam Bui} and Manh Duong Phung, ``Radial Basis Function Neural Networks for Formation Control of Unmanned Aerial Vehicles,'' in \textit{Robotica}, vol. 42, pp. {1842--1860}, 2024.
+    \item \textbf{Duy-Nam Bui}, Thu Hang Khuat, Manh Duong Phung, Thuan-Hoang Tran, Dong LT Tran, ``Optimal Motion Planning for Unmanned Aerial Vehicles in Unknown Environments,'' \textit{2024 International Conference on Control, Robotics and Informatics (ICCRI)}, Da Nang, Vietnam, 2024.
+        \item Thi Thuy Ngan Duong, \textbf{Duy-Nam Bui}, and Manh Duong Phung, ``Navigation Variable-based Multi-objective Particle Swarm Optimization for UAV Path Planning with Kinematic Constraints,'' in \textit{Neural Computing and Applications}, 2024.
+    % \item Thu Hang Khuat, \textbf{Duy-Nam Bui}, Thuy Ngan Duong, and Manh Duong Phung, ``Polar Coordinate-based Differential Evolution for Moving Target Search Using Vision Sensor on Unmanned Aerial Vehicles,'' \textit{Robotics and Autonomous Systems}.
+    %     \item Thu Hang Khuat, \textbf{Duy-Nam Bui}, Hoa TT. Nguyen, Mien L. Trinh, Minh T. Nguyen, and Manh Duong Phung, ``Multi-goal Rapidly Exploring Random Tree with Safety and Dynamic Constraints for UAV Cooperative Path Planning,'' \textit{IEEE Transactions on Vehicular Technology}.
+\end{itemize}
+
+
+\subsection{Open-source Software}\label{sec23}
+Some of the works developed within this thesis have been released publicly for free use by the research community. Namely, these are:
+\begin{itemize}
+    \item The (multiple) UAVs simulator on Gazebo software in the loop {\tt\url{https://github.com/duynamrcv/hummingbird_simulator}}.
+        \item The nonlinear model predictive control (MPC) for UAVs low-level controller {\tt\url{https://github.com/duynamrcv/hummingbird_nmpc}}.
+    \item The self-reconfiguration strategy for V-shape formation of multiple UAVs: {\tt\url{https://github.com/duynamrcv/reconfigurable_vshape}}.
+        \item The distributed formation changing strategy for multiple UAVs: {\tt\url{https://github.com/duynamrcv/edc}}.
+    \item The model prediction-based perceptual deformation control for multiple UAVs: {\tt\url{https://github.com/duynamrcv/mppdc}}.
+\end{itemize}
+\subsection{List of Supervised Students}\label{sec24}
+During this master studies, the author had the opportunity to (co)-supervise the following Bachelor students at VNU University of Engineering and Technology.
+
+% \vspace{-1em}
+\noindent\textbf{Bachelor Theses and Studies on Robotics Engineering, and Electronics and Communications Engineering Technology}
+\begin{itemize}
+    \item Khuat, Thi Thu Hang (Spring 2023): ``Polar coordinate-based differential evolution for moving target search using vision sensor on unmanned aerial vehicles''.
+    \item Nguyen, Trung Hieu (Spring 2024): ``Distributed model predictive control for multi-UAVs in obstacle environments''.
+\end{itemize}
