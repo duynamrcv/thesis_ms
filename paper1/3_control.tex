@@ -67,22 +67,6 @@ where $k_c>0$ is a positive collision gain.
 
 \subsection{Self-reconfigurable formation strategy} 
 \label{sec:0reconfig}
-\begin{figure*}
-    \centering
-    \begin{subfigure}[b]{\textwidth}
-        \includegraphics[width=\textwidth]{paper1/images/result.png}
-        \caption{Trajectories of the UAVs in the formation}
-        \label{fig:chap2_motion}
-    \end{subfigure}
-    \begin{subfigure}[b]{\textwidth}
-        \includegraphics[width=\textwidth]{paper1/images/number.png}
-        \caption{Number of UAVs activating reconfiguration behaviors over time}
-        \label{fig:chap2_number}
-    \end{subfigure}
-    \caption{Simulation result of the V-shape formation moving through a narrow passage}
-    \label{fig:chap2_result}
-\end{figure*}
-
 Inspired by the mechanics of pliers and scissors, which alter their shape through the application of opposing forces on their handle arms, the V-shape formation can open or close its wings based on the exertion of external forces. In our work, the force is produced based on the difference in the distances among the UAVs and their desired distances. Specifically, in case the formation encounters disruptions arising from improper positioning, as illustrated in Figure \ref{fig:chap2_reconfig0} where UAV $R_n$ deviates from the alignment, the combined force acts to guide it toward its desired location.
 
 In the scenario depicted by Figure \ref{fig:chap2_reconfig1} where a force is exerted from one side, UAV $R_n$ responds by generating a thrust $u_n^o$ to avoid a potential collision with obstacles thus resulting in the control signal $u_n$. Accordingly, other UAVs on the same V-wing, including the leader UAV, also adjust their position based on the behavior control signal $u_i^r$. As the leader UAV $R_l$ changes its position, the UAVs on the opposing wing realign themselves by formation behavior $u_i^f$. As a result, the whole UAV formation tends to move towards the other side.
