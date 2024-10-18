@@ -1,11 +1,11 @@
-\section{Event-based Deformation Control}\label{sec3}
+\section{Event-based Formation Reconfiguration Control}\label{sec3}
 
 To address the mentioned problem, the several potential force-based behaviors for each robot $i$ are used to synthetic to the proposed controller, which contains emergent strategies to navigate TVF to deal with the narrow space environment while ensuring the shape and the safety of TVF, named \textit{``Formation''}, and \textit{``Tailgating''}. In \textit{``Formation''} mode, the TVF maintains the original configuration, while in \textit{``Tailgating''} mode, the TVF transforms to the straight line configuration, as presented in Section~\ref{sec:config}. The detail of the proposed strategies is described in Fig.~\ref{fig:1control_diagram}.
 
 \begin{figure*}
     \centering
     \includegraphics[width=0.65\textwidth]{paper2/images/control_diagram.pdf}
-    \caption{Overview of the proposed event-based deformation control. The proposed strategy is constructed by two primary emergent strategy, including \textit{``Formation''} and \textit{``Tailgating''}, which are highlighted by red boxes. There are five individual behaviors that contribute to the emergent strategy, which illustrated via blue boxes.}
+    \caption{Overview of the proposed event-based formation reconfiguration control. The proposed strategy is constructed by two primary emergent strategy, including \textit{``Formation''} and \textit{``Tailgating''}, which are highlighted by red boxes. There are five individual behaviors that contribute to the emergent strategy, which illustrated via blue boxes.}
     \label{fig:1control_diagram}
 \end{figure*}
 
@@ -71,9 +71,9 @@ where $k_i,k_o>0$ is the inter-agent collision and obstacle avoidance gains, res
     \label{eqn:1uo}
 \end{equation}
 
-\subsection{Event-based Deformation Control strategy}\label{sec:edc}
+\subsection{Event-based Formation Reconfiguration Control strategy}\label{sec:edc}
 
-As mentioned in Fig.~\ref{fig:1control_diagram}, the proposed event-based deformation control includes two emergent strategies to navigate TVF safely through narrow space environment while maintaining the shape and ensuring the safety of swarm. At each time step, each robot determine the mode itself based on the sensing data collected from local sensor. The overall strategy can be summarised as follows:
+As mentioned in Fig.~\ref{fig:1control_diagram}, the proposed event-based formation reconfiguration control includes two emergent strategies to navigate TVF safely through narrow space environment while maintaining the shape and ensuring the safety of swarm. At each time step, each robot determine the mode itself based on the sensing data collected from local sensor. The overall strategy can be summarised as follows:
 \begin{equation}
     \tilde{v}_i=\begin{cases}
         v_i^f+v_i^m+v_i^c+v_i^o & \text{if mode = \textit{``Formation''}}\\
@@ -107,7 +107,7 @@ The estimation of the environment's width can be depicted in Fig.~\ref{fig:1we}.
 
 As a result, each robot $i$ can choose its mode and compute scaling factor $\kappa$. Denote $\lambda>2$ be the threshold to transform between two mode. As presented in Algorithm~\ref{alg:1our}, the desired velocity $\tilde{v}_i$ corresponding to its mode can be obtained.
 \begin{algorithm}[h!]
-\caption{Pseudocode of the EDC strategy}
+\caption{Pseudocode of the EFRC strategy}
 \label{alg:1our}
 Get a set of observed obstacle points $\mathcal{M}_i$\;
 \If{$\mathcal{M}_i$ is empty}{

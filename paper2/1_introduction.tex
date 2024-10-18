@@ -19,7 +19,7 @@ Research in~\cite{736776,Reynolds1987,Antonelli2009} proposed that the motion of
     \caption{Proposed approach}
     \label{fig:1sample_edc}
 \end{subfigure}
-\caption{We develop an event-based deformation control method to guide a TVF through confined spaces, including narrow gaps. \textit{Left:} Motion path of the TVF using purely behavior-based formation control~\cite{736776, Vsrhelyi2018}, which are collisions with surrounding obstacles. \textit{Right:} Motion path of the TVF using our proposed approach, which safely navigates through the narrow gap.}
+\caption{We develop an event-based formation reconfiguration control method to guide a TVF through confined spaces, including narrow gaps. \textit{Left:} Motion path of the TVF using purely behavior-based formation control~\cite{736776, Vsrhelyi2018}, which are collisions with surrounding obstacles. \textit{Right:} Motion path of the TVF using our proposed approach, which safely navigates through the narrow gap.}
 \label{fig:1sample}
 \end{figure}
 
@@ -33,9 +33,9 @@ The second case, \textit{formation transformation} involves the flexible transfo
 
 To the best of the authors' knowledge, our study constructs a strategy that can dynamically change formations based on calculations sensed from the environment. The changing decision signal is event-triggering and at a lower computational cost. Of these few existing studies, some studies use centralized control to construct control strategies~\cite{Gmez2013,Roy2018,AlonsoMora2017,8843165} or the information communicated between individuals is very large~\cite{Saska2020,Fu2020}. Our solution is fully distributed control and the amount of communication information between individuals is lightweight, only including position and velocity information. In addition, when transforming to another configuration, the order of each member is calculated reasonably and is not pre-arranged, ensuring reconfiguration takes place safely and immediately.
 
-Motivated by the limitations of the mentioned issues, this paper proposes an event-based deformation control strategy for a TVF to pass through confined space environments, as given in Fig.~\ref{fig:1sample}. The approach utilizes potential field techniques to design the behaviors of formation. The event-based mode-switching strategy is then presented based on the individual sensing capacity in formation. The main contributions of our work are threefold:
+Motivated by the limitations of the mentioned issues, this paper proposes an event-based formation reconfiguration control strategy for a TVF to pass through confined space environments, as given in Fig.~\ref{fig:1sample}. The approach utilizes potential field techniques to design the behaviors of formation. The event-based mode-switching strategy is then presented based on the individual sensing capacity in formation. The main contributions of our work are threefold:
 \begin{enumerate}
-    \item Propose an event-based deformation control strategy designed to enable the formation to scale, and transform to a straight line configuration, allowing it to effectively adapt to safely traverse confined environments;
+    \item Propose an event-based formation reconfiguration control strategy designed to enable the formation to scale, and transform to a straight line configuration, allowing it to effectively adapt to safely traverse confined environments;
         \item Design behaviors for the TVF based on potential field function and demonstrate the stability of the control law through Lyapunov theorem;
     \item Validate the proposed method through numerous simulations and comparisons. Software-in-the-loop (SIL) experiments are also conducted to evaluate the effectiveness.
 \end{enumerate}

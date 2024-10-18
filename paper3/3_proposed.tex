@@ -1,4 +1,4 @@
-\section{MPPDC: Model Prediction-based Perceptual Deformation Control Strategy}\label{sec:propose}
+\section{Model Prediction-based Perceptual Formation Reconfiguration Control}\label{sec:propose}
 
 \begin{figure}
     \centering
@@ -9,7 +9,7 @@
 
 In this work, the formation of robots has the mission to pass through a narrow environment. During the movement, the formation is required to \textit{(O1)} maintain their shape; \textit{(O2)} move along to the predefined direction $u_\text{ref}\in\mathbb{R}^{3}$, where $\left\Vert u_\text{ref}\right\Vert=1$, which can be determined by information collected from surrounding environments~\cite{9565893,Matveev2020}, with \textit{(O3)} the desired speed $\bar{v}_\text{ref}\in\mathbb{R}$; and \textit{(O4)} ensuring no collision with other neighbors or obstacles in the environment.
 
-The proposed deformation control strategy is illustrated in Fig.~\ref{fig:diagram}, which contains two modes, \textit{``Formation''} and \textit{``Tailgating''}. Based on the point cloud data obtained from a local sensor equipped on each robot, the formation can be switched from \textit{``Formation''} to \textit{``Tailgating''} mode if the width of the environment is too narrow to maintain the whole formation topology. In \textit{``Formation''} mode, the formation can maintain its original shape, and in \textit{``Tailgating''} mode, the formation transforms into straight line shapes with positions determined based on their orientation relative to the specified direction $u_\text{ref}$. The straight line shape is chosen in our work because it is an effective shape that can be used to go through obstacles like narrow valleys or tunnels~\cite{Fu2020}.
+The proposed formation reconfiguration control strategy is illustrated in Fig.~\ref{fig:diagram}, which contains two modes, \textit{``Formation''} and \textit{``Tailgating''}. Based on the point cloud data obtained from a local sensor equipped on each robot, the formation can be switched from \textit{``Formation''} to \textit{``Tailgating''} mode if the width of the environment is too narrow to maintain the whole formation topology. In \textit{``Formation''} mode, the formation can maintain its original shape, and in \textit{``Tailgating''} mode, the formation transforms into straight line shapes with positions determined based on their orientation relative to the specified direction $u_\text{ref}$. The straight line shape is chosen in our work because it is an effective shape that can be used to go through obstacles like narrow valleys or tunnels~\cite{Fu2020}.
 
 In the \textit{``Formation''} mode, the aim is to maintain the desired given shape. Let $\delta_{ij}\in\mathbb{R}^3,\forall j\in \mathcal{N}_i$ be the vector representing the desired position of robot $i$ with respect to neighbor $j$. Note that $\delta_{ji}=-\delta_{ij}$ must be satisfied for all pairs $\left(i,j\right)$, $j\neq i$, for consistency and feasibility of the formation. Note also that $\delta_{ii}=0$ for all $i$. This aim can be given as follows~\cite{Dong2016,6798711}:
 \begin{equation}
@@ -149,7 +149,7 @@ The control cost is used as a penalty part to get the minimal control signal, wh
 \end{equation}
 where $w_u>0$ represents the constant control weight.
 
-\subsection{Perceptual deformation control strategy}\label{sec:obs_aware}
+\subsection{Perceptual formation reconfiguration control strategy}\label{sec:obs_aware}
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{paper3/images/perception.pdf}
@@ -187,7 +187,7 @@ Obtain the environment's width $w_e$\tcc*[r]{Eq. \ref{eqn:we}}
 \end{algorithm}
 
 \begin{algorithm}[h!]
-\caption{Pseudocode of the MPPDC strategy}
+\caption{Pseudocode of the MPPFRC strategy}
 \label{alg:our}
 Get the observed obstacle points $\mathcal{M}_i$\;
 \If{$\mathcal{M}_i$ is empty}{
