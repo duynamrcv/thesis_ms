@@ -87,7 +87,7 @@ Configuration             & Strategy & Succ. & Mean speed (m/s) & Mean Acc. cost
 To further verify the effectiveness of the proposed strategy against the pure behavioural-based control (\textit{BC})~\cite{736776,Vsrhelyi2018}, Table~\ref{tbl:com} presents a comparison between proposed strategy, \textit{ERC} and \textit{BC}. It can be seen that the proposed \textit{ERC} strategy outperforms the \textit{BC} in success rate, which can navigate formation passes through a confined space without any collision. Meanwhile, the \textit{BC} always fails when encountering a narrow space (see Fig.~\ref{fig:1sample}). The mean acceleration cost per time is also smaller than the \textit{BC}, because \textit{BC} costs more energy to deal with the surrounding obstacles. The \textit{ERC} provides an effective method to deal with obstacles by the adaptation configuration. However, the mean speed of the TVF is slightly smaller than the standard approach, due to the translation mode while moving affect to the speed down of the TVF.
 
 \subsection{Validation on the software-in-the-loop Gazebo}
-\begin{figure*}[h!]
+\begin{figure*}[!]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{paper2/images/gazebo_uav.pdf}
@@ -103,7 +103,7 @@ To further verify the effectiveness of the proposed strategy against the pure be
     \label{fig:1gazebo_setup}
 \end{figure*}
 
-\begin{figure*}[h!]
+\begin{figure*}[!]
     \centering
     \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper2/images/gazebo_env.pdf}
@@ -118,7 +118,7 @@ To further verify the effectiveness of the proposed strategy against the pure be
     \label{fig:1gazebo_env}
 \end{figure*}
 
-\begin{figure*}
+\begin{figure*}[!]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{paper2/images/gazebo_res1.pdf}
@@ -154,7 +154,7 @@ To further verify the effectiveness of the proposed strategy against the pure be
     \label{fig:1gazebo_result}
 \end{figure*}
 
-\begin{figure*}
+\begin{figure*}[!]
     \centering
     \includegraphics[width=\textwidth]{paper2/images/gazebo_path.pdf}
     \caption{The recorded paths of three UAV in the SIL test (Top view)}
