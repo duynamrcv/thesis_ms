@@ -12,37 +12,42 @@
     \end{subfigure}
     \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/correlation_scen1.pdf}
-    \caption{Scenario 1 - Correlation of number of robots and scaling factor}
+    \caption{Scenario 1 - Correlation of robot number (bar chart) in each mode and scale factor (black line) over time}
     \label{fig:cor1}
     \end{subfigure}
     \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/correlation_scen2.pdf}
-    \caption{Scenario 2 - Correlation of number of robots and scaling factor}
+    \caption{Scenario 2 - Correlation of robot number (bar chart) in each mode and scale factor (black line) over time}
     \label{fig:cor2}
     \end{subfigure}
-    \caption{The motion path of a pentagon formation in two scenarios using the proposed strategy.}
+    \caption{Trajectories and formation shapes of the robots controlled by the PRC in two evaluating scenarios.}
     \label{fig:path}
 \end{figure*}
 
-In this section, our proposed model prediction-based perceptual formation reconfiguration control strategy \textit{(MPPRFC)}, is examined and evaluated through simulation experiments in various cave-like scenarios as depicted in Fig.~\ref{fig:path} and compares with the behavior-based formation reconfiguration control strategy \textit{(BFRC)}, which is reconstructed based on the original model~\cite{736776,Vsrhelyi2018}, and the model prediction-based formation control method \textit{(MPFC)}~\cite{Soria2021,9562281}. For comparison between the different methods, the following performance metrics are used: success rate, mean \textit{order} $\Phi$, mean speed (m/s), mean formation error $\varepsilon$ (m), and acceleration cost $(\sum{\left\Vert u(k)\right\Vert^2}/{N})$ (m$^2$/s$^3$)~\cite{Zhang2021}.
+A number of simulation experiments and comparisons have been conducted to evaluate the performance of the PRC with details as follows.
 
-The robot swarm has five homogeneous individuals with size $r=0.2$~m, equipped with a local sensor with a maximum sensing range of $r_s=3$~m. The maximum speed is $\left\Vert v_\text{max}\right\Vert=1.5$~m/s and the maximum control is $\left\Vert u_\text{max}\right\Vert=2.0$~m/s$^2$. In both scenarios, the desired velocity during movement is set to $\bar{v}_\text{ref}=1$~m/s. The desired formation is set as a regular pentagon. Initially, all robots are randomly positioned on one side of the zone. The swarm then navigates through the narrow passages in the zone along the desired direction $u_\text{ref}=[1,0,0]^T$. The mission is considered complete when all the robots have crossed to the opposite side of the region, specifically $p_x\geq22.0$ in all scenarios. The control period of robots is set at $\tau=0.1$~s.
+\subsection{Evaluation Setup}
+The swarm includes five identical robots, each with a radius of $r=0.2$~m, a maximum speed of $\left\Vert v_\text{max}\right\Vert=1.5$~m/s, and a maximum control input $\left\Vert u_\text{max}\right\Vert=2.0$~m/s$^2$. The robot is equipped with a local sensor having the sensing range of $r_s=3$~m. The desired formation shape is set to a pentagon, the reference velocity is $\bar{v}_\text{ref}=1$~m/s, and the desired direction is $u_\text{ref}=[1,0,0]^T$. The environments include two structures, both having narrow passages, as depicted in Fig.~\ref{fig:path}.
 
-The \textit{order} $\Phi$ metric~\cite{Vicsek1995} is used to measure the heading consensus of robots in formation during movement. The order value is in $\left[0,1\right]$. If robots in the formation have the same direction, the order value is close to 1. It is defined as follows. 
-
+The metrics used for evaluation include the success rate, mean \textit{order} $\Phi$, mean speed (m/s), mean formation error $\varepsilon$ (m), and acceleration cost $\Gamma$ (m$^2$/s$^4$) \cite{Zhang2021}. The \textit{order} metric~\cite{Vicsek1995} measures the heading consensus of the robots and is computed as:
 \begin{equation}
     \Phi=\dfrac{1}{N}\left\Vert\sum_{i=1}^N{\dfrac{v_i}{\left\Vert v_i\right\Vert}}\right\Vert
 \end{equation}
-
-To demonstrate the effectiveness in maintaining the formation, the \textit{formation error} evaluates the deviation between the actual position $p_i$ and its expected position $p^*_i$ of all robots in the formation to demonstrate the effectiveness of the formation control strategy~\cite{6798711}. The closer this error is to zero, the more effective the controller becomes. The formation error $\varepsilon_i$ of robot $i$ can be calculated as follows:
+Its value ranges from 0 to 1, with 1 indicating the robots have the same direction. The \textit{formation error} measures the deviation between the desired and actual positions of the robots~\cite{6798711} and is calculated as:
 \begin{equation}
     \varepsilon_i = \left\Vert p_i-p^*_i\right\Vert
-\end{equation}
+\end{equation} 
+The acceleration cost indicates the control effort and is given by:
+\begin{equation}
+    \Gamma = \dfrac{1}{N}\sum_{i=1}^N{\left\Vert u_i(k)\right\Vert^2}
+\end{equation} 
 
-\subsection{Results and Comparisons}
+The comparing methods include the behavior-based reconfiguration control \textit{(BRC)} \cite{736776,Vsrhelyi2018} and the predictive formation control \textit{(PFC)}~\cite{Soria2021,9562281}. 
+
+\subsection{Results}
 \label{subsec:results}
 
-\begin{figure*}[h!]
+\begin{figure*}
     \centering
     \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/velocity_scen1.pdf}
@@ -80,50 +85,50 @@ To demonstrate the effectiveness in maintaining the formation, the \textit{forma
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.6\textwidth]{paper3/images/scalability.pdf}
+    \includegraphics[width=0.8\textwidth]{paper3/images/scalability.pdf}
     \caption{Effect of number of robots on system performance, including \textit{order} $\Phi$ value and formation error $\varepsilon$.}
     \label{fig:scalability}
 \end{figure}
 
-According to Fig.~\ref{fig:path}, in both scenarios, the robot's formation successfully passes through the narrow space. At the beginning of the motion, the formation rapidly forms a desired pentagon shape. They then change their shape to safely pass through the tight passages, and then transform back to the desired shape after escaping the passages. Fig.~\ref{fig:cor1}-\ref{fig:cor2} depict the correlation of the number of robots in different modes and scaling factor $\kappa$. It can be seen that our strategy provides distributed decision-making capabilities based on the collected information. In particular, the modes of the robot swarm at a specific time vary depending on the structure of the environment and its neighbors. 
+Figure \ref{fig:path} shows the formation results in both scenarios. In the beginning, the robots rapidly form the desired pentagon shape. They then change their shape to safely pass through the tight passages and finally transform back to their original desired shape. Fig.~\ref{fig:cor1}-\ref{fig:cor2} depict the correlation between the number of robots and the scaling factor $\kappa$ in different modes. It can be seen that the scaling factor adapts to the number of robots and so that the formation can be changed according to guide the robot through narrow passages.  the PRC provides distributed decision-making capabilities based on the collected information. In particular, the modes of the robot swarm at a specific time vary depending on the structure of the environment and its neighbors. 
 
-Besides, when the environment is large enough to maintain the original shape, the value of scaling factor $\kappa$ is determined to be 1. When the width of the environment is decreased, the $\kappa$ of each robot is also determined to be smaller than 1 and gradually decreases depending on the width of the passage, adjusting the shape of the formation to shrink. Once the mode is switched to \textit{``Tailgating''}, the $\kappa$ value is determined to be 0. Similarly, when the formation exits the narrow corridor, the width of the environment increases, leading to an increased $\kappa$ value, guiding the formation shape to return to its original shape.
+Additionally, when the environment's width is large, the scaling factor $\kappa$ equals 1 to maintain the desired shape. As the environment's width decreases, $\kappa$ gradually reduces to shrink the formation until it reaches 0, the point at which the mode is switched to \textit{``Tailgating''}. Similarly, when the formation exits the narrow corridor, $\kappa$ increases, allowing the formation to return to its original shape.
 
 \begin{table*}
 \centering
-\caption{The comparison between \textit{BFRC}, \textit{MPFC}, and the proposed \textit{MPPRFC}. Each comparison is over 10 simulations of 5 robots in two
+\caption{The comparison between \textit{BRC}, \textit{PFC}, and the proposed \textit{PRC}. Each comparison is over 10 simulations of 5 robots in two
 different scenarios. The metrics displayed in the table are
 the success rate, mean \textit{order}, mean speed, mean formation error, and acceleration cost.}
 \label{tbl:analys}
 \begin{tabular}{C{1.0cm}C{1.4cm}C{1.8cm}C{1.8cm}C{2.5cm}C{2.3cm}C{2.0cm}}
 \hline \hline
-Scen.             & Strategy & Success rate  & Mean \textit{order} $\Phi$ & Mean speed (m/s) ($v_\text{ref}=1$~m/s) & Mean formation error $\varepsilon$ (m) & Acceleration cost (m$^2$/s$^3$) \\ \hline
-\multirow{3}{*}{1  } & BFRC      & \textbf{10/10} & 0.9890     & 1.0249     & 0.3048               & 69.6589    \\
-                     & MPFC     & 8/10  & \textbf{0.9934}     & 1.0639     & 0.6376               & \textbf{23.7442}    \\
-                     & MPPRFC    & \textbf{10/10} & 0.9824     & \textbf{0.9863}     & \textbf{0.2423}               & 25.0894    \\ \hline
-\multirow{3}{*}{2}   & BFRC      & 6/10  & 0.9883     & \textbf{0.9887}     & 0.6872               & 53.8718    \\
-                     & MPFC     & 0/10  & \textbf{0.9953}     & 1.0470      & 0.4593               & \textbf{19.0365}    \\
-                     & MPPRFC    & \textbf{9/10}  & 0.9830     & 0.9800       & \textbf{0.3217}               & 21.8559   \\ \hline \hline
+Scen.             & Strategy & Success rate  & Mean \textit{order} $\Phi$ & Mean speed (m/s) ($v_\text{ref}=1$~m/s) & Mean formation error $\varepsilon$ (m) & Acceleration cost $\Gamma$ (m$^2$/s$^4$) \\ \hline
+\multirow{3}{*}{1  } & BRC      & \textbf{10/10} & 0.9890     & 1.0249     & 0.3048               & 69.6589    \\
+                     & PFC     & 8/10  & \textbf{0.9934}     & 1.0639     & 0.6376               & \textbf{23.7442}    \\
+                     & PRC    & \textbf{10/10} & 0.9824     & \textbf{0.9863}     & \textbf{0.2423}               & 25.0894    \\ \hline
+\multirow{3}{*}{2}   & BRC      & 6/10  & 0.9883     & \textbf{0.9887}     & 0.6872               & 53.8718    \\
+                     & PFC     & 0/10  & \textbf{0.9953}     & 1.0470      & 0.4593               & \textbf{19.0365}    \\
+                     & PRC    & \textbf{9/10}  & 0.9830     & 0.9800       & \textbf{0.3217}               & 21.8559   \\ \hline \hline
 \end{tabular}
 \end{table*}
 
-To describe the effectiveness of the \textit{MPPRFC} strategy, Fig.~\ref{fig:comparison} illustrates the comparisons of our proposed strategy with other methods including speed profile, \textit{order} metric, and \textit{formation error}. 
+To describe the effectiveness of the \textit{PRC} strategy, Fig.~\ref{fig:comparison} illustrates the comparisons of our proposed strategy with other methods including speed profile, \textit{order} metric, and \textit{formation error}. 
 
-Fig.~\ref{fig:speed1}-\ref{fig:speed2} show the speed profiles of three strategies in both scenarios. The proposed strategy has demonstrated the ability to maintain a steady velocity around the desired velocity $v_\text{ref}$. The \textit{BFRC} shows the unstable speed when the formation changes its shape and/or navigates through the narrow passage due to the effect of the environment. Besides, \textit{MPFC} indicates stability in achieving the desired velocity. However, when the robots in formation face a narrow environment, they do not maintain the designed velocity but are slightly larger.
+Fig.~\ref{fig:speed1}-\ref{fig:speed2} show the speed profiles of three strategies in both scenarios. The proposed strategy has demonstrated the ability to maintain a steady velocity around the desired velocity $v_\text{ref}$. The \textit{BRC} shows the unstable speed when the formation changes its shape and/or navigates through the narrow passage due to the effect of the environment. Besides, \textit{PFC} indicates stability in achieving the desired velocity. However, when the robots in formation face a narrow environment, they do not maintain the designed velocity but are slightly larger.
 
-Fig.~\ref{fig:order1}-\ref{fig:order2} present the \textit{order} metric of three strategies. The results show the high consensus of robots in formation, represented by \textit{order} value $\Phi$ approaching~1. Our \textit{MPPRFC} algorithm has demonstrated the ability to navigate formations more stably when encountering changes in narrow environments.
+Fig.~\ref{fig:order1}-\ref{fig:order2} present the \textit{order} metric of three strategies. The results show the high consensus of robots in formation, represented by \textit{order} value $\Phi$ approaching~1. Our \textit{PRC} algorithm has demonstrated the ability to navigate formations more stably when encountering changes in narrow environments.
 
-Fig.~\ref{fig:error1}-\ref{fig:errorr2} depict the superiority of the proposed \textit{MPPRFC} algorithm compared to other strategies in terms of formation maintenance. The \textit{BFRC} and \textit{MPPRFC} formation reconfiguration strategies both present well-designed formation maintenance, as evidenced by the formation error converging to zero during movement. It can be seen that the proposed \textit{MPPRFC} controller maintains the designed formation better than \textit{BFRC}. Meanwhile, the configuration error of \textit{MPFC} is very significant, because of the influence of obstacles on the ability to operate.
+Fig.~\ref{fig:error1}-\ref{fig:errorr2} depict the superiority of the proposed \textit{PRC} algorithm compared to other strategies in terms of formation maintenance. The \textit{BRC} and \textit{PRC} formation reconfiguration strategies both present well-designed formation maintenance, as evidenced by the formation error converging to zero during movement. It can be seen that the proposed \textit{PRC} controller maintains the designed formation better than \textit{BRC}. Meanwhile, the configuration error of \textit{PFC} is very significant, because of the influence of obstacles on the ability to operate.
 
-Table~\ref{tbl:analys} presents a detailed comparison between the \textit{BFRC}, \textit{MPFC}, and the proposed \textit{MPPRFC} strategies. The results demonstrate that the proposed \textit{MPPRFC} strategy outperforms \textit{MPFC} in both scenarios and surpasses \textit{BFRC} in Scenario 2. In Scenario 1, the width-varying tunnel allows the \textit{BFRC} to switch modes and configurations smoothly and efficiently. However, in Scenario 2, where the tunnel's width changes suddenly, the formation struggles to adapt its configuration in time. The proposed \textit{MPPRFC} excels in maintaining the formation due to its minimal formation error, $\varepsilon$.
+Table~\ref{tbl:analys} presents a detailed comparison between the \textit{BRC}, \textit{PFC}, and the proposed \textit{PRC} strategies. The results demonstrate that the proposed \textit{PRC} strategy outperforms \textit{PFC} in both scenarios and surpasses \textit{BRC} in Scenario 2. In Scenario 1, the width-varying tunnel allows the \textit{BRC} to switch modes and configurations smoothly and efficiently. However, in Scenario 2, where the tunnel's width changes suddenly, the formation struggles to adapt its configuration in time. The proposed \textit{PRC} excels in maintaining the formation due to its minimal formation error, $\varepsilon$.
 
-While the \textit{MPFC} exhibits the best acceleration cost-owing to the absence of transformations between modes-the cost associated with the \textit{MPPRFC} is slightly higher but still shows significant improvement over \textit{BFRC}. Both formation reconfiguration control methods (\textit{MPFC} and \textit{MPPRFC}) demonstrate effective speed maintenance, as they approximately sustain the desired reference speed, $v_\text{ref}$. The mean order in all three strategies is close to 1, reaffirming their efficiency in maintaining the formation.
-% Table~\ref{tbl:analys} shows the statistics of three strategies in two different scenarios. It can be seen that, in both experiments, \textit{BFRC} and \textit{MPPRFC} were able to move through different types of narrow passages to reach their target, while \textit{MPFC} was only successful in scenario 1, where the width of the environment changes gradually. In scenario 2, when the width changes suddenly, the \textit{MPFC} cannot pass the narrow passage and collides with obstacles. In both scenarios of \textit{BFRC} and \textit{MPPRFC} strategies, the smallest distance between two robots $d_{ij}$ is always larger than $2r$, i.e. 0.4 m, and the smallest distance between the robot and the obstacles $d_{im}$ is always greater than robot radius $r$, i.e. 0.2 m. This proves that those strategies successfully move through the narrow passages without collisions. 
+While the \textit{PFC} exhibits the best acceleration cost-owing to the absence of transformations between modes-the cost associated with the \textit{PRC} is slightly higher but still shows significant improvement over \textit{BRC}. Both predictive control methods (\textit{PFC} and \textit{PRC}) demonstrate effective speed maintenance, as they approximately sustain the desired reference speed, $v_\text{ref}$. The mean order in all three strategies is close to 1, reaffirming their efficiency in maintaining the formation.
+% Table~\ref{tbl:analys} shows the statistics of three strategies in two different scenarios. It can be seen that, in both experiments, \textit{BFRC} and \textit{PRC} were able to move through different types of narrow passages to reach their target, while \textit{PFC} was only successful in scenario 1, where the width of the environment changes gradually. In scenario 2, when the width changes suddenly, the \textit{PFC} cannot pass the narrow passage and collides with obstacles. In both scenarios of \textit{BFRC} and \textit{PRC} strategies, the smallest distance between two robots $d_{ij}$ is always larger than $2r$, i.e. 0.4 m, and the smallest distance between the robot and the obstacles $d_{im}$ is always greater than robot radius $r$, i.e. 0.2 m. This proves that those strategies successfully move through the narrow passages without collisions. 
 
-We further investigate the effect of swarm size on the performance of the proposed strategy by using swarms of 4, 5, 7, 10, 15, and 20~robots. We evaluate the changes in the average \textit{order} value~$\Phi$ and formation error~$\varepsilon$ during the robot swarm's movement, as illustrated in Fig. \ref{fig:scalability}. The results indicate that as the number of robots in the formation increases, the proposed strategy maintains a high level of navigation ability, with the average \textit{order} value remaining close to~1. When considering the influence of the number of robots on the average formation error $\varepsilon$ value, we exclude the formation generation stage and the transition stage. The results show that, as the number of robots in the formation increases, the formation error remains relatively stable, fluctuating around 0.1~m. Additionally, statistics show that the time required to generate a formation from the initial position, $t_1$, and the time needed to switch formations between different modes, $t_2$, both increase as the number of robots in the formation grows. Specifically, for a formation of 4 robots, $t_1 \approx 2.5$~s and $t_2 \approx 2$~s, for a formation of 20~robots, $t_1\approx6.5$~s and $t_2\approx5.2$~s. Overall, the \textit{MPPRFC} algorithm has been shown to be effectively deployable in scalable robot swarms, confirming its robustness and efficiency across various swarm sizes.
+We further investigate the effect of swarm size on the performance of the proposed strategy by using swarms of 4, 5, 7, 10, 15, and 20~robots. We evaluate the changes in the average \textit{order} value~$\Phi$ and formation error~$\varepsilon$ during the robot swarm's movement, as illustrated in Fig. \ref{fig:scalability}. The results indicate that as the number of robots in the formation increases, the proposed strategy maintains a high level of navigation ability, with the average \textit{order} value remaining close to~1. When considering the influence of the number of robots on the average formation error $\varepsilon$ value, we exclude the formation generation stage and the transition stage. The results show that, as the number of robots in the formation increases, the formation error remains relatively stable, fluctuating around 0.1~m. Additionally, statistics show that the time required to generate a formation from the initial position, $t_1$, and the time needed to switch formations between different modes, $t_2$, both increase as the number of robots in the formation grows. Specifically, for a formation of 4 robots, $t_1 \approx 2.5$~s and $t_2 \approx 2$~s, for a formation of 20~robots, $t_1\approx6.5$~s and $t_2\approx5.2$~s. Overall, the \textit{PRC} algorithm has been shown to be effectively deployable in scalable robot swarms, confirming its robustness and efficiency across various swarm sizes.
 
 \subsection{Software-in-the-loop verification}
-\begin{figure*}
+\begin{figure*}[h!]
     \centering
     \begin{subfigure}[b]{0.56\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/tunnel.pdf}
@@ -138,7 +143,7 @@ We further investigate the effect of swarm size on the performance of the propos
     \caption{The SIL set up on Gazebo simulator. The environment consists of two large obstacles forming a cave-like environment. We use 5 Hummingbird drones equipped with perception sensors including LiDAR, RGBD camera, communication and positioning modules.}
     \label{fig:sil}
 \end{figure*}
-\begin{figure*}
+\begin{figure*}[h!]
     \centering
     \begin{subfigure}[b]{0.325\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/gazebo_01.png}
@@ -177,7 +182,7 @@ We further investigate the effect of swarm size on the performance of the propos
     \end{subfigure}
     \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/gazebo_correlation.pdf}
-    \caption{Correlation of number of robots and scaling factor $\kappa$}
+    \caption{Correlation of robot number and scaling factor $\kappa$}
     \label{fig:gazebo_mode}
     \end{subfigure}
     \begin{subfigure}[b]{0.48\textwidth}
@@ -211,14 +216,14 @@ Fig.~\ref{fig:snap} depicts the migration process of a formation passing through
 \subsection{Discussion}
 Through the results of simulation experiments, we show the  key properties of the proposed strategy as follows:
 
-\subsubsection{Decentralization} \textit{MPPRFC} is a fully decentralized control. Each robot's decisions are based solely on its own local sensor perceptions. Unlike the approach in~\cite{AlonsoMora2018} which requires network-wide communication under limited communication to update the information of all robots, the \textit{MPPRFC} utilizes only one-hop communication between each robot and its neighbors to update predictive states.
+\subsubsection{Decentralization} \textit{PRC} is a fully decentralized control. Each robot's decisions are based solely on its own local sensor perceptions. Unlike the approach in~\cite{AlonsoMora2018} which requires network-wide communication under limited communication to update the information of all robots, the \textit{PRC} utilizes only one-hop communication between each robot and its neighbors to update predictive states.
 
 \subsubsection{High performance}
 
-The simulation results in \ref{subsec:results} show that \textit{MPPRFC} successfully navigates robots through narrow environments, ensuring high-performance indicators such as low formation error, stable formation direction, and consistent speed. In contrast to the studies in~\cite{Elkilany2020,Vsrhelyi2018,Soria2021,AlonsoMora2018} which only shrink or expand the formation to adapt to changing space and have no evidence of movement through very narrow spaces, \textit{MPPRFC} enables the robot formation to transition into a tailgating (one-chain) configuration, allowing the robots to easily move through the very narrow spaces one at a time.
+The simulation results in \ref{subsec:results} show that \textit{PRC} successfully navigates robots through narrow environments, ensuring high-performance indicators such as low formation error, stable formation direction, and consistent speed. In contrast to the studies in~\cite{Elkilany2020,Vsrhelyi2018,Soria2021,AlonsoMora2018} which only shrink or expand the formation to adapt to changing space and have no evidence of movement through very narrow spaces, \textit{PRC} enables the robot formation to transition into a tailgating (one-chain) configuration, allowing the robots to easily move through the very narrow spaces one at a time.
 
 \subsubsection{Scalability}
-The \textit{MPPRFC} algorithm is successfully implemented with variable-sized robot swarms of 4, 5, 6, 7, 10, 15, and 20 robots without requiring any modifications to the algorithm. The measurement metrics of the swarm indicate that the requirements are satisfied, proving that \textit{MPPRFC} is scalable and maintains efficiency across different swarm sizes. 
+The \textit{PRC} algorithm is successfully implemented with variable-sized robot swarms of 4, 5, 6, 7, 10, 15, and 20 robots without requiring any modifications to the algorithm. The measurement metrics of the swarm indicate that the requirements are satisfied, proving that \textit{PRC} is scalable and maintains efficiency across different swarm sizes. 
 
 \subsubsection{Flexibility}
-The \textit{MPPRFC} algorithm provides flexibility and adaptability to different environmental geometries, automatically adjusting structures based on the scaling factor $\kappa$ in Eq.~\eqref{eqn:kappa} obtained from local sensor perceptual information. By analyzing and processing data from local sensors equipped on the robot, the swarm can adapt to numerous environmental structures. In narrow spaces, the proposed algorithm provides each robot with the ability for distributed decision-making, i.e., the formation can shrink/expand or transform to a straight line, to navigate effectively and safely. The \textit{MPPRFC} was also investigated on a simulation platform that replicates the physical environment, demonstrating its potential for applications in real-world scenarios.
+The \textit{PRC} algorithm provides flexibility and adaptability to different environmental geometries, automatically adjusting structures based on the scaling factor $\kappa$ in Eq.~\eqref{eqn:kappa} obtained from local sensor perceptual information. By analyzing and processing data from local sensors equipped on the robot, the swarm can adapt to numerous environmental structures. In narrow spaces, the proposed algorithm provides each robot with the ability for distributed decision-making, i.e., the formation can shrink/expand or transform to a straight line, to navigate effectively and safely. The \textit{PRC} was also investigated on a simulation platform that replicates the physical environment, demonstrating its potential for applications in real-world scenarios.
