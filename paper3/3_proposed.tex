@@ -7,19 +7,19 @@
     \label{fig:diagram}
 \end{figure}
 
-The aim of reconfiguration control is to drive the robot swarm through a cluttered environment having narrow passages. The swarm adheres to the following constraints: (\textit{C1}) maintain certain desired shapes; (\textit{C2}) move along a prioritized direction $u_\text{ref}\in\mathbb{R}^{3}$; (\textit{C3}) have the desired speed $\bar{v}_\text{ref}\in\mathbb{R}$; and (\textit{C4}) ensure no collision with other neighbors or obstacles in the environment. To address this problem, we propose a predictive reconfiguration control system as shown in Fig.~\ref{fig:diagram}. Inputs to this system include point cloud data from range sensors and the states of neighbor robots. Depending on the environment structure inferred from the point cloud data, the controller operates in either the \textit{``Formation''} or \textit{``Tailgating''} mode. The \textit{``Formation''} mode maintains the original shape, whereas the \textit{``Tailgating''} mode transforms the formation into a line to navigate through narrow spaces like valleys or tunnels. The controller is designed based on a weighted-sum of five cost functions to meet constraints $(C1)-(C4)$. An optimal solver is finally constructed to generate control signals for low-level controllers.
+The aim of reconfiguration control is to drive the robot swarm through a cluttered environment having narrow passages. The swarm adheres to the following constraints: (\textit{C1}) maintain certain desired shapes; (\textit{C2}) move along a prioritized direction $u_\text{ref}\in\mathbb{R}^{3}$; (\textit{C3}) obtain the desired speed $\bar{v}_\text{ref}\in\mathbb{R}$; and (\textit{C4}) ensure no collision with other neighbors or obstacles in the environment. To address this problem, we propose a predictive reconfiguration control system as shown in Figure~\ref{fig:diagram}. Inputs to this system include point cloud data from range sensors and the states of neighbor robots. Depending on the environment structure inferred from the point cloud data, the controller operates in either the \textit{``formation''} or \textit{``tailgating''} mode. The \textit{``formation''} mode maintains the desired shape, whereas the \textit{``tailgating''} mode transforms the formation into a line to navigate through narrow spaces like valleys or tunnels. The controller is designed based on a weighted-sum of five cost functions to meet constraints $(C1)-(C4)$. An optimal solver is then used to generate control signals for low-level controllers.
 
 Let $\delta_{ij}\in\mathbb{R}^3,\forall j\in \mathcal{N}_i$ be the vector representing the desired position of robot $i$ with respect to neighbor $j$. The formation is obtained via the following constraint~\cite{Dong2016,6798711}:
 \begin{equation}
     \lim_{k\to\infty}{\left(p_j(k)-p_i(k)+\kappa\delta_{ij}\right)}=0,\quad\forall i,j\in\{1,...,N\}, i\neq j
 \end{equation}
-where $\kappa\in[0,1]$ is a scaling factor representing the shrinkage of the formation. The desired relative position of robot $i$ in the formation then can be described as:
+where $\kappa\in[0,1]$ is a scaling factor representing the shrinkage level of the formation. The desired relative position of robot $i$ in the formation is then described as:
 \begin{equation}
     p^*_i(k)=\dfrac{1}{N_i}\sum_{j\in\mathcal{N}_i}{\left(p_j\left(k\right)+\kappa\delta_{ij}\right)}.
     \label{eqn:formation}
 \end{equation}
 
-During the transition between modes, each robot needs a leader as a reference to determine its position. The leader is selected based on the inner product $\tilde{p}_{ij}$ of the difference between robot $j$ in the neighbor set $\mathcal{N}_i$ and robot $i$, $p_j-p_i$, and the desired direction, $u_\text{ref}$, as follows:
+During the transition between modes, each robot determines a leader as a reference to determine its position. The leader is selected based on the inner product $\tilde{p}_{ij}$ of the difference between robot $j$ in the neighbor set $\mathcal{N}_i$ and robot $i$, $p_j-p_i$, and the desired direction, $u_\text{ref}$, as follows:
 \begin{equation}
     \tilde{p}_{ij} = \left\langle (p_j-p_i),u_\text{ref}\right\rangle.
     \label{eqn:tildep}
@@ -47,7 +47,7 @@ Select leader $l_i$ for robot $i$ to follow\tcc*[r]{Eq. \ref{eqn:li}}
 
 Algorithm~\ref{alg:ls} presents the leader selection process. 
 
-In the \textit{``Tailgating''} mode, robot~$i$ needs to align and keep a distance~$\bar{d}_\text{ref}\in\mathbb{R}$ with its leader~$l_i$, which can be formulated as follows:
+In the \textit{``tailgating''} mode, robot~$i$ needs to align and keep a distance~$\bar{d}_\text{ref}\in\mathbb{R}$ with its leader~$l_i$. This can be formulated as follows:
 \begin{equation}
     \lim_{k\to\infty}{\left\Vert p_{l_i}(k)-p_i(k)\right\Vert}=\bar{d}_\text{ref}
     \label{eqn:tailcon}
@@ -58,9 +58,15 @@ The desired relative position of robot~$i$ then can be determined as follows:
     \label{eqn:tailgating}
 \end{equation}
 
-Using equations \eqref{eqn:tildep} and \eqref{eqn:tailgating}, formation control is converted into tracking the desired position $p_i^*$, which can be handled by predictive controllers. 
+Using equations \eqref{eqn:tildep} and \eqref{eqn:tailgating}, the formation problem is converted into tracking the desired position $p_i^*$, which can be handled by predictive controllers. 
 
 \subsection{Predictive control design} 
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{paper3/images/perception.pdf}
+    \caption{The process of estimating the environment's width from the robot's range sensor.}
+    \label{fig:perception}
+\end{figure*}
 The proposed predictive controller uses the desired position $p_i^*$ as the reference and a set of cost functions to fulfill formation constraints $(C1)-(C4)$. The functions include tracking cost $J_{t,i}$, direction cost $J_{d,i}$, speed cost $J_{s,i}$, obstacle avoidance cost $J_{o,i}$, inter-agent collision cost $J_{i,i}$, and control effort cost $J_{u,i}$. Let $P\in\mathbb{N}^+$ be the prediction horizon, which is finite and shifts forward at each time step; $(\cdot)(k+l|k )$, $l \in\{0,...,P\}$, be the predicted value of $(\cdot)(k+l )$ when the information at time $t(k)$ is available; $X_i(k)\in\mathbb{R}^{6P}$ be the sequence of the predicted states $x_i(k+l|k)$ over the horizon $l\in\{1,...,P\}$; and $U_i(k)\in\mathbb{R}^{3P}$ be the sequence of the predicted control inputs $u_i(k)$ over the horizon $l\in\{0,...,P-1\}$. The predictive reconfiguration control can be modeled as a non-convex optimization problem as follows:
 \begin{equation}
 \begin{aligned}
@@ -89,14 +95,14 @@ The tracking term aims to drive the robots toward their reference positions to a
 where $w_t$ is a positive tracking weight.
 
 \subsubsection{Speed cost}
-The speed cost is used to maintain the desired speed $\bar{v}_\text{ref}$ of the swarm, which is essential for its efficient operation. It is defined as the squared difference between the actual and the desired speed of the robots as follows:
+The speed cost is used to maintain the desired speed $\bar{v}_\text{ref}$ of the swarm. It is defined as the squared difference between the actual and the desired speed of the robots as follows:
 \begin{equation}
     J_{s,i}(k)=w_s\sum_{l=1}^P\left(\left\Vert v_i(k+l|k)\right\Vert^2-\bar{v}_\text{ref}^2\right)^2,
 \end{equation}
 where $w_s$ is a positive weight.
 
 \subsubsection{Direction cost}
-This cost directs the robots to move in the desired direction $u_\text{ref}$. It is computed based on the normalized dot product between velocity $v_i$ and the desired direction $u_\text{ref}$ of robot $i$. The term equals zero when the velocity perfectly aligns with the reference direction and otherwise increases proportionally with the degree of misalignment. It is given as follows:
+This cost directs the robots to move in the desired direction $u_\text{ref}$. It is computed based on the normalized dot product between velocity $v_i$ and the desired direction $u_\text{ref}$ of robot $i$. It is equal to zero when the velocity perfectly aligns with the reference direction and otherwise increases proportionally with the degree of misalignment. It is given as follows:
 \begin{equation}
     J_{d,i}(k)=w_d\sum_{l=1}^P{\left(1-\dfrac{\left\langle v_i\left(k+l|k\right),u_\text{ref}\right\rangle^2}{\left\Vert v_i(k+l|k)\right\Vert^2}\right)^2},
 \end{equation}
@@ -107,17 +113,17 @@ To avoid collisions, the distance from a robot to any obstacle must be greater t
 \begin{equation}
 \begin{aligned}
     d_{im}(k+l|k)&\geq r \quad i\in\mathcal{N}, m\in\mathcal{M}_i(k)
-    \label{eqn:obsContraint}
+    \label{eq:obsContraint}
 \end{aligned}
 \end{equation}
 \begin{equation}
 \begin{aligned}
     d_{ij}(k+l|k)&\geq 2r \quad i\in\mathcal{N},j\in\mathcal{N}_i
-    \label{eqn:robotContraint}
+    \label{eq:robotContraint}
 \end{aligned}
 \end{equation}
 
-In this work, constraint \eqref{eqn:obsContraint} is represented via obstacle avoidance cost $J_{o,i}$ defined as a logistic function as follows~\cite{8202163}:   
+In this work, constraint (\ref{eq:obsContraint}) is represented via obstacle avoidance cost $J_{o,i}$ defined as a logistic function as follows~\cite{8202163}:   
 
 \begin{equation}
     J_{o,i}(k) = w_o\sum_{l=1}^P \dfrac{1}{1 + \exp{\left(\alpha\left(d_{im}^\text{min}(k+l|k) - r\right)\right)}},
@@ -127,7 +133,7 @@ where $w_o > 0$ is a constant weight, $\alpha > 0$ is a smoothness parameter, an
     d_{im}^\text{min}(k+l|k)=\min\left\{d_{im}(k+l|k)|m\in\mathcal{M}_i\right\}.
 \end{equation}
 
-Similarly, constraint \eqref{eqn:robotContraint} is represented via the inter-agent collision cost $J_{i,i}$ defined as follows~\cite{736776}:
+Similarly, constraint (\ref{eq:robotContraint}) is represented via an inter-agent collision cost $J_{i,i}$ defined as follows~\cite{736776}:
 \begin{equation}
     J_{i,i}(k)=\dfrac{w_i}{N_i}\sum_{l=1}^P{\sum_{j\in\mathcal{N}_i}}F_{ij}(k+l|k),
 \end{equation}
@@ -149,24 +155,20 @@ The control effort cost is used as a penalty term to minimize the control signal
 where $w_u>0$ is a constant control weight.
 
 \subsection{Formation reconfiguration}\label{sec:obs_aware}
-\begin{figure*}
-    \centering
-    \includegraphics[width=\textwidth]{paper3/images/perception.pdf}
-    \caption{The process of estimating the environment's width from the robot's range sensor.}
-    \label{fig:perception}
-\end{figure*}
 
-Depending on the environment's width, the control system can determine the formation shape and scaling factor $\kappa$. The process of estimating the environment's width is illustrated in Fig.~\ref{fig:perception}. Robot $i$ first obtains point cloud data $\mathcal{M}_i$ (green) from its local sensor and then selects a point set $\mathcal{M}_{ui}$ (red) in front of the robot along the moving direction $u_\text{ref}$ as follows:
+Depending on the environment's width, the control system can determine the formation shape and scaling factor $\kappa$. The process of estimating the environment's width is illustrated in Figure~\ref{fig:perception}. Robot $i$ first obtains point cloud data $\mathcal{M}_i$ (green) from its local sensor and then selects a point set $\mathcal{M}_{ui}$ (red) in front of the robot along the moving direction $u_\text{ref}$ as follows:
 \begin{equation}
-    \mathcal{M}_{ui} = \left\{\mathcal{M}_{i}\vert\left\langle\left(p_i-\mathcal{M}_{i}\right),u_\text{ref}\right\rangle<0\right\}
+    \mathcal{M}_{ui} = \left\{\mathcal{M}_{i}\vert\left\langle\left(p_i-\mathcal{M}_{i}\right),u_\text{ref}\right\rangle<0\right\}.
     \label{eqn:mui}
 \end{equation}
-The DBSCAN algorithm~\cite{10.5555/3001460.3001507} is then used to divide $\mathcal{M}_{ui}$ into two clusters corresponding to the left (blue) and right (yellow) sides of the robot. The data points $\mathcal{M}_{i,l}$ and $\mathcal{M}_{i,r}$ from those clusters with the shortest distance to $u_\text{ref}$ are then selected. Using these points, the environment's width is computed as follows:
+The DBSCAN algorithm~\cite{10.5555/3001460.3001507} is then used to divide $\mathcal{M}_{ui}$ into two clusters corresponding to the left (blue) and right (yellow) sides of the robot. Data points $\mathcal{M}_{i,l}$ and $\mathcal{M}_{i,r}$ from those clusters with the shortest distance to $u_\text{ref}$ are then selected. Using these points, the environment's width is computed as:
 \begin{equation}
     w_e= \left\vert\left\langle\left(\mathcal{M}_{i,r}-\mathcal{M}_{i,l}\right),u_\text{ref}\right\rangle\right\vert
     \label{eqn:we}
 \end{equation}
-The pseudocode to estimate the environment's width is presented in Algorithm~\ref{alg:we}. On the other hand, the formation's width $w_f$ is predefined for each specific formation shape. The scaling factor $\kappa$ then can be computed based on the environment's and formation's width as follows:
+The pseudocode to estimate the environment's width is presented in Algorithm~\ref{alg:we}. 
+
+On the other hand, the formation's width $w_f$ is predefined for each specific formation shape. The scaling factor $\kappa$ then can be computed based on the environment's and formation's width as follows:
 \begin{equation}
     \kappa = 
     \begin{cases} 
@@ -192,21 +194,21 @@ Compute the environment's width $w_e$\tcc*[r]{Eq. \ref{eqn:we}}
 \label{alg:our}
 Get data point set $\mathcal{M}_i$\;
 \If{$\mathcal{M}_i$ is empty}{
-    mode $\leftarrow$ \textit{``Formation''}\;
+    mode $\leftarrow$ \textit{``formation''}\;
     $\kappa \leftarrow 1.0$\;
 }
 \Else{
     Get the environment's width $w_e$\tcc*[r]{Alg. \ref{alg:we}}
     \If{$w_e$ is None}{
-        mode $\leftarrow$ \textit{``Formation''}\;
+        mode $\leftarrow$ \textit{``formation''}\;
         $\kappa \leftarrow 1.0$\;
     }
     \Else{
         \If{$w_e\leq\lambda r$}{
-            mode $\leftarrow$ \textit{``Tailgating''}\;
+            mode $\leftarrow$ \textit{``tailgating''}\;
         }
         \Else{
-            mode $\leftarrow$ \textit{``Formation''}\;
+            mode $\leftarrow$ \textit{``formation''}\;
             Estimate the desired formation width $w_f$\;
             \If{$w_e-2r\leq w_f$}{
                 Compute the scaling factor $\kappa$\tcc*[r]{Eq. \ref{eqn:kappa}}
@@ -218,11 +220,11 @@ Get data point set $\mathcal{M}_i$\;
     }
 }
 \Switch{mode}{
-\Case{``Formation''}
+\Case{``formation''}
 {
     Get the desired position $p_i^*$\tcc*[r]{Eq. \ref{eqn:formation}}
 }
-\Case{``Tailgating''}
+\Case{``tailgating''}
 {
     Select a leader to follow\tcc*[r]{Alg. \ref{alg:ls}}
     Get the desired position $p_i^*$\tcc*[r]{Eq. \ref{eqn:tailgating}}
@@ -230,10 +232,10 @@ Get data point set $\mathcal{M}_i$\;
 }
 Establish the formation cost function\tcc*[r]{Eqs. \ref{eqn:J}-\ref{eqn:constraints}}
 
-Minimize the cost function to obtain the optimal control signal $u_i^*$\;
+Minimize the cost function to obtain the optimal control signal $u_i^*$\tcc*[r]{MPC solver~\cite{2020SciPy-NMeth}}
 
 \Return $u_i^*$\;
 \end{algorithm}
 
-Algorithm~\ref{alg:our} presents the whole control system in operation. At each time step, the system estimates the width of the environment to determine the formation mode and the scaling factor $\kappa$. It then computes the desired position $p_i^*$ for each robot and establishes the formation cost function using equations \eqref{eqn:J} - \eqref{eqn:constraints}. This problem can be solved to find the optimal control signal $u_i^*$ using common nonlinear programming (NLP)
+Algorithm~\ref{alg:our} presents the pseudocode of the PRC. At each time step, the system estimates the width of the environment to determine the formation mode and the scaling factor $\kappa$. It then computes the desired position $p_i^*$ for each robot and establishes the formation cost function using equations \eqref{eqn:J} - \eqref{eqn:constraints}. This problem is then solved to find the optimal control signal $u_i^*$ using common nonlinear programming (NLP)
 solvers, such as the Sequential Least Squares Programming (SLSQP)~\cite{kraft1988software}. In this work, we implemented the solver in Python using the optimization software library SciPy~\cite{2020SciPy-NMeth}.

@@ -1,18 +1,19 @@
 \chapter{Predictive Reconfiguration Control for Multi-Robot Formation in Cluttered Environments}\label{paper3}
 
-\noindent{\normalsize Published in:\\
-\textit{Preprint}, 2024\\
-% DOI:
+\noindent{\normalsize Submitted in:\\
+\textit{IEEE Transactions on Control of Network Systems}, 2024\\
+Code: {\tt\url{https://github.com/duynamrcv/prc}}\\
+Video: {\tt\url{https://youtu.be/oAhgOOhFSCA}}
 }
 \vspace{1cm}
 
 \noindent\textit{\textbf{Abstract}}
 
-Formation control plays a key role in multi-robot systems, in which a group of robots is coordinated to enhance task performance. Ensuring the safety of robot formations in clustered environments, especially in narrow space environments, remains a significant challenge. This paper proposes a Predictive Reconfiguration Control (PRC) strategy for a multi-robot swarm. The strategy proactively ensures the safety of robot formations moving through narrow space by changing the shape according to the environment observed from local sensors. The formation navigation method is modeled as objective functions that express the requirements, constraints, and limitations of the system in the formation movement mission. Additionally, a perceptual formation reconfiguration strategy is also proposed for distributed decision-making. Finally, simulations, comparisons, and software-in-the-loop testing results are provided to demonstrate the effectiveness of the proposed approach.
+Reconfiguration control is essential for multi-robot systems to adapt their formations in response to environmental conditions when carrying out complex tasks. This paper introduces a novel approach called predictive reconfiguration control (PRC) to navigate a swarm of robots through cluttered environments with narrow passages such as valleys or tunnels. The robot swarm is modeled as a directed sensing graph where each node represents a robot capable of collecting real-time data on the environment and the states of nearby robots within its communication range. The information from each node is used as input to the controller to adjust its parameters in two control modes, \textit{``formation''} and \textit{``tailgating''}, which serve as the basis for formation adaptation. A set of cost functions is then introduced to represent swarm constraints, including formation shape, reference speed, movement direction, and collision avoidance. These cost functions also allow for the prediction of the swarm's states so that model predictive control solvers can be used to minimize the cost for optimal control signals. Results from a number of comparisons and evaluations show that the proposed controller is not only capable of navigating the robot swarm through challenging environments with narrow passages but also outperforms other state-of-the-art formation control techniques in most performance metrics. Software-in-the-loop tests have been conducted to verify the validity of the proposed controller for practical scenarios.
 % \end{abstract}
 
 \noindent\textbf{\textit{Keywords:}}
-multi-robot system, distributed control, reconfiguration control, model predictive control, cluttered environments
+formation control, multi-robot system, distributed control, reconfiguration control, model predictive control
 % \end{keywords}
 
 \input{paper3/1_introduction}
