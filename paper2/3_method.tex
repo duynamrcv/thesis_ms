@@ -1,13 +1,15 @@
 \section{Event-based Reconfiguration Control}\label{sec3}
 
-To address the mentioned problem, the several potential force-based behaviors for each robot $i$ are used to synthetic to the proposed controller, which contains emergent strategies to navigate TVF to deal with the narrow space environment while ensuring the shape and the safety of TVF, named \textit{``Formation''}, and \textit{``Tailgating''}. In \textit{``Formation''} mode, the TVF maintains the original configuration, while in \textit{``Tailgating''} mode, the TVF transforms to the straight line configuration, as presented in Section~\ref{sec:config}. The detail of the proposed strategies is described in Fig.~\ref{fig:1control_diagram}.
+To address the TVF problem, several potential force-based behaviors for each robot $i$ are used to synthetic to the proposed controller, which contains emergent strategies to navigate TVF to deal with the narrow space environment while ensuring the shape and the safety of TVF, named \textit{``formation''}, and \textit{``tailgating''}. In \textit{``formation''} mode, the TVF maintains the original configuration, while in \textit{``tailgating''} mode, the TVF transforms to the straight line configuration, as presented in Section~\ref{sec:config}. The detail of the proposed strategies is described in Figure~\ref{fig:1control_diagram}.
 
 \begin{figure*}
     \centering
-    \includegraphics[width=0.65\textwidth]{paper2/images/control_diagram.pdf}
-    \caption{Overview of the proposed event-based reconfiguration control. The proposed strategy is constructed by two primary emergent strategy, including \textit{``Formation''} and \textit{``Tailgating''}, which are highlighted by red boxes. There are five individual behaviors that contribute to the emergent strategy, which illustrated via blue boxes.}
+    \includegraphics[width=0.85\textwidth]{paper2/images/control_diagram.pdf}
+    \caption{Overview of the proposed event-based reconfiguration control. The proposed strategy is constructed by two primary emergent strategy, including \textit{``formation''} and \textit{``tailgating''}, which are highlighted by red boxes. There are five individual behaviors that contribute to the emergent strategy, which illustrated via blue boxes.}
     \label{fig:1control_diagram}
 \end{figure*}
+
+Our approach incorporates an event-triggering mechanism into the TVF that allows the swarm to adapt its formation shape in response to environmental conditions for safe navigation, as illustrated in Figure~\ref{fig:1problem}. Initially, the desired configuration assigned to the TVF is denoted $\delta_0$. At time $k$, the TVF can maintain the initial topology, i.e. $\delta(k)=\delta_0$. However, the confined space does not allow the formation maintaining topology $\delta_0$ due to the potential collision. As a result, a new topology is triggered to be applied depending on the surrounding space. Once the confined space is not detected by the robot, the initial topology $\delta_0$ of the formation is restored. With the proposed control approach, the formation configuration can be effectively managed. During the movement of the TVF, collaborative and collision avoidance controls are driven by the APF term in the proposed control strategy.
 
 \subsection{Individual behaviors}
 According to~\cite{Vsrhelyi2018}, the potential field model is used to design individual behaviors a state-of-the-art model that allows robot swarm navigation in confined environments. From the original model, we design the rule of attraction for formation maintenance, tailgating and goal orientation; the rule of repulsion to prevent inter-robot collisions, and obstacle avoidance to avoid collisions with 
@@ -18,7 +20,7 @@ Firstly, to ensure goal-directed motion in environments, a target reaching behav
     v_i^m=v_\text{ref}u_\text{ref}
 \end{equation}
 
-Secondly, the formation behavior is designed as an attractive force that drive robots to move toward their desired positions. Denote $\kappa\in\mathbb{R}$ be the scale ratio, which can be determined in Section~\ref{sec:edc}. Thus, a relative position-based controller of the form to maintain the desired shape, and enhance the abilities of TVF with scalable capabilities, which is given as follow:
+Secondly, the formation behavior is designed as an attractive force that drive robots to move toward their desired positions. Denote $\kappa\in\mathbb{R}$ be the scale ratio, which can be determined in Section~\ref{sec:erc}. Thus, a relative position-based controller of the form to maintain the desired shape, and enhance the abilities of TVF with scalable capabilities, which is given as follow:
 \begin{equation}
     v^f_i=k_f\sum_{j=1}^n{\left(p_j-p_i-\kappa\left(\delta_j-\delta_i\right)\right)}
     \label{eqn:1uf}
@@ -48,7 +50,7 @@ As a result, the value of $\tilde{p}_{ij}$ is positive, proving that robot $j$ i
     \label{eqn:1li}
 \end{equation}
 
-Finally, inter-agent avoidance and obstacle avoidance behaviors are also designed to prevent collision. Denote $\mathcal{M}_i$ be the set of finite points on the obstacle's boundary, which are the closest to robot $i$, as illustrated in Fig.~\ref{fig:1model}. Those repulsive forces are given as follows:
+Finally, inter-agent avoidance and obstacle avoidance behaviors are also designed to prevent collision. Denote $\mathcal{M}_i$ be the set of finite points on the obstacle's boundary, which are the closest to robot $i$, as illustrated in Figure~\ref{fig:1model}. Those repulsive forces are given as follows:
 \begin{equation}
     v_i^i=k_{i}\sum_{j=1,j\neq i}^n{v_{ij}^i}
 \end{equation}
@@ -71,13 +73,13 @@ where $k_i,k_o>0$ is the inter-agent collision and obstacle avoidance gains, res
     \label{eqn:1uo}
 \end{equation}
 
-\subsection{Event-based Reconfiguration Control strategy}\label{sec:edc}
+\subsection{Event-based Reconfiguration Control strategy}\label{sec:erc}
 
-As mentioned in Fig.~\ref{fig:1control_diagram}, the proposed event-based reconfiguration control includes two emergent strategies to navigate TVF safely through narrow space environment while maintaining the shape and ensuring the safety of swarm. At each time step, each robot determine the mode itself based on the sensing data collected from local sensor. The overall strategy can be summarised as follows:
+As mentioned in Figure~\ref{fig:1control_diagram}, the proposed event-based reconfiguration control includes two emergent strategies to navigate TVF safely through narrow space environment while maintaining the shape and ensuring the safety of swarm. At each time step, each robot determine the mode itself based on the sensing data collected from local sensor. The overall strategy can be summarised as follows:
 \begin{equation}
     \tilde{v}_i=\begin{cases}
-        v_i^f+v_i^m+v_i^c+v_i^o & \text{if mode = \textit{``Formation''}}\\
-        v_i^t+v_i^m+v_i^c+v_i^o & \text{if mode = \textit{``Tailgating''}}
+        v_i^f+v_i^m+v_i^c+v_i^o & \text{if mode = \textit{``formation''}}\\
+        v_i^t+v_i^m+v_i^c+v_i^o & \text{if mode = \textit{``tailgating''}}
     \end{cases}
     \label{eqn:1v}
 \end{equation}
@@ -99,7 +101,7 @@ Each obstacle point in the set $\mathcal{M}_{i}$ is clustered into two clusters 
     \label{eqn:1we}
 \end{equation}
 
-The estimation of the environment's width can be depicted in Fig.~\ref{fig:1we}. Besides, the formation's width $w_f$ can be easily determined through the predefined formation topology. Given the widths of the environment and formation, the scaling factor $\kappa$, which contributes to \eqref{eqn:1uf}, can be computed as follows:
+The estimation of the environment's width can be depicted in Figure~\ref{fig:1we}. Besides, the formation's width $w_f$ can be easily determined through the predefined formation topology. Given the widths of the environment and formation, the scaling factor $\kappa$, which contributes to \eqref{eqn:1uf}, can be computed as follows:
 \begin{equation}
     \kappa = 
     \begin{cases} 
@@ -115,22 +117,22 @@ As a result, each robot $i$ can choose its mode and compute scaling factor $\kap
 \label{alg:1our}
 Get a set of observed obstacle points $\mathcal{M}_i$\;
 \If{$\mathcal{M}_i$ is empty}{
-    mode $\leftarrow$ \textit{``Formation''}\;
+    mode $\leftarrow$ \textit{``formation''}\;
     $\kappa \leftarrow 1.0$\;
 }
 \Else{
     Determine the obstacle points $o_l$, $o_r$\;
     \If{$\nexists o_l$ or $\nexists o_r$}{
-        mode $\leftarrow$ \textit{``Formation''}\;
+        mode $\leftarrow$ \textit{``formation''}\;
         $\kappa \leftarrow 1.0$\;
     }
     \Else{
-        Get the space's width $w_e$\tcc*[r]{Eq. \ref{eqn:1we}}
+        Get the space's width $w_e$\tcc*[r]{Eq. \ref{eqn:we}}
         \If{$w_e\leq\lambda r$}{
-            mode $\leftarrow$ \textit{``Tailgating''}\;
+            mode $\leftarrow$ \textit{``tailgating''}\;
         }
         \Else{
-            mode $\leftarrow$ \textit{``Formation''}\;
+            mode $\leftarrow$ \textit{``formation''}\;
             Estimate the desired formation width $w_f$\;
             \If{$w_e-2r\leq w_f$}{
                 Compute the scaling factor $\kappa$\tcc*[r]{Eq. \ref{eqn:1kappa}}
@@ -159,9 +161,9 @@ where $\tilde{u}_i(k+1) =(\tilde{v}_i(k+1)-\tilde{v}_i(k)) /\tau$. Then, we appl
 Given the TVF as described in~\eqref{eqn:1model}, under the control law given in \eqref{eqn:1v}, the TVF asymptotically converges to the desired configuration.
 \end{theorem}
 \begin{proof}
-To prove Theorem~\ref{the:stability}, we consider the negligible effect of collision avoidance behaviors and also neglect the constant impact of migration behavior, for any time $t(k)$, thus we conduct a stability analysis of the TVF in main contributions, i.e. formation and tailgating behaviors, which located in two separate modes, \textit{``Formation''} and \textit{``Tailgating''}, as mentioned in Section~\ref{sec:config}, which together ultimately lead to our conclusion.
+To prove Theorem~\ref{the:stability}, we consider the negligible effect of collision avoidance behaviors and also neglect the constant impact of migration behavior, for any time $t(k)$, thus we conduct a stability analysis of the TVF in main contributions, i.e. formation and tailgating behaviors, which located in two separate modes, \textit{``formation''} and \textit{``tailgating''}, as mentioned in Section~\ref{sec:config}, which together ultimately lead to our conclusion.
 
-\textbf{Mode \textit{``Formation''}:} Denote $L$ be the Laplacian matrix of the interaction topology graph of the swarm. Due to the fully connected, the entries of $L=\left[l_{ij}\right]$ are given as follows:
+\textbf{Mode \textit{``formation''}:} Denote $L$ be the Laplacian matrix of the interaction topology graph of the swarm. Due to the fully connected, the entries of $L=\left[l_{ij}\right]$ are given as follows:
 \begin{equation}
     l_{ij}=\begin{cases}
     -1 & \text{if }i\neq j \\
@@ -198,7 +200,7 @@ Talking the first derivative of $V_f$ gives
 According to the LaSalle’s invariance
 principle, it can be stated that as $k\to\infty$ the state $P$ will converge to the largest invariant subset $\Omega=\left\{P|\dot{V}_f=0\right\}$. In other words, the formation will close to the desired shape.
 
-\textbf{Mode \textit{``Tailgating''}:} In case robot $i$ do not have it leader, we do not analysis the stability, because this robot do not contribute to the configuration maintenance of the TVF. Otherwise, in case robot $i$ has its leader $l_i$, we define a candidate Lyapunov function as follows:
+\textbf{Mode \textit{``tailgating''}:} In case robot $i$ do not have it leader, we do not analysis the stability, because this robot do not contribute to the configuration maintenance of the TVF. Otherwise, in case robot $i$ has its leader $l_i$, we define a candidate Lyapunov function as follows:
 \begin{equation}
     V_{t}=\dfrac{1}{2}\left(p_{l_i}-p_{i}-d_\text{ref}\dfrac{v_{l_i}}{\left\Vert v_{l_i}\right\Vert}\right)^{T}\left(p_{l_i}-p_{i}-d_\text{ref}\dfrac{v_{l_i}}{\left\Vert v_{l_i}\right\Vert}\right)
 \end{equation}
@@ -217,5 +219,5 @@ Therefore, the Lyapunov stability is satisfied. That leads to robot $i$ converge
 \end{proof}
 
 \begin{remark}
-In the research of this paper, decentralized control architecture is adopted for the TVF, i.e., each robot in the formation can decide the mode itself based on the information collected from surrounding environment. Correspondingly, the event-triggering condition we designed in Algorithm~\ref{alg:1our} is also distributed and presented in the form of compact sets. Besides, the control law \eqref{eqn:1v} is demonstrated stability based on Lyapunov theory. Under the action of the designed control law, the TVF will asymptotically achieve the desired configuration in both modes.
+In the research of this paper, decentralized control architecture is adopted for the TVF. Each robot in the formation can decide the mode itself based on information collected from the surrounding environment. The event-triggering condition designed in Algorithm~\ref{alg:1our} is also distributed and presented in the form of compact sets. Besides, the control law \eqref{eqn:1v} demonstrates stability based on Lyapunov theory. Under the action of the designed control law, the TVF will asymptotically achieve the desired configuration in both modes.
 \end{remark}
