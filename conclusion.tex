@@ -1,5 +1,6 @@
 \chapter{Conclusion and Future Works}\label{conclusion}
 
+\section{Conclusion}
 Driven by the transformative potential of multi-UAV systems across various missions, such as search and rescue (SAR), this master's thesis presents a set of contributions addressing the autonomous navigation of UAV formations through clustered environments, particularly in narrow spaces. Below is a summary of the master's thesis, highlighting the key insights and contributions.
 
 To enable the safe navigation of a V-shaped formation, \textit{Method 1} focuses on formation control by designing a distributed architecture for self-reconfiguration. The proposed method integrates several adaptive behaviors that allow the V-shape formation to shrink or expand based on the width of the environment. In collision-free scenarios, the approach ensures shape maintenance and inter-UAV collision avoidance.
@@ -8,6 +9,7 @@ Building upon the foundation laid by \textit{Method 1}, \textit{Method 2} extend
 
 While the first two methods provide foundational strategies for navigation, they do not explicitly account for the physical constraints and limitations of robotic systems. To address this gap, \textit{Method 3} formulates the reconfiguration formation control problem as an optimization problem, fully incorporating system constraints. The behaviors introduced in \textit{Method 2} are converted into objective functions, with control signals derived by minimizing a weighted-sum cost function subject to system constraints. Environmental data is collected to estimate the width of the surrounding space, ensuring the optimal solution to enhance the effectiveness of reconfiguration formation control, and prioritizing safety and collision avoidance.
 
+\section{Future direction}
 Future research will focus on developing safety-critical reconfiguration control strategies to enhance the safe motion of UAVs and minimize the risk of collisions with other robots or environmental obstacles. Given the challenges posed by narrow spaces, mitigating collisions with neighboring robots or the environment is crucial. Enhancing safety-critical mechanisms is essential to ensure reliable, collision-free operation.
 
 Additionally, exploring non-communication formation reconfiguration control methods will be key to improving system autonomy and robustness. Vision-based perception is a promising alternative for addressing these challenges, providing the system with the capability to perceive and adapt to its surroundings independently. These advancements aim to push the boundaries of autonomous UAV formations, ensuring they can operate safely and efficiently in complex and constrained environments.
