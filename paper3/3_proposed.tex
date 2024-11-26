@@ -163,7 +163,7 @@ Depending on the environment's width, the control system can determine the forma
 \end{equation}
 The DBSCAN algorithm~\cite{10.5555/3001460.3001507} is then used to divide $\mathcal{M}_{ui}$ into two clusters corresponding to the left (blue) and right (yellow) sides of the robot. Data points $\mathcal{M}_{i,l}$ and $\mathcal{M}_{i,r}$ from those clusters with the shortest distance to $u_\text{ref}$ are then selected. Using these points, the environment's width is computed as:
 \begin{equation}
-    w_e= \left\vert\left\langle\left(\mathcal{M}_{i,r}-\mathcal{M}_{i,l}\right),u_\text{ref}\right\rangle\right\vert
+    w_e= \left\Vert\left(\mathcal{M}_{i,r}-\mathcal{M}_{i,l}\right)\times u_\text{ref}\right\Vert
     \label{eqn:we}
 \end{equation}
 The pseudocode to estimate the environment's width is presented in Algorithm~\ref{alg:we}. 

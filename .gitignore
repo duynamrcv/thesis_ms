@@ -8,5 +8,7 @@
 **.out
 **.run.xml
 **.gz
+**.lot
+**.lof
 **.toc
 main.pdf

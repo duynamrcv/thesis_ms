@@ -95,9 +95,9 @@ To select the suitable mode at each time step, an event-based mode switching is 
     \label{fig:1we}
 \end{figure}
 
-Each obstacle point in the set $\mathcal{M}_{i}$ is clustered into two clusters on the left and right sides of the robot in $u_\text{ref}$ direction. Denote $o_l$ and $o_r$ respectively be the nearest obstacle point on the left and right sides whose distance to the robot $i$ is minimum. If $o_l$ and $o_r$ exist, the width of the environment can be estimated as follows:
+Each obstacle point in the set $\mathcal{M}_{i}$ is clustered into two clusters on the left and right sides of the robot in $u_\text{ref}$ direction. Denote $o_l$ and $o_r$ are the nearest obstacle points on the left and right sides, respectively, whose distance to the robot $i$ is minimum. If $o_l$ and $o_r$ exist, the width of the environment can be estimated by the magnitude of the cross product of the vector $(o_r-o_l)$ and the desired direction $u_\text{ref}$ as follows:
 \begin{equation}
-    w_e= \left\vert\left\langle\left(o_r-o_l\right),u_\text{ref}\right\rangle\right\vert
+    w_e= \left\Vert\left(o_r-o_l\right)\times u_\text{ref}\right\Vert
     \label{eqn:1we}
 \end{equation}
 
@@ -219,5 +219,5 @@ Therefore, the Lyapunov stability is satisfied. That leads to robot $i$ converge
 \end{proof}
 
 \begin{remark}
-In the research of this paper, decentralized control architecture is adopted for the TVF. Each robot in the formation can decide the mode itself based on information collected from the surrounding environment. The event-triggering condition designed in Algorithm~\ref{alg:1our} is also distributed and presented in the form of compact sets. Besides, the control law \eqref{eqn:1v} demonstrates stability based on Lyapunov theory. Under the action of the designed control law, the TVF will asymptotically achieve the desired configuration in both modes.
+In the research of this chapter, decentralized control architecture is adopted for the TVF. Each robot in the formation can decide the mode itself based on information collected from the surrounding environment. The event-triggering condition designed in Algorithm~\ref{alg:1our} is also distributed and presented in the form of compact sets. Besides, the control law \eqref{eqn:1v} demonstrates stability based on Lyapunov theory. Under the action of the designed control law, the TVF will asymptotically achieve the desired configuration in both modes.
 \end{remark}
