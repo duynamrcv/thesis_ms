@@ -27,19 +27,19 @@
 A number of simulations, comparisons, and software-in-the-loop tests have been conducted to evaluate the performance of the PRC with details as follows.
 
 \subsection{Evaluation Setup}
-The swarm includes five identical robots, each with a radius of $r=0.2$~m, a maximum speed of $\left\Vert v_\text{max}\right\Vert=1.5$~m/s, and a maximum control input $\left\Vert u_\text{max}\right\Vert=2.0$~m/s$^2$. The robot is equipped with a range sensor having the sensing range of $r_s=3$~m. The desired formation shape is set to a pentagon, the reference velocity is $\bar{v}_\text{ref}=1$~m/s, and the desired direction is $u_\text{ref}=[1,0,0]^T$. The environments include two structures, both having narrow passages, as depicted in Figure~\ref{fig:path}.
+The swarm includes five identical robots, each with a radius of $r=0.2$~m, a maximum speed of $\left\Vert \mathbf{v}_\text{max}\right\Vert=1.5$~m/s, and a maximum control input $\left\Vert \mathbf{u}_\text{max}\right\Vert=2.0$~m/s$^2$. The robot is equipped with a range sensor having the sensing range of $r_s=3$~m. The desired formation shape is set to a pentagon, the reference velocity is $\bar{v}_\text{ref}=1$~m/s, and the desired direction is $\mathbf{u}_\text{ref}=[1,0,0]^T$. The environments include two structures, both having narrow passages, as depicted in Figure~\ref{fig:path}.
 
 The metrics used for evaluation include the success rate, mean \textit{order} $\Phi$, mean speed (m/s), mean formation error $\varepsilon$ (m), and acceleration cost $\Gamma$ (m$^2$/s$^4$) \cite{Zhang2021}. The \textit{order} metric~\cite{Vicsek1995} measures the heading consensus of the robots and is computed as:
 \begin{equation}
-    \Phi=\dfrac{1}{N}\left\Vert\sum_{i=1}^N{\dfrac{v_i}{\left\Vert v_i\right\Vert}}\right\Vert
+    \Phi=\dfrac{1}{N}\left\Vert\sum_{i=1}^N{\dfrac{\mathbf{v}_i}{\left\Vert \mathbf{v}_i\right\Vert}}\right\Vert
 \end{equation}
 Its value ranges from 0 to 1, with 1 indicating the robots have the same direction. The \textit{formation error} measures the deviation between the desired and actual positions of the robots and is calculated as~\cite{6798711}:
 \begin{equation}
-    \varepsilon_i = \left\Vert p_i-p^*_i\right\Vert
+    \varepsilon_i = \left\Vert \mathbf{p}_i-\mathbf{p}^*_i\right\Vert
 \end{equation} 
 The acceleration cost indicates the control effort and is given by:
 \begin{equation}
-    \Gamma = \dfrac{1}{N}\sum_{i=1}^N{\left\Vert u_i(k)\right\Vert^2}
+    \Gamma = \dfrac{1}{n}\sum_{i=1}^N{\left\Vert \mathbf{u_i}(k)\right\Vert^2}
 \end{equation} 
 
 The comparing methods include the behavior-based reconfiguration control (BRC) \cite{Vsrhelyi2018} and the predictive formation control (PFC)~\cite{9562281}. In evaluation, each method is run 10 times for each scenario.   
@@ -161,32 +161,32 @@ In another experiment, we vary the swarm size between 4, 5, 7, 10, 15, and 20 ro
 
 \begin{figure*}
     \centering
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/gazebo_path.pdf}
     \caption{The formation and motion paths}
     \label{fig:gazebo_path}
     \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/gazebo_correlation.pdf}
     \caption{Number of robots and scaling factor $\kappa$}
     \label{fig:gazebo_mode}
     \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/gazebo_speed.pdf}
     \caption{The speed profile}
     \label{fig:gazebo_speed}
     \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/gazebo_order.pdf}
     \caption{The \textit{order} metric $\Phi$}
     \label{fig:gazebo_order}
     \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/gazebo_error.pdf}
     \caption{The \textit{formation error} $\varepsilon_i$}
     \label{fig:gazebo_error}
     \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.495\textwidth}
     \includegraphics[width=\textwidth]{paper3/images/gazebo_computation.pdf}
     \caption{The computational time}
     \label{fig:gazebo_time}

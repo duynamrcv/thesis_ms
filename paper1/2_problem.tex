@@ -8,11 +8,11 @@ The V-shape formation is chosen due to its advantages in improving maneuverabili
     \label{fig:chap2_model}
 \end{figure}
  
-The formation consists of $n$ identical UAVs, each equipped with sensory modules for positioning and navigation such as Lidar, GPS and inertial measurement unit (IMU). The UAV is also equipped with a communication module that allows peer-to-peer communication among the UAVs. At height $h$, a UAV $R_i$ is modeled as a particle moving in a 2D plane located at that height with position $p_i$ and heading angle $\psi_i$. The single-integrator kinematic model of UAV $R_i$ can be expressed as follows:
+The formation consists of $n$ identical UAVs, each equipped with sensory modules for positioning and navigation such as Lidar, GPS and inertial measurement unit (IMU). The UAV is also equipped with a communication module that allows peer-to-peer communication among the UAVs. At height $h$, a UAV $R_i$ is modeled as a particle moving in a 2D plane located at that height with position $\mathbf{p}_i$ and heading angle $\psi_i$. The single-integrator kinematic model of UAV $R_i$ can be expressed as follows:
 \begin{equation}
-    \dot{p}_i = u_i,
+    \dot{\mathbf{p}}_i = \mathbf{v}_i,
 \end{equation}
-where $u_i=[u_{ix},u_{iy}]^T$ is the velocity vector of UAV $R_i$. The heading angle $\psi_i$ then can be obtained as:
+where $\mathbf{v}_i=[v_{ix},v_{iy}]^T$ is the velocity vector of UAV $R_i$. The heading angle $\psi_i$ then can be obtained as:
 \begin{equation}
     \psi_i=\text{atan2}(u_{iy},u_{ix}).
 \end{equation}
@@ -40,7 +40,7 @@ In this work, the V-shape formation is constructed by two wings \cite{Dang2019},
 
 Thus, the desired position of UAV $R_i$ can be obtained as follows:
 \begin{equation}
-    p_i^d=p_l+d_i\left[\begin{array}{c}
+    \mathbf{p}_i^d=\mathbf{p}_l+d_i\left[\begin{array}{c}
 \cos\alpha_{i}\\
 \sin\alpha_{i}
 \end{array}\right].

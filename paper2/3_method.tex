@@ -9,42 +9,42 @@ To address the TVF problem, several potential force-based behaviors for each rob
     \label{fig:1control_diagram}
 \end{figure*}
 
-Our approach incorporates an event-triggering mechanism into the TVF that allows the swarm to adapt its formation shape in response to environmental conditions for safe navigation, as illustrated in Figure~\ref{fig:1problem}. Initially, the desired configuration assigned to the TVF is denoted $\delta_0$. At time $k$, the TVF can maintain the initial topology, i.e. $\delta(k)=\delta_0$. However, the confined space does not allow the formation maintaining topology $\delta_0$ due to the potential collision. As a result, a new topology is triggered to be applied depending on the surrounding space. Once the confined space is not detected by the robot, the initial topology $\delta_0$ of the formation is restored. With the proposed control approach, the formation configuration can be effectively managed. During the movement of the TVF, collaborative and collision avoidance controls are driven by the APF term in the proposed control strategy.
+Our approach incorporates an event-triggering mechanism into the TVF that allows the swarm to adapt its formation shape in response to environmental conditions for safe navigation, as illustrated in Figure~\ref{fig:1problem}. Initially, the desired configuration assigned to the TVF is denoted $\mathbf{\delta}_0$. At time $k$, the TVF can maintain the initial topology, i.e. $\mathbf{\delta}(k)=\mathbf{\delta}_0$. However, the confined space does not allow the formation maintaining topology $\mathbf{\delta}_0$ due to the potential collision. As a result, a new topology is triggered to be applied depending on the surrounding space. Once the confined space is not detected by the robot, the initial topology $\mathbf{\delta}_0$ of the formation is restored. With the proposed control approach, the formation configuration can be effectively managed. During the movement of the TVF, collaborative and collision avoidance controls are driven by the APF term in the proposed control strategy.
 
 \subsection{Individual behaviors}
 According to~\cite{Vsrhelyi2018}, the potential field model is used to design individual behaviors a state-of-the-art model that allows robot swarm navigation in confined environments. From the original model, we design the rule of attraction for formation maintenance, tailgating and goal orientation; the rule of repulsion to prevent inter-robot collisions, and obstacle avoidance to avoid collisions with 
 obstacles. 
 
-Firstly, to ensure goal-directed motion in environments, a target reaching behavior is provided by a preferred velocity vector. We denote $v_\text{ref}$ is the preferred speed and $u_\text{ref}$ is the preferred direction~\cite{6095129}. Then, the migration term, equal for every agent, corresponds to:
+Firstly, to ensure goal-directed motion in environments, a target reaching behavior is provided by a preferred velocity vector. We denote $v_\text{ref}$ is the preferred speed and $\mathbf{u}_\text{ref}$ is the preferred direction~\cite{6095129}. Then, the migration term, equal for every agent, corresponds to:
 \begin{equation}
-    v_i^m=v_\text{ref}u_\text{ref}
+    \mathbf{v}_i^m=v_\text{ref}\mathbf{u}_\text{ref}
 \end{equation}
 
 Secondly, the formation behavior is designed as an attractive force that drive robots to move toward their desired positions. Denote $\kappa\in\mathbb{R}$ be the scale ratio, which can be determined in Section~\ref{sec:erc}. Thus, a relative position-based controller of the form to maintain the desired shape, and enhance the abilities of TVF with scalable capabilities, which is given as follow:
 \begin{equation}
-    v^f_i=k_f\sum_{j=1}^n{\left(p_j-p_i-\kappa\left(\delta_j-\delta_i\right)\right)}
+    \mathbf{v}^f_i=k_f\sum_{j=1}^n{\left(\mathbf{p}_j-\mathbf{p}_i-\kappa\left(\mathbf{\delta}_j-\mathbf{\delta}_i\right)\right)}
     \label{eqn:1uf}
 \end{equation}
 where $k_f>0$ is the formation control gain.
 
 Next, the tailgating behavior is designed based on the relative position between each robot with other robot in the TVF, and used to navigate TVF pass through the narrow environment. Let robot $i$ follows robot ${l_i}$ within desired distance $d_\text{ref}$, with $d_\text{ref}>2r$,  an attractive force field for robot $i$ can be expressed as follows:
 \begin{equation}
-    v_i^t=\begin{cases}
-k_t\left(p_{l_i}-p_i-d_\text{ref}\dfrac{v_{l_i}}{\left\Vert v_{l_i}\right\Vert}\right)+v_{l_i} & \text{if } l_i\neq-1\\
+    \mathbf{v}_i^t=\begin{cases}
+k_t\left(\mathbf{p}_{l_i}-\mathbf{p}_i-d_\text{ref}\dfrac{\mathbf{v}_{l_i}}{\left\Vert \mathbf{v}_{l_i}\right\Vert}\right)+\mathbf{v}_{l_i} & \text{if } l_i\neq-1\\
 0 & \text{otherwise}
 \end{cases}
     \label{eqn:1ut}
 \end{equation}
-where $k_t$ is the tailgating control gain. To determine the leader robot, the inner product $\tilde{p}_{ij}$ of the difference between robot $j$ in the neighbor set $\mathcal{N}_i$ with robot $i$, $p_j-p_i$, and the desired direction, $u_\text{ref}$, is given as follows:
+where $k_t$ is the tailgating control gain. To determine the leader robot, the inner product $\tilde{\mathbf{p}}_{ij}$ of the difference between robot $j$ in the neighbor set $\mathcal{N}_i$ with robot $i$, $\mathbf{p}_j-\mathbf{p}_i$, and the desired direction, $\mathbf{u}_\text{ref}$, is given as follows:
 \begin{equation}
-    \tilde{p}_{ij} = \left\langle (p_j-p_i),u_\text{ref}\right\rangle
+    \tilde{\mathbf{p}}_{ij} = \left\langle (\mathbf{p}_j-\mathbf{p}_i),\mathbf{u}_\text{ref}\right\rangle
     \label{eqn:1tildep}
 \end{equation}
 
-As a result, the value of $\tilde{p}_{ij}$ is positive, proving that robot $j$ is in front of robot $i$ according to $u_\text{ref}$, and vice versa. For all robots $j$ in swarm, we obtain $\mathcal{P}_i=\left\{\tilde{p}_{ij}\right\}$. The leader robot ${l_i}$ of robot $i$ is chosen as the closest robot in front of it, i.e.
+As a result, the value of $\tilde{\mathbf{p}}_{ij}$ is positive, proving that robot $j$ is in front of robot $i$ according to $\mathbf{u}_\text{ref}$, and vice versa. For all robots $j$ in swarm, we obtain $\mathcal{P}_i=\left\{\tilde{\mathbf{p}}_{ij}\right\}$. The leader robot ${l_i}$ of robot $i$ is chosen as the closest robot in front of it, i.e.
 \begin{equation}
      l_i=\begin{cases}
-    \arg\min_{j}\left\{\tilde{p}_{ij}\in\mathcal{P}_i\vert\tilde{p}_{ij}\geq0\right\} & \exists~\tilde{p}_{ij}\geq0\\ 
+    \arg\min_{j}\left\{\tilde{\mathbf{p}}_{ij}\in\mathcal{P}_i\vert\tilde{\mathbf{p}}_{ij}\geq0\right\} & \exists~\tilde{\mathbf{p}}_{ij}\geq0\\ 
     -1 & \text{otherwise}
      \end{cases}
     \label{eqn:1li}
@@ -52,22 +52,22 @@ As a result, the value of $\tilde{p}_{ij}$ is positive, proving that robot $j$ i
 
 Finally, inter-agent avoidance and obstacle avoidance behaviors are also designed to prevent collision. Denote $\mathcal{M}_i$ be the set of finite points on the obstacle's boundary, which are the closest to robot $i$, as illustrated in Figure~\ref{fig:1model}. Those repulsive forces are given as follows:
 \begin{equation}
-    v_i^i=k_{i}\sum_{j=1,j\neq i}^n{v_{ij}^i}
+    \mathbf{v}_i^i=k_{i}\sum_{j=1,j\neq i}^n{\mathbf{v}_{ij}^i}
 \end{equation}
 \begin{equation}
-    v_i^o=k_o\sum_{o\in\mathcal{M}}v_{io}^o
+    \mathbf{v}_i^o=k_o\sum_{\mathbf{o}\in\mathcal{M}}\mathbf{v}_{io}^o
 \end{equation}
-where $k_i,k_o>0$ is the inter-agent collision and obstacle avoidance gains, respectively. Denote $p_{ij}=p_i-p_j$, and $\hat{p}_{ij}=\dfrac{p_{ij}}{\left\Vert p_{ij}\right\Vert}$ be the relation position and the normalized vector between robot $i$ and robot $j$, respectively. Similarly, $p_{io}$, and $\hat{p}_{io}$ are the relative position and the normalized vector between robot $i$ and obstacle $o$, respectively, with $o\in\mathcal{M}_i$. Thus, the associated inter-agent avoidance $v_{ij}^i$ and obstacle avoidance $v_{io}^o$ are given as follows:
+where $k_i,k_o>0$ is the inter-agent collision and obstacle avoidance gains, respectively. Denote $\mathbf{p}_{ij}=\mathbf{p}_i-\mathbf{p}_j$, and $\hat{\mathbf{p}}_{ij}=\dfrac{\mathbf{p}_{ij}}{\left\Vert \mathbf{p}_{ij}\right\Vert}$ be the relation position and the normalized vector between robot $i$ and robot $j$, respectively. Similarly, $\mathbf{p}_{io}$, and $\hat{\mathbf{p}}_{io}$ are the relative position and the normalized vector between robot $i$ and obstacle $\mathbf{o}$, respectively, with $\mathbf{o}\in\mathcal{M}_i$. Thus, the associated inter-agent avoidance $\mathbf{v}_{ij}^i$ and obstacle avoidance $\mathbf{v}_{io}^o$ are given as follows:
 \begin{equation}
-    v_{ij}^{i}=\begin{cases}
-    \dfrac{r_a-\left\Vert p_{ij}\right\Vert}{r_a -2r}\hat{p}_{ij} & \text{if }\left\Vert p_{ij}\right\Vert<r_{a} \\
+    \mathbf{v}_{ij}^{i}=\begin{cases}
+    \dfrac{r_a-\left\Vert \mathbf{p}_{ij}\right\Vert}{r_a -2r}\hat{\mathbf{p}}_{ij} & \text{if }\left\Vert \mathbf{p}_{ij}\right\Vert<r_{a} \\
     0 & \text{otherwise}
     \end{cases}
     \label{eqn:1ui}
 \end{equation}
 \begin{equation}
-    v_{io}^{o}=\begin{cases}
-    \dfrac{r_a-\left\Vert p_{io}\right\Vert}{r_a -r}\hat{p}_{io} & \text{if }\left\Vert p_{io}\right\Vert<r_{a} \\
+    \mathbf{v}_{io}^{o}=\begin{cases}
+    \dfrac{r_a-\left\Vert \mathbf{p}_{io}\right\Vert}{r_a -r}\hat{\mathbf{p}}_{io} & \text{if }\left\Vert \mathbf{p}_{io}\right\Vert<r_{a} \\
     0 & \text{otherwise}
     \end{cases}
     \label{eqn:1uo}
@@ -77,14 +77,14 @@ where $k_i,k_o>0$ is the inter-agent collision and obstacle avoidance gains, res
 
 As mentioned in Figure~\ref{fig:1control_diagram}, the proposed event-based reconfiguration control includes two emergent strategies to navigate TVF safely through narrow space environment while maintaining the shape and ensuring the safety of swarm. At each time step, each robot determine the mode itself based on the sensing data collected from local sensor. The overall strategy can be summarised as follows:
 \begin{equation}
-    \tilde{v}_i=\begin{cases}
-        v_i^f+v_i^m+v_i^c+v_i^o & \text{if mode = \textit{``formation''}}\\
-        v_i^t+v_i^m+v_i^c+v_i^o & \text{if mode = \textit{``tailgating''}}
+    \tilde{\mathbf{v}}_i=\begin{cases}
+        \mathbf{v}_i^f+\mathbf{v}_i^m+\mathbf{v}_i^c+\mathbf{v}_i^o & \text{if mode = \textit{``formation''}}\\
+        \mathbf{v}_i^t+\mathbf{v}_i^m+\mathbf{v}_i^c+\mathbf{v}_i^o & \text{if mode = \textit{``tailgating''}}
     \end{cases}
     \label{eqn:1v}
 \end{equation}
 
-To search the large parameter space $\mathcal{K}=\left\{k_f,k_t,k_i,k_o\right\}$ of the controller, evolutionary optimization can be used for highest-order flight and lowest number of collisions. The evaluation of the swarm behavior is based on a single fitness function that sums three independent values, including order, agent-safety, and obs-safety, smaller or equal to 1 (ideal case). The fitness is determined in simulations where the swarm is initialized with random positions in an environment where obstacles are  randomly placed. The description  to seek parameter values are similar and detailed in the~\cite{Vsrhelyi2018}.
+To search the large parameter space $\Xi=\left\{k_f,k_t,k_i,k_o\right\}$ of the controller, evolutionary optimization can be used for highest-order flight and lowest number of collisions. The evaluation of the swarm behavior is based on a single fitness function that sums three independent values, including order, agent-safety, and obs-safety, smaller or equal to 1 (ideal case). The fitness is determined in simulations where the swarm is initialized with random positions in an environment where obstacles are  randomly placed. The description  to seek parameter values are similar and detailed in the~\cite{Vsrhelyi2018}.
 
 To select the suitable mode at each time step, an event-based mode switching is designed to deal with the requirement to navigate a TVF through a narrow space environment. According to the individual behaviors and emergent strategies mentioned above, the mode of each robot can be changed based on its sense with environment around.
 
@@ -95,9 +95,9 @@ To select the suitable mode at each time step, an event-based mode switching is 
     \label{fig:1we}
 \end{figure}
 
-Each obstacle point in the set $\mathcal{M}_{i}$ is clustered into two clusters on the left and right sides of the robot in $u_\text{ref}$ direction. Denote $o_l$ and $o_r$ are the nearest obstacle points on the left and right sides, respectively, whose distance to the robot $i$ is minimum. If $o_l$ and $o_r$ exist, the width of the environment can be estimated by the magnitude of the cross product of the vector $(o_r-o_l)$ and the desired direction $u_\text{ref}$ as follows:
+Each obstacle point in the set $\mathcal{M}_{i}$ is clustered into two clusters on the left and right sides of the robot in $\mathbf{u}_\text{ref}$ direction. Denote $\mathbf{o}_l$ and $\mathbf{o}_r$ are the nearest obstacle points on the left and right sides, respectively, whose distance to the robot $i$ is minimum. If $\mathbf{o}_l$ and $\mathbf{o}_r$ exist, the width of the environment can be estimated by the magnitude of the cross product of the vector $(\mathbf{o}_r-\mathbf{o}_l)$ and the desired direction $\mathbf{u}_\text{ref}$ as follows:
 \begin{equation}
-    w_e= \left\Vert\left(o_r-o_l\right)\times u_\text{ref}\right\Vert
+    w_e= \left\Vert\left(\mathbf{o}_r-\mathbf{o}_l\right)\times \mathbf{u}_\text{ref}\right\Vert
     \label{eqn:1we}
 \end{equation}
 
@@ -121,8 +121,8 @@ Get a set of observed obstacle points $\mathcal{M}_i$\;
     $\kappa \leftarrow 1.0$\;
 }
 \Else{
-    Determine the obstacle points $o_l$, $o_r$\;
-    \If{$\nexists o_l$ or $\nexists o_r$}{
+    Determine the obstacle points $\mathbf{o}_l$, $\mathbf{o}_r$\;
+    \If{$\nexists \mathbf{o}_l$ or $\nexists \mathbf{o}_r$}{
         mode $\leftarrow$ \textit{``formation''}\;
         $\kappa \leftarrow 1.0$\;
     }
@@ -143,17 +143,17 @@ Get a set of observed obstacle points $\mathcal{M}_i$\;
         }
     }
 }
-Compute desired velocity $\tilde{v}_i$\tcc*[r]{Eq. \ref{eqn:1v}}
-\Return $\tilde{v}_i$\;
+Compute desired velocity $\tilde{\mathbf{v}}_i$\tcc*[r]{Eq. \ref{eqn:1v}}
+\Return $\tilde{\mathbf{v}}_i$\;
 \end{algorithm}
 
 After summing the contributions, we apply a cutoff on the acceleration at $u_\text{max}$ according to
 \begin{equation}
-    u_i=\dfrac{\tilde{u}_i}{\left\Vert\tilde{u}_i\right\Vert}\min(\left\Vert\tilde{u}_i\right\Vert, u_\text{max})
+    \mathbf{u}_i=\dfrac{\tilde{\mathbf{u}}_i}{\left\Vert\tilde{\mathbf{u}}_i\right\Vert}\min(\left\Vert\tilde{\mathbf{u}}_i\right\Vert, u_\text{max})
 \end{equation}
-where $\tilde{u}_i(k+1) =(\tilde{v}_i(k+1)-\tilde{v}_i(k)) /\tau$. Then, we apply a cutoff on the speed at $v_\text{max}$, and get the velocity command $v_i$ as follows:
+where $\tilde{\mathbf{u}}_i(k+1) =(\tilde{\mathbf{v}}_i(k+1)-\tilde{\mathbf{v}}_i(k)) /\tau$. Then, we apply a cutoff on the speed at $v_\text{max}$, and get the velocity command $v_i$ as follows:
 \begin{equation}
-    v_i=\dfrac{\tilde{v}_i}{\left\Vert\tilde{v}_i\right\Vert}\min(\left\Vert\tilde{v}_i\right\Vert, v_\text{max})
+    \mathbf{v}_i=\dfrac{\tilde{\mathbf{v}}_i}{\left\Vert\tilde{\mathbf{v}}_i\right\Vert}\min(\left\Vert\tilde{\mathbf{v}}_i\right\Vert, v_\text{max})
 \end{equation}
 
 \subsection{Stability analysis}
@@ -163,7 +163,7 @@ Given the TVF as described in~\eqref{eqn:1model}, under the control law given in
 \begin{proof}
 To prove Theorem~\ref{the:stability}, we consider the negligible effect of collision avoidance behaviors and also neglect the constant impact of migration behavior, for any time $t(k)$, thus we conduct a stability analysis of the TVF in main contributions, i.e. formation and tailgating behaviors, which located in two separate modes, \textit{``formation''} and \textit{``tailgating''}, as mentioned in Section~\ref{sec:config}, which together ultimately lead to our conclusion.
 
-\textbf{Mode \textit{``formation''}:} Denote $L$ be the Laplacian matrix of the interaction topology graph of the swarm. Due to the fully connected, the entries of $L=\left[l_{ij}\right]$ are given as follows:
+\textbf{Mode \textit{``formation''}:} Denote $L$ be the Laplacian matrix of the interaction topology graph of the swarm. Due to the fully connected, the entries of $\mathbf{L}=\left[l_{ij}\right]$ are given as follows:
 \begin{equation}
     l_{ij}=\begin{cases}
     -1 & \text{if }i\neq j \\
@@ -173,46 +173,46 @@ To prove Theorem~\ref{the:stability}, we consider the negligible effect of colli
 
 The control law \eqref{eqn:1uf} can be shown as follows:
 \begin{equation}
-    k_f\sum_{j=1}^n{\left(p_j-p_i-\kappa \delta_{ji}\right)}=k_f\sum_{j=1}^n{\left(p_j-p_i\right)}+b_i
+    k_f\sum_{j=1}^n{\left(\mathbf{p}_j-\mathbf{p}_i-\kappa \delta_{ji}\right)}=k_f\sum_{j=1}^n{\left(\mathbf{p}_j-\mathbf{p}_i\right)}+\mathbf{b}_i
 \end{equation}
-where the bias $b_i=-k_f\sum_{j=1}^n\kappa \delta_{ji}$.  In order to use the properties of the Laplacian matrix, the dynamics of the swarm system with the control law can be expressed as follows:
+where the bias $\mathbf{b}_i=-k_f\sum_{j=1}^n\kappa \delta_{ji}$.  In order to use the properties of the Laplacian matrix, the dynamics of the swarm system with the control law can be expressed as follows:
 \begin{equation}
-    \dot{P}=-k_fLP+B
+    \dot{\mathbf{P}}=-k_f\mathbf{L}\mathbf{P}+\mathbf{B}
 \end{equation}
-where $P=\left[p_1,...,p_n\right]^T$, $B=\left[b_1,...,b_n\right]^T$ and $L$ is the Laplacian matrix of the interaction topology graph of the formation. For these values of its elements the Laplacian matrix has only one zero eigenvalue and the rest of its eigenvalues are positive and the same. Note also that the vector $B$ is an eigenvector of $L$ with the corresponding eigenvalue $n$ and:
+where $\mathbf{P}=\left[\mathbf{p}_1,...,\mathbf{p}_n\right]^T$, $\mathbf{B}=\left[\mathbf{b}_1,...,\mathbf{b}_n\right]^T$ and $\mathbf{L}$ is the Laplacian matrix of the interaction topology graph of the formation. For these values of its elements the Laplacian matrix has only one zero eigenvalue and the rest of its eigenvalues are positive and the same. Note also that the vector $\mathbf{B}$ is an eigenvector of $\mathbf{L}$ with the corresponding eigenvalue $n$ and:
 \begin{equation}
-    LB=nB
+    \mathbf{L}\mathbf{B}=n\mathbf{B}
 \end{equation}
 
 Defined the Lyapunov-like function for the TVF system as follows:
 \begin{equation}
-    V_f=\dfrac{1}{2}\left(P-\dfrac{1}{k_fn}B\right)^T\left(P-\dfrac{1}{k_fn}B\right)
+    V_f=\dfrac{1}{2}\left(\mathbf{P}-\dfrac{1}{k_fn}\mathbf{B}\right)^T\left(\mathbf{P}-\dfrac{1}{k_fn}\mathbf{B}\right)
 \end{equation}
 
 Talking the first derivative of $V_f$ gives
 \begin{equation}
 \begin{aligned}
-    \dot{V}_f&=\left(P-\dfrac{1}{k_fn}B\right)^T\left(-k_fLP+B\right)\\
-    &=-k_f\left(P-\dfrac{1}{k_fn}B\right)^TL\left(P-\dfrac{1}{k_fn}B\right)\leq0
+    \dot{V}_f&=\left(\mathbf{P}-\dfrac{1}{k_fn}\mathbf{B}\right)^T\left(-k_f\mathbf{L}\mathbf{P}+\mathbf{B}\right)\\
+    &=-k_f\left(\mathbf{P}-\dfrac{1}{k_fn}\mathbf{B}\right)^T\mathbf{L}\left(\mathbf{P}-\dfrac{1}{k_fn}\mathbf{B}\right)\leq0
 \end{aligned}
 \end{equation}
 
 According to the LaSalle’s invariance
-principle, it can be stated that as $k\to\infty$ the state $P$ will converge to the largest invariant subset $\Omega=\left\{P|\dot{V}_f=0\right\}$. In other words, the formation will close to the desired shape.
+principle, it can be stated that as $k\to\infty$ the state $\mathbf{P}$ will converge to the largest invariant subset $\Omega=\left\{\mathbf{P}|\dot{V}_f=0\right\}$. In other words, the formation will close to the desired shape.
 
 \textbf{Mode \textit{``tailgating''}:} In case robot $i$ do not have it leader, we do not analysis the stability, because this robot do not contribute to the configuration maintenance of the TVF. Otherwise, in case robot $i$ has its leader $l_i$, we define a candidate Lyapunov function as follows:
 \begin{equation}
-    V_{t}=\dfrac{1}{2}\left(p_{l_i}-p_{i}-d_\text{ref}\dfrac{v_{l_i}}{\left\Vert v_{l_i}\right\Vert}\right)^{T}\left(p_{l_i}-p_{i}-d_\text{ref}\dfrac{v_{l_i}}{\left\Vert v_{l_i}\right\Vert}\right)
+    V_{t}=\dfrac{1}{2}\left(\mathbf{p}_{l_i}-\mathbf{p}_{i}-d_\text{ref}\dfrac{\mathbf{v}_{l_i}}{\left\Vert \mathbf{v}_{l_i}\right\Vert}\right)^{T}\left(\mathbf{p}_{l_i}-\mathbf{p}_{i}-d_\text{ref}\dfrac{\mathbf{v}_{l_i}}{\left\Vert \mathbf{v}_{l_i}\right\Vert}\right)
 \end{equation}
 
 Taking the first derivative of $V_t$, gives:
 \begin{equation}
-    \dot{V}_{t}=\left(p_{l_i}-p_{i}-d_\text{ref}\dfrac{v_{l_i}}{\left\Vert v_{l_i}\right\Vert}\right)^{T}\left(v_{l_i}-v_{i}\right)
+    \dot{V}_{t}=\left(\mathbf{p}_{l_i}-\mathbf{p}_{i}-d_\text{ref}\dfrac{\mathbf{v}_{l_i}}{\left\Vert \mathbf{v}_{l_i}\right\Vert}\right)^{T}\left(\mathbf{v}_{l_i}-\mathbf{v}_{i}\right)
 \end{equation}
 
-By using the control law $v^t_i$ in \eqref{eqn:1ut}, $\dot{V}_t$ becomes:
+By using the control law $\mathbf{v}^t_i$ in \eqref{eqn:1ut}, $\dot{V}_t$ becomes:
 \begin{equation}
-    \dot{V}_{t}=-k_{t}\left(p_{l_i}-p_{i}-d_\text{ref}\dfrac{v_{l_i}}{\left\Vert v_{l_i}\right\Vert}\right)^{T}\left(p_{l_i}-p_{i}-d_\text{ref}\dfrac{v_{l_i}}{\left\Vert v_{l_i}\right\Vert}\right)\leq0
+    \dot{V}_{t}=-k_{t}\left(\mathbf{p}_{l_i}-\mathbf{p}_{i}-d_\text{ref}\dfrac{\mathbf{v}_{l_i}}{\left\Vert \mathbf{v}_{l_i}\right\Vert}\right)^{T}\left(\mathbf{p}_{l_i}-\mathbf{p}_{i}-d_\text{ref}\dfrac{\mathbf{v}_{l_i}}{\left\Vert \mathbf{v}_{l_i}\right\Vert}\right)\leq0
 \end{equation}
 
 Therefore, the Lyapunov stability is satisfied. That leads to robot $i$ converges to its leader $l_i$ and keep behind a distance $d_\text{ref}$ along its leader direction. As a result, the straight line configuration can be guaranteed.
