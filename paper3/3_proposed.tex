@@ -47,14 +47,14 @@ Select leader $l_i$ for robot $i$ to follow\tcc*[r]{Eq. \ref{eqn:li}}
 
 Algorithm~\ref{alg:ls} presents the leader selection process. 
 
-In the \textit{``tailgating''} mode, robot~$i$ needs to align and keep a distance~$\bar{d}_\text{ref}\in\mathbb{R}$ with its leader~$l_i$. This can be formulated as follows:
+In the \textit{``tailgating''} mode, robot~$i$ needs to align and keep a distance~$d_\text{ref}\in\mathbb{R}$ with its leader~$l_i$. This can be formulated as follows:
 \begin{equation}
-    \lim_{k\to\infty}{\left\Vert \mathbf{p}_{l_i}(k)-\mathbf{p}_i(k)\right\Vert}=\bar{d}_\text{ref}
+    \lim_{k\to\infty}{\left\Vert \mathbf{p}_{l_i}(k)-\mathbf{p}_i(k)\right\Vert}=d_\text{ref}
     \label{eqn:tailcon}
 \end{equation}
 The desired relative position of robot~$i$ then can be determined as follows:
 \begin{equation}
-    \mathbf{p}_i^*(k)= \mathbf{p}_{l_i}(k)-\bar{d}_\text{ref}\mathbf{u}_\text{ref}.
+    \mathbf{p}_i^*(k)= \mathbf{p}_{l_i}(k)-d_\text{ref}\mathbf{u}_\text{ref}.
     \label{eqn:tailgating}
 \end{equation}
 
@@ -92,14 +92,14 @@ The tracking term aims to drive the robots toward their reference positions to a
 where $w_t$ is a positive tracking weight.
 
 \subsubsection{Speed cost}
-The speed cost is used to maintain the desired speed $\bar{v}_\text{ref}$ of the swarm. It is defined as the squared difference between the actual and the desired speed of the robots as follows:
+The speed cost is used to maintain the desired speed $v_\text{ref}$ of the swarm. It is defined as the squared difference between the actual and the desired speed of the robots as follows:
 \begin{equation}
-    J_{s,i}(k)=w_s\sum_{l=1}^P\left(\left\Vert \mathbf{v}_i(k+l|k)\right\Vert^2-\bar{v}_\text{ref}^2\right)^2,
+    J_{s,i}(k)=w_s\sum_{l=1}^P\left(\left\Vert \mathbf{v}_i(k+l|k)\right\Vert^2-v_\text{ref}^2\right)^2,
 \end{equation}
 where $w_s$ is a positive weight.
 
 \subsubsection{Direction cost}
-This cost directs the robots to move in the desired direction $\mathbf{u}_\text{ref}$. It is computed based on the normalized dot product between velocity $\mathbf{v}_i$ and the desired direction $\mathbf{u}_\text{ref}$ of robot $i$. It is equal to zero when the velocity perfectly aligns with the reference direction and otherwise increases proportionally with the degree of misalignment. It is given as follows:
+This cost directs the robots to move in the desired direction $\mathbf{u}_\text{ref}$. It is computed based on the normalized dot product between velocity $\mathbf{v}_i$ and the desired direction $\mathbf{u}_\text{ref}$ of robot~$i$. It is equal to zero when the velocity perfectly aligns with the reference direction and otherwise increases proportionally with the degree of misalignment. It is given as follows:
 \begin{equation}
     J_{d,i}(k)=w_d\sum_{l=1}^P{\left(1-\dfrac{\left\langle \mathbf{v}_i\left(k+l|k\right),\mathbf{u}_\text{ref}\right\rangle^2}{\left\Vert \mathbf{v}_i(k+l|k)\right\Vert^2}\right)^2},
 \end{equation}
