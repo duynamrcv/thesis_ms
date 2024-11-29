@@ -27,7 +27,7 @@
 A number of simulations, comparisons, and software-in-the-loop tests have been conducted to evaluate the performance of the PRC with details as follows.
 
 \subsection{Evaluation Setup}
-The swarm includes five identical robots, each with a radius of $r=0.2$~m, a maximum speed of $\left\Vert \mathbf{v}_\text{max}\right\Vert=1.5$~m/s, and a maximum control input $\left\Vert \mathbf{u}_\text{max}\right\Vert=2.0$~m/s$^2$. The robot is equipped with a range sensor having the sensing range of $r_s=3$~m. The desired formation shape is set to a pentagon, the reference velocity is $\bar{v}_\text{ref}=1$~m/s, and the desired direction is $\mathbf{u}_\text{ref}=[1,0,0]^T$. The environments include two structures, both having narrow passages, as depicted in Figure~\ref{fig:path}.
+The swarm includes five identical robots, each with a radius of $r=0.2$~m, a maximum speed of $\left\Vert \mathbf{v}_\text{max}\right\Vert=1.5$~m/s, and a maximum control input $\left\Vert \mathbf{u}_\text{max}\right\Vert=2.0$~m/s$^2$. The robot is equipped with a range sensor having the sensing range of $r_s=3$~m. The desired formation shape is set to a pentagon, the reference velocity is $v_\text{ref}=1$~m/s, and the desired direction is $\mathbf{u}_\text{ref}=[1,0,0]^T$. The environments include two structures, both having narrow passages, as depicted in Figure~\ref{fig:path}.
 
 The metrics used for evaluation include the success rate, mean \textit{order} $\Phi$, mean speed (m/s), mean formation error $\varepsilon$ (m), and acceleration cost $\Gamma$ (m$^2$/s$^4$) \cite{Zhang2021}. The \textit{order} metric~\cite{Vicsek1995} measures the heading consensus of the robots and is computed as:
 \begin{equation}
