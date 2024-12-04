@@ -7,14 +7,16 @@ Video: {\tt\url{https://youtu.be/oAhgOOhFSCA}}
 }
 \vspace{1cm}
 
-\noindent\textit{\textbf{Abstract}}
+% \noindent\textit{\textbf{Abstract}}
 
-Reconfiguration control is essential for multi-robot systems to adapt their formations in response to environmental conditions when carrying out complex tasks. This chapter introduces a novel approach called predictive reconfiguration control (PRC) to navigate a swarm of robots through cluttered environments with narrow passages such as valleys or tunnels. The robot swarm is modeled as a directed sensing graph where each node represents a robot capable of collecting real-time data on the environment and the states of nearby robots within its communication range. The information from each node is used as input to the controller to adjust its parameters in two control modes, \textit{``formation''} and \textit{``tailgating''}, which serve as the basis for formation adaptation. A set of cost functions is then introduced to represent swarm constraints, including formation shape, reference speed, movement direction, and collision avoidance. These cost functions also allow for the prediction of the swarm's states so that model predictive control solvers can be used to minimize the cost for optimal control signals. Results from a number of comparisons and evaluations show that the proposed controller is not only capable of navigating the robot swarm through challenging environments with narrow passages but also outperforms other state-of-the-art formation control techniques in most performance metrics. Software-in-the-loop tests have been conducted to verify the validity of the proposed controller for practical scenarios.
-% \end{abstract}
+% Reconfiguration control is essential for multi-robot systems to adapt their formations in response to environmental conditions when carrying out complex tasks. This chapter introduces a novel approach called predictive reconfiguration control (PRC) to navigate a swarm of robots through cluttered environments with narrow passages such as valleys or tunnels. The robot swarm is modeled as a directed sensing graph where each node represents a robot capable of collecting real-time data on the environment and the states of nearby robots within its communication range. The information from each node is used as input to the controller to adjust its parameters in two control modes, \textit{``formation''} and \textit{``tailgating''}, which serve as the basis for formation adaptation. A set of cost functions is then introduced to represent swarm constraints, including formation shape, reference speed, movement direction, and collision avoidance. These cost functions also allow for the prediction of the swarm's states so that model predictive control solvers can be used to minimize the cost for optimal control signals. Results from a number of comparisons and evaluations show that the proposed controller is not only capable of navigating the robot swarm through challenging environments with narrow passages but also outperforms other state-of-the-art formation control techniques in most performance metrics. Software-in-the-loop tests have been conducted to verify the validity of the proposed controller for practical scenarios.
+% % \end{abstract}
 
-\noindent\textbf{\textit{Keywords:}}
-formation control, multi-robot system, distributed control, reconfiguration control, model predictive control
+% \noindent\textbf{\textit{Keywords:}}
+% formation control, multi-robot system, distributed control, reconfiguration control, model predictive control
 % \end{keywords}
+
+This chapter presents an optimal solution of the ERC, which is presented in Chapter~\ref{paper2} called predictive reconfiguration control (PRC) to navigate a swarm of robots through cluttered environments with narrow passages such as valleys or tunnels. A set of cost functions is introduced to represent swarm constraints, including formation shape, reference speed, movement direction, and collision avoidance. These cost functions also allow for predicting the swarm's states so that model predictive control solvers can be used to minimize the cost for optimal control signals.
 
 \input{paper3/1_introduction}
 \input{paper3/2_problem}
